@@ -1,14 +1,11 @@
 /*-------Reset-------*/
-html {
-	background: #f6f6f6;
-}
 body {
     min-width: 930px;
 	max-width: 1280px;
 	margin:0 auto;
     color:#333;
     font:12px Roboto, Arial, Helvetica, sans-serif;
-    background:#fff;
+    background:#ffffff;
 }
 img {border-style:none;}
 a {
@@ -43,6 +40,15 @@ p {
 
 /*-------Custom Styles-------*/
 
+html {
+	background: #000;
+}
+
+body {
+    background:#f6f6f6;
+	height: 1000px;
+}
+
 h1 {
 	font-size: 45px;
 	line-height: 60px;
@@ -53,7 +59,7 @@ h1 {
 	margin: 25px 0;
 }
 
-header {
+.header {
 	position: relative;
 	display: block;
 	height: 350px;
@@ -61,7 +67,7 @@ header {
 	color: #ffffff;
 }
 
-.header_logo {
+.brand {
 	display: block;
 	width: 139px;
 	height: 24px;
@@ -76,7 +82,7 @@ header {
 	transition: background 0.3s ease 0s;
 }
 
-.header_logo:hover {
+.brand:hover {
 	background: url(../img/logo_header_hover.png) no-repeat center center;
 }
 
@@ -85,24 +91,86 @@ header {
 	position: absolute;
 	right: 30px;
 	top: 29px;
-	padding-right: 27px;
 	color: #fff;
 	font-size: 14px;
 	font-weight: 900;
 	text-transform: uppercase;
-	letter-spacing: 2px;
-	background: url(../img/icon_menu.png) no-repeat right center;
-	/* Переход */
-	-webkit-transition: background 0.3s ease 0s;
-	-moz-transition: background 0.3s ease 0s;
-	-o-transition: background 0.3s ease 0s;
-	transition: background 0.3s ease 0s;
- 
+	letter-spacing: 2px; 
 }
+
+.menu_icon {
+	display: inline-block;
+	width: 18px;
+	height: 14px;
+	position: relative;
+	top: 2px;
+}
+
+.menu_icon .normal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 1;
+	/* Переход */
+	-webkit-transition: opacity 0.3s ease 0s;
+	-moz-transition: opacity 0.3s ease 0s;
+	-o-transition: opacity 0.3s ease 0s;
+	transition: opacity 0.3s ease 0s;
+}
+
+.menu_icon .hover {
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	/* Переход */
+	-webkit-transition: opacity 0.3s ease 0s;
+	-moz-transition: opacity 0.3s ease 0s;
+	-o-transition: opacity 0.3s ease 0s;
+	transition: opacity 0.3s ease 0s;
+}
+
+.header_menu:hover > .menu_icon .normal {
+	opacity: 0;
+}
+
+.header_menu:hover > .menu_icon .hover {
+	opacity: 1;
+}
+
+.fix_menu {
+	position: absolute;
+	right: 30px;
+	top: 17px;
+	color: #000;
+	font-size: 14px;
+	font-weight: 900;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+
+.fix_nav {
+	margin-top: 50px;
+	position: relative;
+}
+
+
+.fix_menu:hover > .menu_icon .normal {
+	opacity: 0;
+}
+
+.fix_menu:hover > .menu_icon .hover {
+	opacity: 1;
+}
+
+.fix_menu:hover {
+	text-decoration: none;
+}
+
+
 
 .header_menu:hover{
 	text-decoration: none;
-	background: url(../img/icon_menu_hover.png) no-repeat right center;
 }
 
 .header_title {
@@ -126,5 +194,98 @@ header {
 	line-height: 1.5;
 	margin: 0;
 }
+
+.nav {
+	display: block;
+	background: #ffffff;
+	height: 49px;
+	border-bottom: 1px solid #dddddd;
+}
+
+.page_nav {
+	text-align: center;
+}
+
+.page_nav li {
+	box-sizing: border-box;
+	height: 50px;
+	display: inline-block;
+	line-height: 50px;
+	margin: 0 18px;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: 2px;
+	/* Переход */
+	-webkit-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	-moz-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	-o-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.page_nav .selected {
+	border-bottom: 3px solid #000;
+}
+
+.page_nav li:hover:not(.selected){
+	border-bottom: 3px solid #22a24f;
+}
+
+.page_nav li:hover:not(.selected) > a{
+	color: #22a24f;
+	text-decoration: none;
+}
+
+.fix_brand {
+	display: block;
+	top: 0;
+	left: 0;
+	width: 200px;
+	height: 50px;
+	position: absolute;
+	/* Переход */
+	-webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	-moz-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	-o-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	
+}
+
+.fix_brand a{
+	display: block;
+	position: relative;
+}
+
+.fix_brand img{
+	position: absolute;
+	width: 139px;
+	height: 24px;
+	top: 14px;
+	left: 30px;
+	/* Переход */
+	-webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	-moz-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	-o-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.fix_brand .hover {
+	opacity: 0;
+}
+
+.fix_brand:hover {
+	background: #22a24f;
+}
+
+.fix_brand:hover > a .normal {
+	opacity: 0;
+}
+
+.fix_brand:hover > a .hover {
+	opacity: 1;
+}
+
+
+
+
 
 
