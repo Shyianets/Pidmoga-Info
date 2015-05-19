@@ -2,8 +2,9 @@
 <html lang="uk">
 	<head>
 		<meta charset="utf-8" />
-		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,900' rel='stylesheet' type='text/css'>
-		<link rel="stylesheet" href="styles/top.css" type="text/css" media="screen" />
+		<link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700, 900' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles/normalize.css" type="text/css" media="screen" />
+		<link rel="stylesheet" href="styles/style.css" type="text/css" media="screen"/>
 	</head>
 	<body>
 		<div class="header">
@@ -30,28 +31,30 @@
 				</ul>
 			</div>
 		</div>
-		<div class="nav fix_nav">
-			<div class="page_nav">
-				<div class="fix_brand">
-					<a href="#">
-						<img class="normal" src="img/logo_topmenu.png">
-						<img class="hover" src="img/logo_topmenu_hover.png">
+		<div class="fixnav">
+			<div class="nav fix_nav">
+				<div class="page_nav">
+					<div class="fix_brand">
+						<a href="#">
+							<img class="normal" src="img/logo_topmenu.png">
+							<img class="hover" src="img/logo_topmenu_hover.png">
+						</a>
+					</div>
+					<ul>
+						<li class="selected">Діяльність</li>
+						<li><a href="#">Мета</a></li>
+						<li><a href="#">Досягнення</a></li>
+						<li><a href="#">Команда</a></li>
+						<li><a href="#">Партнери</a></li>
+					</ul>
+					<a href="#" class="fix_menu">Меню
+						<span class="menu_icon">
+							<img class="normal" src="img/icon_menu_topmenu.png">
+							<img class="hover" src="img/icon_menu_hover.png">
+						</span>
 					</a>
 				</div>
-				<ul>
-					<li class="selected">Діяльність</li>
-					<li><a href="#">Мета</a></li>
-					<li><a href="#">Досягнення</a></li>
-					<li><a href="#">Команда</a></li>
-					<li><a href="#">Партнери</a></li>
-				</ul>
-				<a href="#" class="fix_menu">Меню
-					<span class="menu_icon">
-						<img class="normal" src="img/icon_menu_topmenu.png">
-						<img class="hover" src="img/icon_menu_hover.png">
-					</span>
-				</a>
-			</div>
+		</div>
 		</div>
 	</body>
 </html>
