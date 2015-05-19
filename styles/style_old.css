@@ -1,0 +1,14 @@
+body {
+    min-width:930px;
+	margin:0 auto;
+    color:#333;
+    font:12px/14px Roboto, Arial, Helvetica, sans-serif;
+    background:#fff;
+}
+img {border-style:none;}
+a {
+    text-decoration:none;
+    color:#000;
+}
+a:hover {text-decoration:underline;}
+a:active {background:none;}
