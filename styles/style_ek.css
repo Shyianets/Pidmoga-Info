@@ -151,11 +151,45 @@ a:hover {
     padding: 13px 0;
 }
 
-.footer {
-    height: 70px;
-    background-color: #1a1a1a;
-    color: #5d5d5d;
-    vertical-align: middle;
-    
-    
+.logo1 {
+    width: 75px;
+    height: 29px;
+    background-image: url(../img/logo_school.png);
+     margin-right: 30px;
 }
+
+.logo2 {
+    width: 58px;
+    height: 11px;
+    background-image: url(../img/logo_delta.png);
+    margin-right: 26px;
+}
+
+.copy {
+    width: 1090px;
+    height: 15px;
+    margin: 0;
+}
+
+.footer h4 {
+    color: #616161;
+    margin:  0px 0px 0px 20px;
+}
+
+.footer {
+    height: 100%;
+    margin: 0 auto;
+    background-color: #1a1a1a;    
+}
+
+.footer:before, .logo1, .logo2, .copy {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.footer:before {
+    content: '';
+    height: 70px;
+    margin-left: -0.25em;
+}
+ 
