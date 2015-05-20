@@ -1,0 +1,54 @@
+.clearfix:after, .row:after, .container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.container {
+	width: 930px;
+	margin: 0 auto;
+}
+.row {
+	position: relative;
+	margin: 0 -15px;
+}
+.col {
+	position:relative;
+	float:left;
+	padding: 0 15px;
+}
+.col1 {
+	width: 50px;
+}
+.col2 {
+	width: 130px;
+}
+.col3 {
+	width: 210px;
+}
+.col4 {
+	width: 290px;
+}
+.col5 {
+	width: 370px;
+}
+.col6 {
+	width: 450px;
+}
+.col7 {
+	width: 530px;
+}
+.col8 {
+	width: 610px;
+}
+.col9 {
+	width: 690px;
+}
+.col10 {
+	width: 770px;
+}
+.col11 {
+	width: 850px;
+}
+.col12 {
+	width: 930px;
+}
