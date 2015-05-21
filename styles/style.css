@@ -463,6 +463,20 @@ p {
 	background: #466cbb;
 }
 
+.logo1 {
+    width: 75px;
+    height: 29px;
+    background-image: url(../img/logo_school.png);
+     margin-right: 30px;
+}
+
+.logo2 {
+    width: 58px;
+    height: 11px;
+    background-image: url(../img/logo_delta.png);
+    margin-right: 26px;
+}
+
 .copy {
     margin: 0;
 }
