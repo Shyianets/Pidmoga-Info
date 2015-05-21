@@ -1,6 +1,6 @@
 .clearfix:after, .row:after, .container:after {
 	content: "";
-	display: block;
+	display: table;
 	clear: both;
 }
 .container {
@@ -11,44 +11,44 @@
 	position: relative;
 	margin: 0 -15px;
 }
-.col {
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, {
 	position:relative;
 	float:left;
 	padding: 0 15px;
 }
-.col1 {
+.col-1 {
 	width: 50px;
 }
-.col2 {
+.col-2 {
 	width: 130px;
 }
-.col3 {
+.col-3 {
 	width: 210px;
 }
-.col4 {
+.col-4 {
 	width: 290px;
 }
-.col5 {
+.col-5 {
 	width: 370px;
 }
-.col6 {
+.col-6 {
 	width: 450px;
 }
-.col7 {
+.col-7 {
 	width: 530px;
 }
-.col8 {
+.col-8 {
 	width: 610px;
 }
-.col9 {
+.col-9 {
 	width: 690px;
 }
-.col10 {
+.col-10 {
 	width: 770px;
 }
-.col11 {
+.col-11 {
 	width: 850px;
 }
-.col12 {
+.col-12 {
 	width: 930px;
 }
