@@ -1,6 +1,5 @@
 html {
 	box-sizing: border-box;
-	background: #000;
 }
 
 html *,
@@ -10,12 +9,13 @@ html *:after {
 }
 
 body {
-    min-width: 930px;
-	max-width: 1280px;
-	margin:0 auto;
     color:#616161;
     font:16px Roboto, Arial, Helvetica, sans-serif;
-    background:#ffffff;
+    background:#000;
+}
+
+.container {
+	background:#fff;
 }
 
 a {
