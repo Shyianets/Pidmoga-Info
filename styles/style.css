@@ -434,29 +434,32 @@ p {
 	background: #466cbb;
 }
 
-.logo1 {
+.copy {
+    margin: 0;
+}
+.footer h4 {
+    color: #616161;
+    margin:  0px 0px 0px 20px;
+}
+
+.footer_logos {
+    margin-top: 18px;
+    float: right;
+    padding-right: 10px;
+}
+
+.logo_school {
     width: 75px;
     height: 29px;
     background-image: url(../img/logo_school.png);
-     margin-right: 30px;
+    margin-right: 30px;
 }
 
-.logo2 {
+.logo_delta {
     width: 58px;
     height: 11px;
     background-image: url(../img/logo_delta.png);
     margin-right: 26px;
-}
-
-.copy {
-    width: 1090px;
-    height: 15px;
-    margin: 0;
-}
-
-.footer h4 {
-    color: #616161;
-    margin:  0px 0px 0px 20px;
 }
 
 .footer {
@@ -465,7 +468,7 @@ p {
     background-color: #1a1a1a;
 }
 
-.footer:before, .logo1, .logo2, .copy {
+.footer:before, .logo_school, .logo_delta, .copy, .footer_logos {
     display: inline-block;
     vertical-align: middle;
 }
