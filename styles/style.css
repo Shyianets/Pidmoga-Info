@@ -12,6 +12,7 @@ body {
     color:#616161;
     font:16px Roboto, Arial, Helvetica, sans-serif;
     background:#000;
+    min-width: 1024px;
 }
 
 .container {
