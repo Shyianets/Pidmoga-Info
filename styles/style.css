@@ -206,7 +206,7 @@ p {
 .nav {
 	display: block;
 	background: #ffffff;
-	height: 49px;
+	height: 50px;
 	border-bottom: 1px solid #dddddd;
 }
 
@@ -270,6 +270,34 @@ p {
 	height: 150px;
 }
 
+.header_menu:hover{
+	text-decoration: none;
+}
+
+.header_title {
+	display: block;
+	text-align: center;
+	padding-top: 120px;
+	width: 600px;
+	margin: auto auto;
+}
+
+.header_title h1 {
+	color: #fff;
+	margin: 0;
+    padding: 0;
+}
+
+.header_title p {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.5;
+	margin: 0;
+}
+
+
+
 .fix_menu {
 	position: absolute;
 	right: 30px;
@@ -303,34 +331,6 @@ p {
 	text-decoration: none;
 }
 
-
-
-.header_menu:hover{
-	text-decoration: none;
-}
-
-.header_title {
-	display: block;
-	text-align: center;
-	padding-top: 120px;
-	width: 600px;
-	margin: auto auto;
-}
-
-.header_title h1 {
-	color: #fff;
-	margin: 0;
-    padding: 0;
-}
-
-.header_title p {
-	color: #fff;
-	font-size: 20px;
-	font-weight: 400;
-	line-height: 1.5;
-	margin: 0;
-}
-
 .fix_brand {
 	display: block;
 	top: 0;
@@ -344,11 +344,6 @@ p {
 	-o-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 	transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 
-}
-
-.fix_brand a{
-	display: block;
-	position: relative;
 }
 
 .fix_brand img{
@@ -372,11 +367,11 @@ p {
 	background: #22a24f;
 }
 
-.fix_brand:hover > a .normal {
+.fix_brand:hover .normal {
 	opacity: 0;
 }
 
-.fix_brand:hover > a .hover {
+.fix_brand:hover .hover {
 	opacity: 1;
 }
 
