@@ -100,25 +100,6 @@ p {
 	padding: 15px 0 40px 0;
 }
 
-.content {
-	width: 610px;
-	margin: 0 auto;
-}
-
-.content ul {
-	padding-left:px;
-}
-.content li {
-	color: #4b4b4b;
-	width: 475px;
-	line-height: 25px;
-	margin: 15px 0;
-	padding-left: 48px;
-	list-style: none;
-	background: url(../img/ul_marker.png) no-repeat 30px 10px;
-
-}
-
 .header {
 	position: relative;
 	display: block;
@@ -375,6 +356,22 @@ p {
 	opacity: 1;
 }
 
+.info li {
+	line-height: 25px;
+	margin: 15px 0;
+	padding-left: 48px;
+	list-style: none;
+}
+
+.info li::before {content: "";
+  display: block;
+  width: 7px;
+  height: 7px;
+  background-color: #bdbdbd;
+  position: relative;
+  top: 15px;
+  left: -20px;
+}
 
 .insert {
     width: 610px;
@@ -413,7 +410,40 @@ p {
     padding:70px 490px 70px 80px;
 }
 
+.cards {
+  margin: 40px 0;
+}
 
+.card {
+  display: block;
+}
+
+.card a {
+  text-decoration: none;
+}
+
+.cards h3:hover {
+  color: #22a24f;
+}
+
+.pub-list li {
+  list-style:none;
+  display: inline-block;  
+}
+
+.pub-list li a{
+  text-decoration: none;
+  letter-spacing: 2px;
+
+}
+  
+
+
+.pub-all {
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+}
 
 .facebook_block {
     height: 345px;
