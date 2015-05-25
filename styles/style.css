@@ -131,7 +131,7 @@ p {
 	display: block;
 	width: 139px;
 	height: 24px;
-	position: absolute;
+	position: a bsolute;
 	left: 30px;
 	top: 26px;
 	background: url(../img/logo_header.png) no-repeat center center;
@@ -522,8 +522,29 @@ p {
     margin-left: -0.25em;
 }
 
+/* форма alex */
 
+input[type="text"], input[type="email"], input[type="tel"], input[type="select"] {
+  background-color: #ededed;
+  width: 290px;
+  min-height: 40px; 
+  margin-bottom: 20px;
+  float: right;
+  border: none;
+  
+}
 
+input[placeholder] {
+  text-transform: uppercase;
+  color: #cfcfcf;
+  padding-left: 12px;
+}
 
+label {
+  padding-left: 68px;
+  text-transform: uppercase;
+  font: 12pt "roboto" 700;
+}
 
+/* форма alex end*/
 
