@@ -87,7 +87,7 @@ h5 {
 
 p {
 	line-height: 25px;
-	padding: 10px 0;
+	padding-bottom: 30px;
 }
 
 .data {
@@ -125,6 +125,10 @@ p {
 
 .brand:hover {
 	background: url(../img/logo_header_hover.png) no-repeat center center;
+}
+
+.brand span {
+    display: none;
 }
 
 
@@ -246,7 +250,6 @@ p {
 
 
 .fixnav {
-	padding-top: 50px;
     background:#f6f6f6;
 	height: 150px;
 }
@@ -356,9 +359,47 @@ p {
 	opacity: 1;
 }
 
+.type-view {
+    font-size: 0;
+    text-align: center;
+    width: 910px;
+    margin: 0 auto;
+}
+
+.grid-view {
+    display: inline-block;
+    width: 32px;
+    height: 19px;
+    background-image: url(../img/icon-grid-view.png);
+    margin: 15px;
+}
+
+
+.list-view {
+    display: inline-block;
+    width: 32px;
+    height: 19px;
+    margin: 15px;
+    background-image: url(../img/icon-list-view.png);
+    opacity: 0.35;
+    /* Переход */
+	-webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	-moz-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	-o-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.list-view:hover {
+    opacity: 1;
+}
+
+ul {
+    padding: 0 0 15px  0;
+}
+
 .info li {
-	line-height: 25px;
-	margin: 15px 0;
+	line-height: 20px;
+	padding-bottom: 15px;
 	padding-left: 48px;
 	list-style: none;
 }
