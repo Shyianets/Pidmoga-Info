@@ -13,6 +13,11 @@
 	width: 930px;
 	margin: 0 auto;
 }
+
+.empty-col {
+    height: 10px;
+}
+
 .row {
 	position: relative;
 	margin: 0 -15px;
