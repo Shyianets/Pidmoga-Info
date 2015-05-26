@@ -112,7 +112,7 @@ p {
 	display: block;
 	width: 139px;
 	height: 24px;
-	position: a bsolute;
+	position: absolute;
 	left: 30px;
 	top: 26px;
 	background: url(../img/logo_header.png) no-repeat center center;
@@ -280,7 +280,6 @@ p {
 	line-height: 1.5;
 	margin: 0;
 }
-
 
 
 .fix_menu {
@@ -452,18 +451,15 @@ p {
 }
 
 .cards {
-  margin: 40px 0;
+  padding-bottom: 40px;
+    
 }
 
-.card {
-  display: block;
-}
-
-.card a {
+.cards a {
   text-decoration: none;
 }
 
-.cards h3:hover {
+.cards span:hover {
   color: #22a24f;
 }
 
