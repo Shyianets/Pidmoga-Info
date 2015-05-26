@@ -415,6 +415,10 @@ p {
   left: -20px;
 }
 
+.cont_insert {
+  margin: 40px 0;
+}
+
 .insert {
     width: 610px;
     margin:0 auto;
@@ -608,6 +612,10 @@ input[placeholder] {
   padding-left: 12px;
 }
 
+input[type="select"] option {
+  padding-left: 12px;
+}
+
 .label {
   box-sizing: border-box;
   height: 40px;
@@ -617,6 +625,14 @@ input[placeholder] {
   line-height: 40px;
 }
 
+input[type="radio"], input[type="checkbox"] {
+  margin-bottom:25px;
+  
+}
+
+input[type="radio"] span {
+  
+}
 
 /* форма alex end*/
 
