@@ -647,13 +647,26 @@ input[type="radio"] span {
   
 }
 
-.my_radio {
+.my_radio, .my_checkbox {
   display: block;
   height: 15px;
   width: 15px;
   border: 1px solid #c2c2c2;
-  
 }
+
+.my_radio {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+  
+.my_checkbox {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+
 
 /* форма alex end*/
 
