@@ -606,6 +606,11 @@ input[type="text"], input[type="email"], input[type="tel"], select {
   
 }
 
+input:hover, input:focus, select:hover, select:focus {
+  border: 1px solid #22a24f;
+  outline: none;
+}
+
 select {
   padding-left: 7px;
   line-height: 40px;
@@ -619,7 +624,7 @@ input[placeholder] {
   padding-left: 12px;
   }
 
-input[placeholder]:hover {
+input[placeholder]:hover, input[placeholder]:focus {
   text-transform: uppercase;
   color: #cfcfcf;
   padding-left: 12px;
@@ -640,18 +645,25 @@ input[type="select"] option {
 
 input[type="radio"], input[type="checkbox"] {
   margin-bottom:25px;
+
+}
+
+input[type="radio"] span, input[type="checkbox"] span {
   
 }
 
-input[type="radio"] span {
-  
-}
+/* стилизую кружок и квадрат alex-- */
 
 .my_radio, .my_checkbox {
   display: block;
   height: 15px;
   width: 15px;
   border: 1px solid #c2c2c2;
+  margin: 10px;
+}
+
+.my_radio:hover, .my_checkbox:hover, .my_radio:focus, .my_checkbox:focus {
+  border-color: #22a24f;
 }
 
 .my_radio {
@@ -665,6 +677,18 @@ input[type="radio"] span {
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
+
+.my_radio_point {
+  display: block;
+  height: 7px;
+  width: 7px;
+  background-color: #22a24f; 
+  -moz-border-radius: 7px;
+  -webkit-border-radius: 7px;
+  border-radius: 7px;
+  margin: 25%;
+}
+/* --стилизую кружок и квадрат alex */
 
 
 
