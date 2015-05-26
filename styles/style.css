@@ -596,7 +596,7 @@ p {
   padding: 20px 0;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], input[type="select"], select {
+input[type="text"], input[type="email"], input[type="tel"], select {
   background-color: #ededed;
   width: 290px;
   min-height: 40px; 
@@ -606,7 +606,20 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="select"]
   
 }
 
+select {
+  padding-left: 7px;
+  line-height: 40px;
+  
+  
+}
+
 input[placeholder] {
+  text-transform: uppercase;
+  color: #9e9e9e;
+  padding-left: 12px;
+  }
+
+input[placeholder]:hover {
   text-transform: uppercase;
   color: #cfcfcf;
   padding-left: 12px;
@@ -631,6 +644,14 @@ input[type="radio"], input[type="checkbox"] {
 }
 
 input[type="radio"] span {
+  
+}
+
+.my_radio {
+  display: block;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #c2c2c2;
   
 }
 
