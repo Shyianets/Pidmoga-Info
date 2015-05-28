@@ -623,11 +623,15 @@ input[placeholder] {
 input[placeholder]:hover, input[placeholder]:focus {
   text-transform: uppercase;
   color: #cfcfcf;
-  padding-left: 12px;
+  padding-left: 11px;
 }
 
 input[type="select"] option {
   padding-left: 12px;
+}
+
+select:hover, select:focus {
+  padding-left: 6px;  
 }
 
 .label {
@@ -641,6 +645,17 @@ input[type="select"] option {
 
 input[type="radio"], input[type="checkbox"] {
   margin-bottom:25px;
+  display: none;
+
+}
+
+ input[type="checkbox"] .label:befor {
+  content: "";
+  display: block;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #c2c2c2;
+  margin: 10px;
 
 }
 
