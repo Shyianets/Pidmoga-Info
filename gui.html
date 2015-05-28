@@ -6,7 +6,8 @@
       <link rel="stylesheet" href="styles/fontello.css" type="text/css">
       <link rel="stylesheet" href="styles/grid.css" type="text/css">
       <link rel="stylesheet" href="styles/normalize.css" type="text/css">  
-      <link rel="stylesheet" href="styles/style.css" type="text/css">  
+      <link rel="stylesheet" href="styles/style.css" type="text/css">
+      <script type="text/javascript" src="https://github.com/brianreavis/selectize.js/blob/master/src/selectize.js"></script>
       <title>Pidmoga Info</title>
     </head>
     <body>
@@ -134,7 +135,7 @@
           </div>
         
          <!-- Alex - forma-->
-          <div class="forma clearfix"> 
+        <div class="forma clearfix"> 
              <div class="label">
                <label>ім'я<input type="text" name="name" placeholder="введіть ім'я">
                </label>
@@ -147,16 +148,31 @@
                <label>телефон<input type="tel" name="tel" placeholder="ваш номер телефону">
                </label>
              </div>
-            <select name="tip_dopomogi" size="1">
-              <option disabled>ТИП ДОПОМОГИ</option>
-              <option>ЮРИДИЧНА</option>
-              <option>ІНФОРМАЦІЙНА</option>
-              <option>ПСИХОЛОГІЧНА</option>
-              <option>МАТЕРІАЛЬНА</option>
+              
+              <!-- Alex - выпадающий список-->
+              
+          <div class="select">
+            <input type="text" id="custom_select" class="my_select" placeholder="ТИП ДОПОМОГИ">
+              <option value="1">ЮРИДИЧНА</option>
+              <option value="2">ІНФОРМАЦІЙНА</option>
+              <option value="3">ПСИХОЛОГІЧНА</option>
+              <option value="4">МАТЕРІАЛЬНА</option>
             </select>
-            </div>
+          </div>  
+            <!-- Скрипт для стилизации селекта-->     
+<script>
+				$('#custom_select').selectize({
+					persist: false,
+					createOnBlur: true,
+					create: true
+				});
+				</script> 
+            
+        </div>
           
         <div class="row">
+            
+            <!-- Alex - чекбоксы-->
             
               <div class="checkbox col-6">
                 <input type="checkbox" id="check1" />
@@ -186,6 +202,8 @@
                       Бійцям АТО дозволено перевищувати граничні ціни втричі;
                 </label><br>
                   
+                <!-- Alex - радиокнопки-->
+                
                 <input type="radio" id="rad2" name="rad" />
                 <label for="rad2">
                     Спрощено перелік документів для отримання протезу;
@@ -284,5 +302,7 @@
           </div>
         </div>
       </div>
+        
+        
     </body>
 </html>

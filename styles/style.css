@@ -592,7 +592,7 @@ p {
   padding: 20px 0;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], select {
+input[type="text"], input[type="email"], input[type="tel"], .select option {
   background-color: #ededed;
   width: 290px;
   min-height: 40px; 
@@ -602,34 +602,32 @@ input[type="text"], input[type="email"], input[type="tel"], select {
   
 }
 
-input:hover, input:focus, select:hover, select:focus {
+input:hover, input:focus {
   border: 1px solid #22a24f;
   outline: none;
 }
 
-select {
-  padding-left: 7px;
-  line-height: 40px;
+        /* selectize */
+           
+.select option {
+    margin-bottom: 0;
+    line-height: 40px;
 }
 
-input[placeholder] {
+.select option:hover,
+.select option:focus {
+    background-color: #22a24f;
+    color: white;
+}
+
+input[placeholder], .select option {
   text-transform: uppercase;
   color: #9e9e9e;
-  padding-left: 12px;
+  padding-left: 10px;
   }
 
-input[placeholder]:hover, input[placeholder]:focus {
-  text-transform: uppercase;
-  color: #cfcfcf;
-  padding-left: 11px;
-}
-
-input[type="select"] option {
-  padding-left: 12px;
-}
-
-select:hover, select:focus {
-  padding-left: 6px;  
+input[placeholder]:hover {
+    padding-left: 9px;
 }
 
 .label {
@@ -648,6 +646,7 @@ select:hover, select:focus {
   cursor: pointer;
   position: relative;
   padding-left: 24px;
+  padding-bottom: 24px;
 }
 
 input[type="radio"], input[type="checkbox"] {
@@ -680,10 +679,9 @@ input[type="radio"], input[type="checkbox"] {
  input[type="radio"]:checked + label:before {
   content: "\2022";
   color: #22a24f;
-  font-size: 30px;
+  font-size: 35px;
   text-align: center;
-  line-height: 15px;
-  border-color: #22a24f;
+  line-height: 16px;
 }
 
  input[type="checkbox"]:checked + label:before {
@@ -695,12 +693,11 @@ input[type="radio"], input[type="checkbox"] {
     line-height: 12px;
     border-color: #22a24f;
 }    
-    
+
+    /* не работает как нужно - подсвечивает ВСЕ */
 .checkbox:hover > label:before {
     border-color: #22a24f;
 }
-
-/* --стилизую кружок и квадрат alex */
 
 /* форма alex end*/
 
