@@ -112,7 +112,7 @@ p {
 	display: block;
 	width: 139px;
 	height: 24px;
-	position: a bsolute;
+	position: absolute;
 	left: 30px;
 	top: 26px;
 	background: url(../img/logo_header.png) no-repeat center center;
@@ -280,7 +280,6 @@ p {
 	line-height: 1.5;
 	margin: 0;
 }
-
 
 
 .fix_menu {
@@ -452,18 +451,15 @@ p {
 }
 
 .cards {
-  margin: 40px 0;
+  padding-bottom: 40px;
+    
 }
 
-.card {
-  display: block;
-}
-
-.card a {
+.cards a {
   text-decoration: none;
 }
 
-.cards h3:hover {
+.cards span:hover {
   color: #22a24f;
 }
 
@@ -544,10 +540,11 @@ p {
 }
 
 .copy {
-    margin: 0;
-}
-.footer h4 {
     color: #616161;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     margin:  0px 0px 0px 20px;
 }
 
@@ -596,7 +593,7 @@ p {
   padding: 20px 0;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], input[type="select"], select {
+input[type="text"], input[type="email"], input[type="tel"], .select option {
   background-color: #ededed;
   width: 290px;
   min-height: 40px; 
@@ -606,14 +603,32 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="select"]
   
 }
 
-input[placeholder] {
-  text-transform: uppercase;
-  color: #cfcfcf;
-  padding-left: 12px;
+input:hover, input:focus {
+  border: 1px solid #22a24f;
+  outline: none;
 }
 
-input[type="select"] option {
-  padding-left: 12px;
+        /* selectize */
+           
+.select option {
+    margin-bottom: 0;
+    line-height: 40px;
+}
+
+.select option:hover,
+.select option:focus {
+    background-color: #22a24f;
+    color: white;
+}
+
+input[placeholder], .select option {
+  text-transform: uppercase;
+  color: #9e9e9e;
+  padding-left: 10px;
+  }
+
+input[placeholder]:hover {
+    padding-left: 9px;
 }
 
 .label {
@@ -625,13 +640,64 @@ input[type="select"] option {
   line-height: 40px;
 }
 
-input[type="radio"], input[type="checkbox"] {
-  margin-bottom:25px;
-  
+/* стилизую кружок и квадрат alex-- */
+
+.checkbox label, .radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 24px;
+  padding-bottom: 24px;
 }
 
-input[type="radio"] span {
+input[type="radio"], input[type="checkbox"] {
+  display: none;
+}
+
+ .checkbox label:before, .radio label:before {
+  content: "";
+  display: inline-block;
+  height: 15px;
+  width: 15px;
+  border: 1px solid #c2c2c2;
+  position: absolute;
+  left: 0;
+  top: 2px;
+}
+
+.radio label:before {
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
   
+.checkbox label:before {
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+ input[type="radio"]:checked + label:before {
+  content: "\2022";
+  color: #22a24f;
+  font-size: 35px;
+  text-align: center;
+  line-height: 16px;
+}
+
+ input[type="checkbox"]:checked + label:before {
+    content: "\e800";
+    font-family: "fontello";
+    color: #22a24f;
+    font-size: 12px;
+    text-align: center;
+    line-height: 12px;
+    border-color: #22a24f;
+}    
+
+    /* не работает как нужно - подсвечивает ВСЕ */
+.checkbox:hover > label:before {
+    border-color: #22a24f;
 }
 
 /* форма alex end*/

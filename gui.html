@@ -3,9 +3,11 @@
     <head>
       <meta charset="utf-8">
       <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
+      <link rel="stylesheet" href="styles/fontello.css" type="text/css">
       <link rel="stylesheet" href="styles/grid.css" type="text/css">
       <link rel="stylesheet" href="styles/normalize.css" type="text/css">  
-      <link rel="stylesheet" href="styles/style.css" type="text/css">  
+      <link rel="stylesheet" href="styles/style.css" type="text/css">
+      <script type="text/javascript" src="https://github.com/brianreavis/selectize.js/blob/master/src/selectize.js"></script>
       <title>Pidmoga Info</title>
     </head>
     <body>
@@ -137,7 +139,7 @@
           </div>
         
          <!-- Alex - forma-->
-          <div class="forma clearfix"> 
+        <div class="forma clearfix"> 
              <div class="label">
                <label>ім'я<input type="text" name="name" placeholder="введіть ім'я">
                </label>
@@ -150,29 +152,82 @@
                <label>телефон<input type="tel" name="tel" placeholder="ваш номер телефону">
                </label>
              </div>
-            <select name="tip_dopomogi" size="1">
-              <option disabled>ТИП ДОПОМОГИ</option>
-              <option>ЮРИДИЧНА</option>
-              <option>ІНФОРМАЦІЙНА</option>
-              <option>ПСИХОЛОГІЧНА</option>
-              <option>МАТЕРІАЛЬНА</option>
+              
+              <!-- Alex - выпадающий список-->
+              
+          <div class="select">
+            <input type="text" id="custom_select" class="my_select" placeholder="ТИП ДОПОМОГИ">
+              <option value="1">ЮРИДИЧНА</option>
+              <option value="2">ІНФОРМАЦІЙНА</option>
+              <option value="3">ПСИХОЛОГІЧНА</option>
+              <option value="4">МАТЕРІАЛЬНА</option>
             </select>
-            </div>
+          </div>  
+            <!-- Скрипт для стилизации селекта-->     
+<script>
+				$('#custom_select').selectize({
+					persist: false,
+					createOnBlur: true,
+					create: true
+				});
+				</script> 
+            
+        </div>
           
         <div class="row">
-              <div class="col-6">
-                <input type="checkbox" name="checkbox" value="check1">Бійцям АТО дозволено перевищувати граничні ціни втричі;<br>
-                <input type="checkbox" name="checkbox" value="check2">Спрощено перелік документів для отримання протезу;<br>
-                <input type="checkbox" name="checkbox" value="check3">Єдиноразова виплата підвищилась до 60,9 тис. грн;<br>
-                <input type="checkbox" name="checkbox" value="check4">Внесено 50 змін до Міністерства соціальної політики.
+            
+            <!-- Alex - чекбоксы-->
+            
+              <div class="checkbox col-6">
+                <input type="checkbox" id="check1" />
+                  <label for="check1">
+                      Бійцям АТО дозволено перевищувати граничні ціни втричі;
+                </label><br>
+                  
+                <input type="checkbox" id="check2" />
+                <label for="check2">
+                    Спрощено перелік документів для отримання протезу;
+                </label><br>
+                 
+                <input type="checkbox" id="check3" />
+                <label for="check3">
+                    Єдиноразова виплата підвищилась до 60,9 тис. грн;
+                </label><br>
+                
+               <input type="checkbox" id="check4" />
+                <label for="check4">
+                    Внесено 50 змін до Міністерства соціальної політики.
+                </label>
+              </div>   
+                
+            <div class="radio col-6">
+                <input type="radio" id="rad1" checked="checked" name="rad" />
+                  <label for="rad1">
+                      Бійцям АТО дозволено перевищувати граничні ціни втричі;
+                </label><br>
+                  
+                <!-- Alex - радиокнопки-->
+                
+                <input type="radio" id="rad2" name="rad" />
+                <label for="rad2">
+                    Спрощено перелік документів для отримання протезу;
+                </label><br>
+                 
+                <input type="radio" id="rad3" name="rad" />
+                <label for="rad3">
+                    Єдиноразова виплата підвищилась до 60,9 тис. грн;
+                </label><br>
+                
+               <input type="radio" id="rad4" name="rad" />
+                <label for="rad4">
+                    Внесено 50 змін до Міністерства соціальної політики.
+                </label>
               </div>
-              <div class="col-6">
-                <input type="radio" name="radio" value="rad1"><span>Бійцям АТО дозволено перевищувати граничні ціни втричі;</span><br>
-                <input type="radio" name="radio"  value="rad2">Спрощено перелік документів для отримання протезу;<br>
-                <input type="radio" name="radio" value="rad3">Єдиноразова виплата підвищилась до 60,9 тис. грн;<br>
-                <input type="radio" name="radio" value="rad4">Внесено 50 змін до Міністерства соціальної політики.
-              </div>
+              
+                  
         </div>
+            
+            
           <!-- Alex - мои блоки-->
           
         <div class="cont_insert">   
@@ -196,26 +251,26 @@
            <!-- Andrey - блоки-->
           
           <div class="cards row">
-            <div class="card col-4">
+            <div class="col-4">
               <a href="#">
                 <img src="img/card-1.png">
-                <h3>Документи, необхідні
+                <span>Документи, необхідні
   для отрімання посвідчення
-  учасника АТО</h3>
+  учасника АТО</span>
               </a>    
             </div>
-            <div class="card col-4">
+            <div class="col-4">
               <a href="#">
                 <img src="img/card-2.png">
-                <h3>Порядок проходження
-  військової комісії</h3>
+                <span>Порядок проходження
+  військової комісії</span>
               </a>
             </div>
-            <div class="card col-4">
+            <div class="col-4">
               <a href="#"> 
                 <img src="img/card-3.png">
-                <h3>Соціальні пільги
-  учасникам АТО</h3>
+                <span>Соціальні пільги
+  учасникам АТО</span>
               </a>
             </div>
           </div>
@@ -244,12 +299,14 @@
           <a href="#" class="fb_button">ми у facebook</a>
         </div>
         <div class="footer">
-          <div class="copy"><h4>© 2015 pidmoga.info</h4></div>
+          <div class="copy"><span>© 2015 pidmoga.info</span></div>
           <div class="footer_logos">
             <a href="#" class="logo_school"></a>
             <a href="#" class="logo_delta"></a>	
           </div>
         </div>
       </div>
+        
+        
     </body>
 </html>
