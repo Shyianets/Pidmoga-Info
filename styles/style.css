@@ -688,10 +688,11 @@ input[type="radio"], input[type="checkbox"] {
 
  input[type="checkbox"]:checked + label:before {
     content: "\e800";
+    font-family: "fontello";
     color: #22a24f;
-    font-size: 15px;
+    font-size: 12px;
     text-align: center;
-    line-height: 15px;
+    line-height: 12px;
     border-color: #22a24f;
 }    
     
