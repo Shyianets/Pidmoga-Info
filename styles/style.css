@@ -118,8 +118,6 @@ p {
 	background: url(../img/logo_header.png) no-repeat center center;
 	/* Переход */
 	-webkit-transition: background 0.3s ease 0s;
-	-moz-transition: background 0.3s ease 0s;
-	-o-transition: background 0.3s ease 0s;
 	transition: background 0.3s ease 0s;
 }
 
@@ -163,8 +161,6 @@ p {
 	opacity: 1;
 	/* Переход */
 	-webkit-transition: opacity 0.3s ease 0s;
-	-moz-transition: opacity 0.3s ease 0s;
-	-o-transition: opacity 0.3s ease 0s;
 	transition: opacity 0.3s ease 0s;
 }
 
@@ -175,8 +171,6 @@ p {
 	opacity: 0;
 	/* Переход */
 	-webkit-transition: opacity 0.3s ease 0s;
-	-moz-transition: opacity 0.3s ease 0s;
-	-o-transition: opacity 0.3s ease 0s;
 	transition: opacity 0.3s ease 0s;
 }
 
@@ -217,8 +211,6 @@ p {
 	letter-spacing: 2px;
 	/* Переход */
 	-webkit-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-	-moz-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-	-o-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
 	transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
@@ -324,8 +316,6 @@ p {
 	position: absolute;
 	/* Переход */
 	-webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
-	-moz-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
-	-o-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 	transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 
 }
@@ -338,8 +328,6 @@ p {
 	left: 30px;
 	/* Переход */
 	-webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
-	-moz-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
-	-o-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 	transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
@@ -384,8 +372,6 @@ p {
     opacity: 0.35;
     /* Переход */
 	-webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
-	-moz-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
-	-o-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 	transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
@@ -533,8 +519,6 @@ p {
     color: white;
 	/* Переход */
 	-webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
-	-moz-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
-	-o-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 	transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 
 }
@@ -722,6 +706,84 @@ label[for]:hover:before {
 
 /*------------Button Style--------------*/
 
-.button-style {
-    
+.buttons {
+   margin: 50px 0;
 }
+
+a.content-button {
+    display: block;
+    height: 60px;
+    line-height: 58px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 1.4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a.b-green {
+    background: #22a24f;
+    color: #fff;
+    border: 2px solid transparent;
+    border-bottom: 5px solid transparent;
+    -webkit-transition: background 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	transition: background 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+a.b-green:hover,
+a.b-green:focus {
+    background: #1b9144;
+}
+
+a.b-green:active {
+    background: transparent;
+    color: #1b9144;
+    border: 2px solid #22a24f;
+    border-bottom: 5px solid #22a24f;
+}
+
+a.b-border {
+    color: #1b9144;
+    border: 2px solid #4caf51;
+    -webkit-transition: background 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	transition: background 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+a.b-border:hover,
+a.b-border:focus {
+    border-bottom: 5px solid #4caf51;
+}
+
+a.b-border:active {
+    background: #22a24f;
+    color: #fff;
+    border: 2px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
+.dark-bckgrnd {
+    background: #000;
+    margin: -15px;
+    padding: 15px;
+}
+
+a.b-dark-bkgrnd {
+    color: #fff;
+    border: 2px solid #4caf51;
+    -webkit-transition: background 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+	transition: background 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+a.b-dark-bkgrnd:hover,
+a.b-dark-bkgrnd:focus {
+    border-bottom: 5px solid #4caf51;
+}
+
+a.b-dark-bkgrnd:active {
+    background: #22a24f;
+    color: #fff;
+    border: 2px solid transparent;
+    border-bottom: 5px solid transparent;
+}
+
