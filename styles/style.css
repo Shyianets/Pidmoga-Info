@@ -691,11 +691,9 @@ input[type="radio"], input[type="checkbox"] {
     font-size: 12px;
     text-align: center;
     line-height: 12px;
-    border-color: #22a24f;
 }    
 
-    /* не работает как нужно - подсвечивает ВСЕ */
-.checkbox:hover > label:before {
+label[for]:hover:before {
     border-color: #22a24f;
 }
 
