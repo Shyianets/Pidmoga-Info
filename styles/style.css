@@ -402,6 +402,7 @@ p {
 	padding-bottom: 15px;
 	padding-left: 48px;
 	list-style: none;
+	position: relative;
 }
 
 .info li::before {content: "";
@@ -409,9 +410,9 @@ p {
   width: 7px;
   height: 7px;
   background-color: #bdbdbd;
-  position: relative;
-  top: 15px;
-  left: -20px;
+  position: absolute;
+  top: 6px;
+  left: 20px;
 }
 
 .cont_insert {
@@ -463,18 +464,31 @@ p {
   color: #22a24f;
 }
 
+.pub-list {
+	line-height: 25px;
+}
+
 .pub-list li {
+  min-width: 30px;
   list-style:none;
-  display: inline-block;  
+  display: inline-block;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
 }
 
 .pub-list li a{
   text-decoration: none;
   letter-spacing: 2px;
+  display: inline-block;
+  padding: 3px 8px;
 
 }
-  
 
+.pub-list li a:hover {
+	background-color: #22a24f;
+	color: #fff;
+}
 
 .pub-all {
   text-transform: uppercase;
