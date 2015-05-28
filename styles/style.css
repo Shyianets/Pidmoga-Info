@@ -466,6 +466,7 @@ p {
 
 .pub-list {
 	line-height: 25px;
+	margin: 20px 0;
 }
 
 .pub-list li {
@@ -488,6 +489,10 @@ p {
 .pub-list li a:hover {
 	background-color: #22a24f;
 	color: #fff;
+}
+
+.pub {
+	margin: 20px 0;
 }
 
 .pub-all {
