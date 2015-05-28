@@ -540,10 +540,11 @@ p {
 }
 
 .copy {
-    margin: 0;
-}
-.footer h4 {
     color: #616161;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     margin:  0px 0px 0px 20px;
 }
 
