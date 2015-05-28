@@ -610,8 +610,6 @@ input:hover, input:focus, select:hover, select:focus {
 select {
   padding-left: 7px;
   line-height: 40px;
-  
-  
 }
 
 input[placeholder] {
@@ -643,65 +641,65 @@ select:hover, select:focus {
   line-height: 40px;
 }
 
-input[type="radio"], input[type="checkbox"] {
-  margin-bottom:25px;
-  display: none;
-
-}
-
- input[type="checkbox"] .label:befor {
-  content: "";
-  display: block;
-  height: 15px;
-  width: 15px;
-  border: 1px solid #c2c2c2;
-  margin: 10px;
-
-}
-
-input[type="radio"] span, input[type="checkbox"] span {
-  
-}
-
 /* стилизую кружок и квадрат alex-- */
 
-.my_radio, .my_checkbox {
-  display: block;
+.checkbox label, .radio label {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 24px;
+}
+
+input[type="radio"], input[type="checkbox"] {
+  display: none;
+}
+
+ .checkbox label:before, .radio label:before {
+  content: "";
+  display: inline-block;
   height: 15px;
   width: 15px;
   border: 1px solid #c2c2c2;
-  margin: 10px;
+  position: absolute;
+  left: 0;
+  top: 2px;
 }
 
-.my_radio:hover, .my_checkbox:hover, .my_radio:focus, .my_checkbox:focus {
-  border-color: #22a24f;
-}
-
-.my_radio {
+.radio label:before {
   -moz-border-radius: 15px;
   -webkit-border-radius: 15px;
   border-radius: 15px;
 }
   
-.my_checkbox {
+.checkbox label:before {
   -moz-border-radius: 3px;
   -webkit-border-radius: 3px;
   border-radius: 3px;
 }
 
-.my_radio_point {
-  display: block;
-  height: 7px;
-  width: 7px;
-  background-color: #22a24f; 
-  -moz-border-radius: 7px;
-  -webkit-border-radius: 7px;
-  border-radius: 7px;
-  margin: 25%;
+ input[type="radio"]:checked + label:before {
+  content: "\2022";
+  color: #22a24f;
+  font-size: 30px;
+  text-align: center;
+  line-height: 15px;
+  border-color: #22a24f;
 }
+
+ input[type="checkbox"]:checked + label:before {
+    content: "\e800";
+    color: #22a24f;
+    font-size: 15px;
+    text-align: center;
+    line-height: 15px;
+    border-color: #22a24f;
+}    
+    
+.checkbox:hover > label:before {
+    border-color: #22a24f;
+}
+
 /* --стилизую кружок и квадрат alex */
-
-
 
 /* форма alex end*/
 
