@@ -5,7 +5,8 @@
       <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
       <link rel="stylesheet" href="styles/fontello.css" type="text/css">
       <link rel="stylesheet" href="styles/grid.css" type="text/css">
-      <link rel="stylesheet" href="styles/normalize.css" type="text/css">  
+      <link rel="stylesheet" href="styles/modal.css" type="text/css">
+      <link rel="stylesheet" href="styles/normalize.css" type="text/css">
       <link rel="stylesheet" href="styles/style.css" type="text/css">
       <script type="text/javascript" src="https://github.com/brianreavis/selectize.js/blob/master/src/selectize.js"></script>
       <title>Pidmoga Info</title>
@@ -66,9 +67,9 @@
           </div>
         </div>
         <div class="container">
-          
+
            <!-- Andrey - блоки-->
-          
+
           <div class="content row">
             <div class="col-2 empty-col"></div>
             <div class="info col-8">
@@ -79,7 +80,7 @@
               <div class="data">24 листопада 2014
               </div>
               <p>Громадська організація «Підмога.інфо» надає <a href="#">інформаційну</a> та адвокаційну <a href="#">допомогу</a> учасникам АТО і мирним громадянам, які постраждали внаслідок бойових дій на території України.
-              </p>          
+              </p>
               <ul>
                 <li>Бійцям АТО дозволено перевищувати
                 граничні ціни втричі;</li>
@@ -133,9 +134,28 @@
                 </p>
               </div>
           </div>
-        
+
+          <!-- modal window -->
+          <div class="row modal">
+            <div class="modal-block">
+              <div class="modal-head">
+                <a href="#" class="modal-close"><span class="modal-close-text">Закрити</span><span class="modal-close-icon"></span></a>
+                <h2>Порядок проходження<br>військової комісії</h2>
+              </div>
+              <div class="modal-body">
+                <h2>Державна допомога</h2>
+                <p>На протезування держава теж встановила певні ліміти. Якщо йдеться про ногу, то вартість протезу не повинна перевищувати 98 тисяч гривень. Ще донедавна ця сума була приблизно на десять тисяч меншою. Для бійців АТО ліміт можна перевищити в тричі, тобто не більше 294 тисяч гривень, якщо буде дозвіл медичної комісії.</p>
+                <p>Збільшення фінансових лімітів — це наша маленька перемога, — каже Краснощоков. Ми змусили чиновників переглянути витрати, адже хлопці ще зовсім молоді, активні і вони потребують сучасних протезів. Волонтерський проект власне створено, аби вказувати чиновникам на недоліки системи, вносити на законодавчому рівні зміни щодо реабілітації, щоб за декілька років хлопцям не довелося ходити з простягнутою рукою.</p>
+              </div>
+              <div class="modal-link">
+                <a href="#">Наступна публікація</a>
+              </div>
+            </div>
+          </div>
+        <!-- /modal window -->
+
          <!-- Alex - forma-->
-        <div class="forma clearfix"> 
+        <div class="forma clearfix">
              <div class="label">
                <label>ім'я<input type="text" name="name" placeholder="введіть ім'я">
                </label>
@@ -148,9 +168,9 @@
                <label>телефон<input type="tel" name="tel" placeholder="ваш номер телефону">
                </label>
              </div>
-              
+
               <!-- Alex - выпадающий список-->
-              
+
           <div class="select">
             <input type="text" id="custom_select" class="my_select" placeholder="ТИП ДОПОМОГИ">
               <option value="1">ЮРИДИЧНА</option>
@@ -158,75 +178,75 @@
               <option value="3">ПСИХОЛОГІЧНА</option>
               <option value="4">МАТЕРІАЛЬНА</option>
             </select>
-          </div>  
-            <!-- Скрипт для стилизации селекта-->     
+          </div>
+            <!-- Скрипт для стилизации селекта-->
 <script>
 				$('#custom_select').selectize({
 					persist: false,
 					createOnBlur: true,
 					create: true
 				});
-				</script> 
-            
+				</script>
+
         </div>
-          
+
         <div class="row">
-            
+
             <!-- Alex - чекбоксы-->
-            
+
               <div class="checkbox col-6">
                 <input type="checkbox" id="check1" />
                   <label for="check1">
                       Бійцям АТО дозволено перевищувати граничні ціни втричі;
                 </label><br>
-                  
+
                 <input type="checkbox" id="check2" />
                 <label for="check2">
                     Спрощено перелік документів для отримання протезу;
                 </label><br>
-                 
+
                 <input type="checkbox" id="check3" />
                 <label for="check3">
                     Єдиноразова виплата підвищилась до 60,9 тис. грн;
                 </label><br>
-                
+
                <input type="checkbox" id="check4" />
                 <label for="check4">
                     Внесено 50 змін до Міністерства соціальної політики.
                 </label>
-              </div>   
-                
+              </div>
+
             <div class="radio col-6">
                 <input type="radio" id="rad1" checked="checked" name="rad" />
                   <label for="rad1">
                       Бійцям АТО дозволено перевищувати граничні ціни втричі;
                 </label><br>
-                  
+
                 <!-- Alex - радиокнопки-->
-                
+
                 <input type="radio" id="rad2" name="rad" />
                 <label for="rad2">
                     Спрощено перелік документів для отримання протезу;
                 </label><br>
-                 
+
                 <input type="radio" id="rad3" name="rad" />
                 <label for="rad3">
                     Єдиноразова виплата підвищилась до 60,9 тис. грн;
                 </label><br>
-                
+
                <input type="radio" id="rad4" name="rad" />
                 <label for="rad4">
                     Внесено 50 змін до Міністерства соціальної політики.
                 </label>
               </div>
-              
-                  
+
+
         </div>
-            
-            
+
+
           <!-- Alex - мои блоки-->
-          
-        <div class="cont_insert">   
+
+        <div class="cont_insert">
           <p>Громадська організація «Підмога.інфо» надає інформаційну та адвокаційну допомогу учасникам АТО і мирним громадянам, які постраждали внаслідок бойових дій на території України.</p>
             <div class="insert">
               <div class="insert_heading">
@@ -238,14 +258,14 @@
             <span>Основною сферою діяльності є питання, пов’язані із протезуванням
             </span>
           </div>
-        </div> 
+        </div>
             <!-- Женя - блоки-->
-            
-            
-            
-         
+
+
+
+
            <!-- Andrey - блоки-->
-          
+
           <div class="cards row">
             <div class="col-4">
               <a href="#">
@@ -253,7 +273,7 @@
                 <span>Документи, необхідні
   для отрімання посвідчення
   учасника АТО</span>
-              </a>    
+              </a>
             </div>
             <div class="col-4">
               <a href="#">
@@ -263,7 +283,7 @@
               </a>
             </div>
             <div class="col-4">
-              <a href="#"> 
+              <a href="#">
                 <img src="img/card-3.png">
                 <span>Соціальні пільги
   учасникам АТО</span>
@@ -298,11 +318,11 @@
           <div class="copy"><span>© 2015 pidmoga.info</span></div>
           <div class="footer_logos">
             <a href="#" class="logo_school"></a>
-            <a href="#" class="logo_delta"></a>	
+            <a href="#" class="logo_delta"></a>
           </div>
         </div>
       </div>
-        
-        
+
+
     </body>
 </html>
