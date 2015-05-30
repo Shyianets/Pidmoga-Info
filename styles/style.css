@@ -520,11 +520,12 @@ p {
 }
 
 .content ul {
-    padding: 0 0 15px  0;
+    padding-bottom: 30px;
 }
 
 .info li {
-    line-height: 20px;
+    
+    line-height: 25px;
     padding-bottom: 15px;
     padding-left: 48px;
     list-style: none;
@@ -537,8 +538,8 @@ p {
     height: 7px;
     background-color: #bdbdbd;
     position: absolute;
-    top: 6px;
-    left: 20px;
+    top: 8px;
+    left: 30px;
 }
 
 .cont_insert {
