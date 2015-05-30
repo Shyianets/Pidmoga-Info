@@ -17,6 +17,7 @@ body {
 
 .main-conteiner {
     background:#fff;
+    overflow-x: hidden;
 }
 
 a {
@@ -74,7 +75,7 @@ h4 {
     line-height: 25px;
     font-weight: 500;
     color: #616161;
-    padding: 20px 0;	
+    padding: 20px 0;
 }
 
 h5 {
@@ -129,6 +130,145 @@ p {
     display: none;
 }
 
+.header .header-menu-block .menu-block {
+    height: 100%;
+    width: 320px;
+    position: absolute;
+    top: 0;
+    right: -320px;
+    font-size: 14px;
+    color: #1a1a1a;
+    background: url(../img/menu-background.png);
+    transition: right .15s linear;
+}
+
+.header-menu-block:hover .menu-block {
+    right: 0;
+}
+
+.header .header-menu-block .menu-block .menu-head .menu-lang {
+    float: left;
+}
+
+.header .header-menu-block .menu-block .menu-head .menu-lang a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1a1a1a;
+    transition: color .15s linear;
+}
+
+
+.header .header-menu-block .menu-block .menu-head {
+    padding: 15px 30px 0 30px;
+}
+
+.header .header-menu-block .menu-block .menu-head .menu-lang a:hover {
+    color: #22a24f;
+}
+
+.header .header-menu-block .menu-block .menu-head .menu-lang a + a {
+    margin-left: 15px;
+}
+
+.header .header-menu-block .menu-block .menu-head .menu-close {
+    display: block;
+    float: right;
+    text-decoration: none;
+}
+
+.header .header-menu-block .menu-block .menu-head .menu-close .menu-close-text {
+    display: inline-block;
+    vertical-align: middle;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #1a1a1a;
+}
+
+.header .header-menu-block .menu-block .menu-head .menu-close .menu-close-icon {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 10px;
+    background: url(../img/icon_menu_close.png);
+    width: 14px;
+    height: 14px;
+}
+
+.header .header-menu-block .menu-block .menu-body {
+    clear: both;
+    margin-top: 10px;
+    padding: 0 30px;
+}
+
+.header .header-menu-block .menu-block .menu-body li {
+    list-style: none;
+    position: relative;
+}
+
+.header .header-menu-block .menu-block .menu-body li.active:before {
+    content: '';
+    position: absolute;
+    top: 3px;
+    left: -30px;
+    display: block;
+    width: 20px;
+    height: 10px;
+    background: #22a24f;
+}
+
+.header .header-menu-block .menu-block .menu-body li + li {
+    margin-top: 10px;
+}
+
+.header .header-menu-block .menu-block .menu-body li a {
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    color: #1a1a1a;
+    border: none;
+    transition: color .15s linear, border .15s linear;
+}
+
+.header .header-menu-block .menu-block .menu-body li a:hover {
+    color: #22a24f;
+    border-bottom: 1px solid #22a24f;
+}
+
+.header .header-menu-block .menu-block .menu-contact {
+    margin-top: 10px;
+    padding: 0 30px 15px 30px;
+}
+
+.header .header-menu-block .menu-block .menu-contact a {
+    text-decoration: none;
+    color: #1a1a1a;
+    transition: color .15s linear;
+}
+
+.header .header-menu-block .menu-block .menu-contact a:hover {
+    text-decoration: none;
+    color: #22a24f;
+}
+
+.header .header-menu-block .menu-block .menu-button {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+    background: #3a5898;
+    padding: 20px;
+    transition: background .15s linear;
+}
+
+.header .header-menu-block .menu-block .menu-button:hover {
+    background: #466cbb;
+}
 
 .header_menu {
     position: absolute;
@@ -139,7 +279,7 @@ p {
     font-weight: 700;
     text-transform: uppercase;
     text-decoration: none;
-    letter-spacing: 2px; 
+    letter-spacing: 2px;
 }
 
 .header_menu:hover{
@@ -262,7 +402,7 @@ p {
     color: #fff;
     margin: 0;
     padding: 0;
-    padding-bottom: 10px; 
+    padding-bottom: 10px;
 }
 
 .header_title p {
@@ -639,7 +779,7 @@ p {
 input[type="text"], input[type="email"], input[type="tel"], .select option {
     background-color: #ededed;
     width: 290px;
-    min-height: 40px; 
+    min-height: 40px;
     margin-bottom: 20px;
     float: right;
     border: none;
@@ -735,7 +875,7 @@ input[type="checkbox"]:checked + label:before {
     font-size: 12px;
     text-align: center;
     line-height: 12px;
-}    
+}
 
 label[for]:hover:before {
     border-color: #22a24f;
@@ -841,14 +981,14 @@ a.b-dark-bkgrnd:active {
     font-weight: 400;
     letter-spacing: 1px;
     line-height: 20px;
-    padding: 0 10px; 
+    padding: 0 10px;
     height: 20px;
     color: #fff;
     background-color: rgba(255, 255, 255, 0.3);
     position: absolute;
     bottom: 0;
     right: 0;
-    
+
 }
 
 .slider-nav {
