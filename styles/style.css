@@ -12,7 +12,7 @@ body {
     color:#616161;
     font:16px Roboto, Arial, Helvetica, sans-serif;
     background:#000;
-    min-width: 1024px;
+    min-width: 980px;
 }
 
 .main-conteiner {
@@ -524,7 +524,6 @@ p {
 }
 
 .info li {
-    
     line-height: 25px;
     padding-bottom: 15px;
     padding-left: 48px;
@@ -532,7 +531,8 @@ p {
     position: relative;
 }
 
-.info li::before {content: "";
+.info li::before {
+    content: "";
     display: block;
     width: 7px;
     height: 7px;
@@ -758,7 +758,11 @@ p {
     background-color: #1a1a1a;
 }
 
-.footer:before, .logo_school, .logo_delta, .copy, .footer_logos {
+.footer:before, 
+.logo_school, 
+.logo_delta, 
+.copy, 
+.footer_logos {
     display: inline-block;
     vertical-align: middle;
 }
@@ -777,7 +781,9 @@ p {
     padding: 20px 0;
 }
 
-input[type="text"], input[type="email"], input[type="tel"], .select option {
+input[type="text"], 
+input[type="email"], input[type="tel"], 
+.select option {
     background-color: #ededed;
     width: 290px;
     min-height: 40px;
@@ -787,7 +793,8 @@ input[type="text"], input[type="email"], input[type="tel"], .select option {
 
 }
 
-input:hover, input:focus {
+input:hover, 
+input:focus {
     border: 1px solid #22a24f;
     outline: none;
 }
@@ -805,7 +812,8 @@ input:hover, input:focus {
     color: white;
 }
 
-input[placeholder], .select option {
+input[placeholder], 
+.select option {
     text-transform: uppercase;
     color: #9e9e9e;
     padding-left: 10px;
@@ -826,7 +834,8 @@ input[placeholder]:hover {
 
 /* стилизую кружок и квадрат alex-- */
 
-.checkbox label, .radio label {
+.checkbox label, 
+.radio label {
     display: inline-block;
     cursor: pointer;
     position: relative;
@@ -834,11 +843,13 @@ input[placeholder]:hover {
     padding-bottom: 24px;
 }
 
-input[type="radio"], input[type="checkbox"] {
+input[type="radio"], 
+input[type="checkbox"] {
     display: none;
 }
 
-.checkbox label:before, .radio label:before {
+.checkbox label:before,
+.radio label:before {
     content: "";
     display: inline-block;
     height: 15px;
