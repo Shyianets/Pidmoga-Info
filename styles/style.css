@@ -438,12 +438,16 @@ p {
 }
 
 .cards {
-  padding-bottom: 40px;
-    
+  	padding-bottom: 40px;
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .cards a {
-  text-decoration: none;
+  	text-decoration: none;
 }
 
 .cards span:hover {
