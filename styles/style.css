@@ -668,16 +668,18 @@ p {
 
 .small-cards {
 	margin: 50px 0;
-	overflow: hidden;
 }
 
+.small-cards img {
+	position: relative;
+	left: -25px;
+}
 
 .small-cards span {
     font-size: 20px;
     font-weight: 500;
     color: #000;
     line-height: 30px;
-    display: block;
     padding-top: 15px;
     -webkit-transition: color 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: color 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
@@ -695,6 +697,40 @@ p {
     opacity: 0.9;
     -webkit-transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.admins a {
+	text-decoration: none;
+}
+
+.admins img {
+	margin-bottom: 30px;
+}
+
+.admins a:hover > img {
+    opacity: 0.9;
+    -webkit-transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.admins span {
+	text-transform: uppercase;
+	font-size: 15px;
+    font-weight: 900;
+    color: #000;
+    line-height: 30px;
+    -webkit-transition: color 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: color 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.admins a:hover > span {
+	color: #22a24f;
+}
+
+.admins p {
+	font-size: 15px;
+	font-weight: 500;
+	color: #616161
 }
 
 .facebook_block {
