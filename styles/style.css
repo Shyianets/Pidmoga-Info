@@ -578,7 +578,6 @@ p {
 }
 
 .cards a {
-    font-size: 0;
     text-decoration: none;
 }
 
@@ -665,6 +664,37 @@ p {
 .pub-all a:focus {
     border-bottom: 2px solid #1a8640;
     color: #1a8640;
+}
+
+.small-cards {
+	margin: 50px 0;
+	overflow: hidden;
+}
+
+
+.small-cards span {
+    font-size: 20px;
+    font-weight: 500;
+    color: #000;
+    line-height: 30px;
+    display: block;
+    padding-top: 15px;
+    -webkit-transition: color 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: color 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.small-cards a {
+    text-decoration: none;
+}
+
+.small-cards a:hover > span {
+    color: #22a24f;
+}
+
+.small-cards a:hover > img {
+    opacity: 0.9;
+    -webkit-transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .facebook_block {
