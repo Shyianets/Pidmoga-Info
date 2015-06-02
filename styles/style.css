@@ -667,15 +667,17 @@ p {
 }
 
 .small-cards {
+	width: 590px;
 	margin: 50px 0;
 }
 
 .small-cards img {
-	position: relative;
-	left: -25px;
+	float: left;
+	margin-right: 34px;
 }
 
 .small-cards span {
+    margin: 34px 0;
     font-size: 20px;
     font-weight: 500;
     color: #000;
@@ -1149,5 +1151,55 @@ a.b-dark-bkgrnd:active {
 .p-arrow .hover:focus {
     opacity: 1;
 }
+
+
+.steps {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 70px;
+    font-size: 0;
+}
+
+.box-step {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 2px solid #e0e0e0;
+    color: #e0e0e0;
+    font-size: 35px;
+    line-height: 60px;
+}
+
+.ok-step {
+    border: 2px solid transparent;
+    background: #22a24f;
+    color: #fff;
+}
+
+.current-step {
+    border: 2px solid #22a24f; 
+    color: #22a24f;
+}
+
+.s-divider {
+    position: relative;
+    top: -11px;
+    display: inline-block;
+    width: 70px;
+    height: 2px;
+    background: #e0e0e0;
+    margin: 0 20px;
+}
+
+.ok-divider {
+    background: #22a24f;
+}
+
+
+
+
+
+
+
 
 
