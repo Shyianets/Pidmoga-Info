@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'fontello';
+  src: url('../font/fontello.eot?10992883');
+  src: url('../font/fontello.eot?10992883#iefix') format('embedded-opentype'),
+       url('../font/fontello.woff?10992883') format('woff'),
+       url('../font/fontello.ttf?10992883') format('truetype'),
+       url('../font/fontello.svg?10992883#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+/* использую в style.css
+.icon-ok:before { content: '\e800'; } 
+.icon-down-open:before { content: '\e801'; } 
+.icon-up-open:before { content: '\e802'; } 
+*/
