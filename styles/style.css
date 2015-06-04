@@ -1207,16 +1207,32 @@ a.b-dark-bkgrnd:active {
     color: #22a24f;
 }
 
-img:before {
+.hover-img {
     height: 200px;
     width: 290px;
     background-color: #22a24f;
     position: absolute;
-    z-index: 5;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
 }
 
-.news a:hover > img {
-    opacity: 0.8;
+.fb-share {
+    display: block;
+    border: 1px solid white;
+    position: absolute;
+    top: 80px;
+    left: 27px;
+    padding: 10px;
+    color: white;
+    font: 14px/20px, Roboto, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+
+.news a:hover > .hover-img {
+    opacity: 0.6;
 }
 
 .news-text {
