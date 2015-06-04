@@ -4,18 +4,10 @@
 	clear: both;
 }
 
-.main-conteiner {
-	max-width: 1280px;
-	margin: 0 auto;
-}
-
 .container {
 	width: 930px;
 	margin: 0 auto;
 }
-
-
-
 .row {
 	position: relative;
 	margin: 0 -15px;
