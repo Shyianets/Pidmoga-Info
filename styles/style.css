@@ -1207,19 +1207,25 @@ a.b-dark-bkgrnd:active {
     float: right;
 }
 
+.news-sm-text {
+    margin-left: 20px;
+}
+
 .topic, .days-ago {
     font: 12px/30px, Roboto, sans-serif;
-    font-weight: 700;
     text-transform: uppercase;
-    
+    display: inline-block;
+    margin: 20px 0 18px 0;
 }
 
 .topic {
     color: #22a24f;
+    font-weight: 700;
 }
 
 .days-ago {
     color: #616161;
+    font-weight: 400;
 }
 
 .description {
@@ -1234,5 +1240,10 @@ a.b-dark-bkgrnd:active {
     margin-top: 30px;
 }
 
-
+.description-sm {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 500;
+    color: black;
+}
 
