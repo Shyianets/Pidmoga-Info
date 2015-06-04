@@ -705,7 +705,7 @@ p {
     transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
-.admis {
+.admins {
 	margin: 50px 0;
 	display: inline-block;
 }
