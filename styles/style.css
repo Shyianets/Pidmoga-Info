@@ -1199,6 +1199,26 @@ a.b-dark-bkgrnd:active {
     margin-top: 50px;
 }
 
+.news a {
+    text-decoration: none;
+}
+
+.news a:hover > span {
+    color: #22a24f;
+}
+
+img:before {
+    height: 200px;
+    width: 290px;
+    background-color: #22a24f;
+    position: absolute;
+    z-index: 5;
+}
+
+.news a:hover > img {
+    opacity: 0.8;
+}
+
 .news-text {
     display: block;
     box-sizing: border-box;
