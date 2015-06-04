@@ -667,15 +667,21 @@ p {
 }
 
 .small-cards {
+	width: 590px;
 	margin: 50px 0;
 }
 
+.scard {
+	margin: 34px 0;
+}
+
 .small-cards img {
-	position: relative;
-	left: -25px;
+	float: left;
+	margin-right: 34px;
 }
 
 .small-cards span {
+    margin: 34px 0;
     font-size: 20px;
     font-weight: 500;
     color: #000;
@@ -697,6 +703,23 @@ p {
     opacity: 0.9;
     -webkit-transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.admins {
+	margin: 50px 0;
+	display: inline-block;
+}
+
+.admin-1 {
+	float: left;
+}
+
+.admin-2 {
+}
+
+.admin-3 {
+	float: right;
+
 }
 
 .admins a {
@@ -1154,7 +1177,7 @@ a.b-dark-bkgrnd:active {
 .steps {
     text-align: center;
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 70px;
     font-size: 0;
 }
 
@@ -1193,73 +1216,118 @@ a.b-dark-bkgrnd:active {
     background: #22a24f;
 }
 
-#file-browse {
-    display: none;
-}
-
-.file-browse-visible {
-    margin: 40px 0;
+.news {
     display: block;
-    height: 130px;
-    border: 2px dashed #e0e0e0;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: 1.3px;
-    color: #e0e0e0;
-    line-height: 25px;
-    cursor: pointer;
-    -webkit-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-}
-
-.fileb-link {
-    border-bottom: 1px solid #e0e0e0;
-    -webkit-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-}
-
-.fileb-images {
-    display: inline-block;
-    width: 32px;
-    height: 32px;
     position: relative;
-    text-align: left;
-    margin-top:20px;
-    margin-bottom: 3px;
+    margin-top: 20px;
+    padding: 50px 0;
+    background-color: #f6f6f6;
 }
 
-.file-browse-visible span.fileb-img {
-    position: absolute;
-    height: 32px;
-    width: 32px;
-    background: url(../img/file_browse.png) no-repeat center;
+.news a {
+    text-decoration: none;
 }
 
-.file-browse-visible span.hover {
-    background: url(../img/file_browse_ok.png) no-repeat center;
-    opacity: 0;
-    -webkit-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-}
-
-.file-browse-visible:hover {
-    border: 2px dashed #22a24f;
-    color: #616161;
-}
-
-.file-browse-visible:hover span.hover {
-    opacity: 1;
-}
-
-.file-browse-visible:hover .fileb-link {
+.news a:hover > span {
     color: #22a24f;
-    border-bottom: 1px solid #22a24f;
+}
+
+.hover-img {
+    height: 200px;
+    width: 290px;
+    background-color: #22a24f;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    opacity: 0;
+}
+
+.fb-share {
+    display: block;
+    border: 1px solid white;
+    position: absolute;
+    top: 80px;
+    left: 27px;
+    padding: 10px;
+    color: white;
+    font: 14px/20px, Roboto, sans-serif;
+    text-transform: uppercase;
+    font-weight: 700;
+    
+}
+
+.news a:hover > .hover-img {
+    opacity: 0.6;
+}
+
+.news-text {
+    display: block;
+    box-sizing: border-box;
+    width: 400px;
+    border-top: 2px solid #22a24f;
+    float: right;
+}
+
+.news-sm-text {
+    min-height: 172px;
+    padding-left: 20px;
+    background-color: white;
+}
+
+.news-micro-text {
+    min-height: 184px;
+    border-top: 2px solid #22a24f; 
+}
+
+.topic, 
+.days-ago, 
+.date, 
+.more-news {
+    font: 12px/30px, Roboto, sans-serif;
+    text-transform: uppercase;
+    display: inline-block;
+    margin: 20px 0 18px 0;
+}
+
+.topic, 
+.more-news {
+    color: #22a24f;
+    font-weight: 700;
+}
+
+.days-ago, 
+.date {
+    color: #616161;
+    font-weight: 400;
+}
+
+.more-news {
+    display: block;
+    width: 200px;
+    margin: 0 auto;
+    border-bottom: 2px solid #22a24f; 
+    letter-spacing: 2px;
+    padding-bottom: 2px;
+}
+
+.description {
+    font-size: 30px;
+    line-height: 35px;
+    font-weight: 500;
+    color: black;
 }
 
 
+.news-small, 
+.news-micro {
+    margin-top: 30px;
+}
 
-
-
+.description-sm, 
+.description-micro {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 500;
+    color: black;
+}
 
