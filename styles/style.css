@@ -707,6 +707,19 @@ p {
 
 .admis {
 	margin: 50px 0;
+	display: inline-block;
+}
+
+.admin-1 {
+	float: left;
+}
+
+.admin-2 {
+}
+
+.admin-3 {
+	float: right;
+
 }
 
 .admins a {
