@@ -671,6 +671,10 @@ p {
 	margin: 50px 0;
 }
 
+.scard {
+	margin: 34px 0;
+}
+
 .small-cards img {
 	float: left;
 	margin-right: 34px;
@@ -699,6 +703,23 @@ p {
     opacity: 0.9;
     -webkit-transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.admis {
+	margin: 50px 0;
+	display: inline-block;
+}
+
+.admin-1 {
+	float: left;
+}
+
+.admin-2 {
+}
+
+.admin-3 {
+	float: right;
+
 }
 
 .admins a {
