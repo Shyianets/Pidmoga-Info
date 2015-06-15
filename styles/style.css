@@ -100,8 +100,8 @@ p {
 .header {
     position: relative;
     display: block;
-    height: 350px;
-    background: #000 url(../img/header_bg_about.jpg) no-repeat;
+    /*height: 350px;
+    background: #000 url(../img/info-header.png) no-repeat;*/
     background-size: cover;
     color: #ffffff;
     overflow-x: hidden;
