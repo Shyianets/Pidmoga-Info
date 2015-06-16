@@ -797,16 +797,10 @@ p {
 }
 
 .footer {
-    height: 100%;
+    height: 70px;
     margin: 0 auto;
     background-color: #1a1a1a;
 }
-
-    .footer:before {
-        content: '';
-        height: 70px;
-        margin-left: -0.25em;
-    }
 
     .footer:before,
     .footer_logos,
@@ -824,6 +818,8 @@ p {
         letter-spacing: 1px;
         text-transform: uppercase;
         margin:  0px 0px 0px 20px;
+        float: left;
+        line-height: 70px;
     }
 
     .footer_logos {
