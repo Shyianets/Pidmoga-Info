@@ -186,6 +186,16 @@
                         <option value="3">ПСИХОЛОГІЧНА</option>
                         <option value="4">МАТЕРІАЛЬНА</option>
                     </div>
+                   
+                    <script>
+                        
+                    var $select = $('#custom_select').selectize({
+                        create: true,
+                        sortField: 'text'
+                    });
+                        
+                    </script>
+                    
                 </div>
 
                 <div class="row">
@@ -586,8 +596,8 @@
                     <a href="#" class="logo_delta"></a>
                 </div>
             </div>
-
-
-
+                                    <!--  Подключаем jquary & selectize  -->
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">                 </script>                    
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/js/selectize.js"></script>
     </body>
 </html>
