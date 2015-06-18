@@ -1,6 +1,5 @@
-var $select = $('select').selectize(options);
+$(document).ready(function() {
 
-$('#my-select').selectize({
-    create: true,
-    sortField: 'text'
+ $('.my-select').selectize();
+
 });
