@@ -770,6 +770,7 @@ p {
 .facebook_block .fb_description {
     padding-bottom: 35px;
     margin: auto;
+    max-width: 550px;
 }
 
 .fb_button {
@@ -1216,7 +1217,7 @@ a.b-dark-bkgrnd:active {
 
 .hover-img {
     height: 200px;
-    width: 290px;
+    width: 293px;
     background-color: #22a24f;
     position: absolute;
     top: 0;
