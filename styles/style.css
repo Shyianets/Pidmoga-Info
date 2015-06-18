@@ -89,7 +89,7 @@ p {
 
 .data {
     font-size: 12px;
-    line-height: 15px;
+    line-height: 30px;
     font-weight: 500;
     color: #616161;
     text-transform: uppercase;
@@ -569,6 +569,11 @@ p {
     text-transform: uppercase;
     color: #616161;
     padding: 60px 490px 60px 80px;
+}
+
+.container a{
+	text-decoration: none;
+
 }
 
 .cards {
@@ -1207,10 +1212,6 @@ a.b-dark-bkgrnd:active {
     /*background-color: #f6f6f6;*/
 }
 
-.news a {
-    text-decoration: none;
-}
-
 .news a:hover > span {
     color: #22a24f;
 }
@@ -1255,6 +1256,7 @@ a.b-dark-bkgrnd:active {
     min-height: 140px;
     /*padding-left: 20px;*/
     background-color: white;
+    margin-top: 15px;
 }
 
 .news-micro-text {
