@@ -1218,7 +1218,7 @@ a.b-dark-bkgrnd:active {
 
 .hover-img {
     height: 200px;
-    width: 293px;
+    width: 290px;
     background-color: #22a24f;
     position: absolute;
     top: 0;
@@ -1306,7 +1306,6 @@ a.b-dark-bkgrnd:active {
 .news-small,
 .news-micro {
     margin-top: 30px;
-    text-decoration: none;
 }
 
 .description-sm,
