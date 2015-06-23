@@ -33,8 +33,14 @@ h4,
 h5,
 ul,
 p {
-    margin: 0;
+    margin: 35px 0;
     padding: 0;
+}
+
+h1 + .data,
+h2 + .data,
+h3 + .data {
+    margin: -20px 0 0;
 }
 
 h1 {
@@ -44,7 +50,7 @@ h1 {
     letter-spacing: 4px;
     color: #1a1a1a;
     text-transform: uppercase;
-    padding: 25px 0;
+    margin-top: 80px;
 }
 
 h2 {
@@ -54,7 +60,6 @@ h2 {
     letter-spacing: 2px;
     color: #1a1a1a;
     text-transform: uppercase;
-    padding: 5px 0;
 }
 
 h3 {
@@ -63,7 +68,6 @@ h3 {
     line-height: 30px;
     font-weight: 500;
     color: #1a1a1a;
-    padding: 20px 0;
 }
 
 h4 {
@@ -71,7 +75,6 @@ h4 {
     line-height: 25px;
     font-weight: 500;
     color: #616161;
-    padding: 20px 0;
 }
 
 h5 {
@@ -79,12 +82,22 @@ h5 {
     line-height: 25px;
     font-weight: 500;
     color: #1a1a1a;
-    padding: 15px 0;
 }
 
 p {
     line-height: 25px;
-    padding-bottom: 30px;
+}
+
+.el-vertical-align:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    margin-right: -0.25em;
+}
+
+.margin-top-large {
+    margin-top: 50px;
 }
 
 .data {
@@ -94,34 +107,51 @@ p {
     color: #616161;
     text-transform: uppercase;
     letter-spacing: 2px;
-    padding: 15px 0 40px 0;
 }
 
 .header {
     position: relative;
     display: block;
-    height: 350px;
     background: #000 url(../img/header_bg_about.jpg) no-repeat;
     background-size: cover;
     color: #ffffff;
     overflow-x: hidden;
+    text-align: center;
+    height: 350px;
 }
 
 .brand {
     display: block;
-    width: 139px;
+    width: auto;
     height: 24px;
-    position: absolute;
-    left: 30px;
-    top: 26px;
-    background: url(../img/logo_header.png) no-repeat center center;
-    /* Переход */
-    -webkit-transition: background 0.3s ease 0s;
-    transition: background 0.3s ease 0s;
+    float: left;
+    margin-top: 26px;
+    margin-left: 30px;
 }
 
-.brand:hover {
-    background: url(../img/logo_header_hover.png) no-repeat center center;
+.brand div {
+    position: relative;
+}
+
+.brand img {
+position: absolute;
+    width: 139px;
+    height: 24px;
+    /* Переход */
+    -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.brand .hover {
+    opacity: 0;
+}
+
+.brand:hover .normal {
+    opacity: 0;
+}
+
+.brand:hover .hover {
+    opacity: 1;
 }
 
 .brand span {
@@ -389,11 +419,10 @@ p {
 }
 
 .header_title {
-    display: block;
+    display: inline-block;
     text-align: center;
-    padding-top: 120px;
     width: 600px;
-    margin: auto auto;
+    vertical-align: middle;
 }
 
 .header_title h1 {
@@ -409,6 +438,7 @@ p {
     font-weight: 400;
     line-height: 1.5;
     margin: 0;
+    padding: 0;
 }
 
 
@@ -517,10 +547,6 @@ p {
     opacity: 1;
 }
 
-.content ul {
-    padding-bottom: 30px;
-}
-
 .info li {
     line-height: 25px;
     padding-bottom: 15px;
@@ -542,10 +568,6 @@ p {
 
 .cont_insert {
     margin: 40px 0;
-}
-
-.insert {
-    padding-bottom: 30px;
 }
 
 .insert_heading {
@@ -572,7 +594,7 @@ p {
 }
 
 .container a{
-	text-decoration: none;
+    text-decoration: none;
 
 }
 
@@ -670,18 +692,18 @@ p {
 }
 
 .small-cards {
-	width: 640px;
-	margin: 50px 0;
+    width: 640px;
+    margin: 50px 0;
     margin-left: 130px;
 }
 
 .scard {
-	margin: 34px 0;
+    margin: 34px 0;
 }
 
 .small-cards img {
-	float: left;
-	margin-right: 34px;
+    float: left;
+    margin-right: 34px;
 }
 
 .small-cards span {
@@ -710,28 +732,28 @@ p {
 }
 
 .admins {
-	margin: 50px 0;
-	display: inline-block;
+    margin: 50px 0;
+    display: inline-block;
 }
 
 .admin-1 {
-	float: left;
+    float: left;
 }
 
 .admin-2 {
 }
 
 .admin-3 {
-	float: right;
+    float: right;
 
 }
 
 .admins a {
-	text-decoration: none;
+    text-decoration: none;
 }
 
 .admins img {
-	margin-bottom: 30px;
+    margin-bottom: 30px;
 }
 
 .admins a:hover > img {
@@ -741,8 +763,8 @@ p {
 }
 
 .admins span {
-	text-transform: uppercase;
-	font-size: 15px;
+    text-transform: uppercase;
+    font-size: 15px;
     font-weight: 900;
     color: #000;
     line-height: 30px;
@@ -751,13 +773,13 @@ p {
 }
 
 .admins a:hover > span {
-	color: #22a24f;
+    color: #22a24f;
 }
 
 .admins p {
-	font-size: 15px;
-	font-weight: 500;
-	color: #616161
+    font-size: 15px;
+    font-weight: 500;
+    color: #616161
 }
 
 .facebook_block {
