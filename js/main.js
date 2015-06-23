@@ -1,5 +1,2 @@
-$(document).ready(function() {
+$('.my-select').selectize();
 
- $('.my-select').selectize();
-
-});

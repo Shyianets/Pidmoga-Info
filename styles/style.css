@@ -857,8 +857,7 @@ p {
 }
 
 input[type="text"],
-input[type="email"], input[type="tel"],
-.select option {
+input[type="email"], input[type="tel"] {
     background-color: #ededed;
     width: 290px;
     min-height: 40px;
@@ -885,17 +884,9 @@ input[placeholder],
     padding-left: 10px;
 }
 
-/* select */
-
-.select option {
-    margin-bottom: 0;
-    line-height: 40px;
-}
-
-.select option:hover,
-.select option:focus {
-    background-color: #22a24f;
-    color: white;
+.select-cont {
+    width: 290px;
+    float: right;
 }
 
 .label {
