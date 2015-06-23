@@ -906,6 +906,7 @@ input[placeholder],
 .select-cont {
     width: 290px;
     float: right;
+    margin-bottom: 50px;
 }
 
 .label {

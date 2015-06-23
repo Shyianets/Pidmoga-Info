@@ -10,6 +10,7 @@
       <link rel="stylesheet" href="styles/modal.css" type="text/css">
       <link rel="stylesheet" href="styles/normalize.css" type="text/css">
       <link rel="stylesheet" href="styles/style.css" type="text/css">
+      <link rel="stylesheet" href="styles/selectize.css" type="text/css">
       <title>Pidmoga Info</title>
     </head>
     <body>
@@ -165,8 +166,30 @@
                 </div>
 
                 <div class="row margin-top-large">
+                    
+                    <div class="forma">
+                    <label class="label">Iм'я<input type="text" name="name" placeholder="введіть ім'я">
+                    </label>
 
-                    <!-- Alex - чекбоксы-->
+                    <label class="label">E-mail<input type="email" name="email" placeholder="введіть email">
+                    </label>
+
+                    <label class="label">Телефон<input type="tel" name="tel" placeholder="ваш номер телефону">
+                    </label>
+
+                    <div class="select-cont">
+                        <select class="demo-default my-select" placeholder="ТИП ДОПОМОГИ">
+                            <option disabled>ТИП ДОПОМОГИ</option>
+                            <option value="jur">ЮРИДИЧНА</option>
+                            <option value="info">ІНФОРМАЦІЙНА</option>
+                            <option value="psy">ПСИХОЛОГІЧНА</option>
+                            <option value="mat">МАТЕРІАЛЬНА</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                    
+                    <!--  чекбоксы-->
 
                     <div class="checkbox col-6">
                         <input type="checkbox" id="check1" />
@@ -564,8 +587,9 @@
             </div>
         
             <!-- jquary & selectize -->
-        <script src="https://ajax,googleapis.com/ajax/libs/jquary/2.1.4/jquary.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/js/selectize.js"></script>     
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/js/standalone/selectize.min.js"></script>
+        <script src="js/main.js"></script>     
         
     </body>
 </html>
