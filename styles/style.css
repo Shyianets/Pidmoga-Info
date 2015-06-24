@@ -941,18 +941,33 @@ input[type="checkbox"] {
 .radio label:before {
     content: "";
     display: inline-block;
-    height: 15px;
-    width: 15px;
+    height: 16px;
+    width: 16px;
     border: 1px solid #c2c2c2;
     position: absolute;
     left: 0;
-    top: 2px;
+    top: 3px;
+}
+
+.radio label:after {
+    content: "";
+    opacity: 0;
+    display: inline-block;
+    background-color: #22a24f;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    left: 4px;
+    top: 7px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
 }
 
 .radio label:before {
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    border-radius: 15px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
 }
 
 .checkbox label:before {
@@ -961,12 +976,8 @@ input[type="checkbox"] {
     border-radius: 3px;
 }
 
-input[type="radio"]:checked + label:before {
-    content: "\2022";
-    color: #22a24f;
-    font-size: 35px;
-    text-align: center;
-    line-height: 16px;
+input[type="radio"]:checked + label:after {
+    opacity: 1;
 }
 
 input[type="checkbox"]:checked + label:before {
