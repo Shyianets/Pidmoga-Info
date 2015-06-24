@@ -362,6 +362,10 @@ position: absolute;
     text-align: center;
 }
 
+.page_nav ul{
+    margin-top: 0;
+}
+
 .page_nav li {
     display: inline-block;
 }
