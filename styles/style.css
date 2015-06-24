@@ -488,7 +488,7 @@ p {
 .type-view {
     font-size: 0;
     text-align: center;
-    width: 910px;
+	background-color: #f6f6f6;
     margin: 0 auto;
 }
 
@@ -577,7 +577,7 @@ p {
 }
 
 .cards {
-    margin: 50px 0;
+    margin: 20px 0;
 }
 
 .cards a {
