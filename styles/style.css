@@ -567,11 +567,11 @@ position: absolute;
     left: 30px;
 }
 
-.cont_insert {
+.cont-insert {
     margin: 40px 0;
 }
 
-.insert_heading {
+.insert-heading {
     color: #616161;
     border-left: 3px solid #22a24f;
     padding-left: 30px;
@@ -582,7 +582,7 @@ position: absolute;
     text-transform: uppercase;
 }
 
-.insert_photo {
+.insert-photo {
     border-left: 3px solid #22a24f;
     background: url(../img/insert_photo.jpg) no-repeat right;
     font-size: 20px;
@@ -746,7 +746,6 @@ position: absolute;
 
 .admin-3 {
     float: right;
-
 }
 
 .admins a {
@@ -783,26 +782,25 @@ position: absolute;
     color: #616161
 }
 
-.facebook_block {
+.facebook-block {
     height: 345px;
     background-color: #f6f6f6;
     font-family: Roboto, sans-serif;
     text-align: center;
-
 }
 
-.facebook_block h2 {
+.facebook-block h2 {
     padding-top: 75px;
     padding-bottom: 30px;
 }
 
-.facebook_block .fb_description {
+.facebook-block .fb_description {
     padding-bottom: 35px;
     margin: auto;
     max-width: 550px;
 }
 
-.fb_button {
+.fb-button {
     display: block;
     width: 230px;
     height: 50px;
@@ -821,7 +819,7 @@ position: absolute;
 
 }
 
-.fb_button:hover {
+.fb-button:hover {
     color: #fff;
     background: #466cbb;
 }
@@ -832,47 +830,46 @@ position: absolute;
     background-color: #1a1a1a;
 }
 
-    .footer:before,
-    .footer_logos,
-    .logo_school,
-    .logo_delta,
-    .copy {
-        display: inline-block;
-        vertical-align: middle;
+.footer:before,
+.footer-logos,
+.logo-school,
+.logo-delta,
+.copy {
+    display: inline-block;
+    vertical-align: middle;
     }
 
-    .copy {
-        color: #616161;
-        font-size: 12px;
-        font-weight: 500;
-        letter-spacing: 1px;
-        text-transform: uppercase;
-        margin:  0px 0px 0px 20px;
-        float: left;
-        line-height: 70px;
+.copy {
+    color: #616161;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin:  0px 0px 0px 20px;
+    float: left;
+    line-height: 70px;
     }
 
-    .footer_logos {
-        margin-top: 18px;
-        float: right;
-        margin-right: 30px;
+.footer-logos {
+    margin-top: 18px;
+    float: right;
+    margin-right: 30px;
     }
     
-        .logo_delta {
-            width: 58px;
-            height: 11px;
-            background-image: url(../img/logo_delta.png);
-            
-        }
+.logo-delta {
+    width: 58px;
+    height: 11px;
+    background-image: url(../img/logo_delta.png);        
+    }
 
-        .logo_school {
-            width: 75px;
-            height: 29px;
-            background-image: url(../img/logo_school.png);
-            margin-right: 30px;
-        }
+.logo-school {
+    width: 75px;
+    height: 29px;
+    background-image: url(../img/logo_school.png);
+    margin-right: 30px;
+    }
 
-/* форма alex */
+/* форма */
 
 .forma {
     width: 382px;
@@ -910,6 +907,7 @@ input[placeholder],
 .select-cont {
     width: 290px;
     float: right;
+    margin-bottom: 50px;
 }
 
 .label {
@@ -944,18 +942,33 @@ input[type="checkbox"] {
 .radio label:before {
     content: "";
     display: inline-block;
-    height: 15px;
-    width: 15px;
+    height: 16px;
+    width: 16px;
     border: 1px solid #c2c2c2;
     position: absolute;
     left: 0;
-    top: 2px;
+    top: 3px;
+}
+
+.radio label:after {
+    content: "";
+    opacity: 0;
+    display: inline-block;
+    background-color: #22a24f;
+    height: 8px;
+    width: 8px;
+    position: absolute;
+    left: 4px;
+    top: 7px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
 }
 
 .radio label:before {
-    -moz-border-radius: 15px;
-    -webkit-border-radius: 15px;
-    border-radius: 15px;
+    -moz-border-radius: 16px;
+    -webkit-border-radius: 16px;
+    border-radius: 16px;
 }
 
 .checkbox label:before {
@@ -964,12 +977,8 @@ input[type="checkbox"] {
     border-radius: 3px;
 }
 
-input[type="radio"]:checked + label:before {
-    content: "\2022";
-    color: #22a24f;
-    font-size: 35px;
-    text-align: center;
-    line-height: 16px;
+input[type="radio"]:checked + label:after {
+    opacity: 1;
 }
 
 input[type="checkbox"]:checked + label:before {
