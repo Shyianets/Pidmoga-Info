@@ -13,7 +13,7 @@ body {
     font:16px Roboto, Arial, Helvetica, sans-serif;
     background:#fff;
     width: 100%;
-    
+
 }
 
 
@@ -116,7 +116,7 @@ p {
     background: #000 url(../img/header_bg_about.jpg) no-repeat;
     background-size: cover;
     color: #ffffff;
-    overflow-x: hidden;
+    overflow: hidden;
     text-align: center;
     height: 350px;
 }
@@ -859,11 +859,11 @@ position: absolute;
     float: right;
     margin-right: 30px;
     }
-    
+
 .logo-delta {
     width: 58px;
     height: 11px;
-    background-image: url(../img/logo_delta.png);        
+    background-image: url(../img/logo_delta.png);
     }
 
 .logo-school {
