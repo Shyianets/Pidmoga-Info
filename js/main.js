@@ -1,6 +1,4 @@
-//Selectize
 $('.my-select').selectize();
-
 
 // Slider Counter
 +function($) {
@@ -12,3 +10,4 @@ $('.my-select').selectize();
         $('span.slider-counter').html('' + currentIndex + '/' + totalItems + '');
     });
 }(jQuery);
+
