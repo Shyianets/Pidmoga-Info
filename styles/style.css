@@ -1109,7 +1109,7 @@ a.b-dark-bkgrnd:active {
 .carousel-next {
     display: inline-block;
     position: absolute;
-    width: 640px;
+    width: 610px;
     height: 350px;
     z-index: 2;
 }
