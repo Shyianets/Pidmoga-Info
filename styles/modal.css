@@ -54,6 +54,7 @@
     bottom: 35px;
     font-size: 35px;
     line-height: 40px;
+    margin: 0;
 }
 .modal .modal-block .modal-body {
     background: #fff;
