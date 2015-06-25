@@ -1,4 +1,4 @@
-
+$('.my-select').selectize();
 
 // Slider Counter
 +function($) {
@@ -11,5 +11,3 @@
     });
 }(jQuery);
 
-//Selectize
-$('.my-select').selectize();
