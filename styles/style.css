@@ -798,7 +798,7 @@ position: absolute;
     padding-bottom: 30px;
 }
 
-.facebook-block .fb_description {
+.facebook-block .fb-description {
     padding-bottom: 35px;
     margin: auto;
     max-width: 550px;

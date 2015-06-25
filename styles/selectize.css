@@ -31,7 +31,7 @@
 .selectize-input,
 .selectize-control.single .selectize-input.input-active {
   background: #ededed;
-  cursor: text;
+  cursor: pointer;;
   display: inline-block;
 }
 .selectize-input {
@@ -81,7 +81,7 @@
 }
 .selectize-input::after,
 .selectize-input.dropdown-active::before {
-  content: '';
+  content: "'';
   display: block;
   width: 10px;
   height: 10px;
