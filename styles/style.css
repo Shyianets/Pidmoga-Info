@@ -880,6 +880,18 @@ position: absolute;
     margin: 20px auto;
 }
 
+.forma span {
+    display: inline-block;
+    width: 180px;
+    height: 40px;
+    position: absolute;
+    left: 73%;
+    top: 26%;
+    color: #cfcfcf;
+    font-size: 14px;
+    line-height: 21px;
+}
+
 input[type="text"],
 input[type="email"], input[type="tel"] {
     background-color: #ededed;
