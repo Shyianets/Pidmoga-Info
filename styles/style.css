@@ -34,8 +34,8 @@ h4,
 h5,
 ul,
 p {
-    margin: 35px 0;
     padding: 0;
+    margin: 35px 0;
 }
 
 h1 + .data,
@@ -1214,10 +1214,10 @@ a.b-dark-bkgrnd:active {
 }
 
 .carousel-control.left .hover {
-    background: url("../img/arrow-left-hover.png") #22a24f no-repeat;
     opacity: 0;
     -webkit-transition: opacity 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: opacity 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    background: url("../img/arrow-left-hover.png") #22a24f no-repeat;
 }
 
 .carousel-control.right .hover {
@@ -1228,7 +1228,9 @@ a.b-dark-bkgrnd:active {
 }
 
 .carousel-control.left .hover:hover,
-.carousel-control.right .hover:hover {
+.carousel-control.right .hover:hover,
+.carousel-control.left .hover:focus,
+.carousel-control.right .hover:focus {
     opacity: 1;
 }
 
@@ -1252,7 +1254,7 @@ a.b-dark-bkgrnd:active {
 
 .carousel-indicators .active,
 .carousel-indicators li:hover,
-.carousel-indicators li:active {
+.carousel-indicators li:focus {
     background: #22a24f;
 
 }
