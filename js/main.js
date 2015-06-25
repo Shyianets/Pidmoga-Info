@@ -11,3 +11,8 @@ $('.my-select').selectize();
     });
 }(jQuery);
 
+// // Menu Scroll
+// $(window).on(‘scroll’, function(){
+//     if($(this).scrollTop() >= $(menu).offset().top)
+//     $(menu).css({});
+// })
