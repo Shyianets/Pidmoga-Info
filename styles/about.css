@@ -36,3 +36,15 @@
 .call-us > span {
     color: #616161;
 }
+.partners {
+    display: block;
+    min-height: 340px;
+    text-align: center;
+}
+.partners h2 {
+    display: inline-block;
+    margin: 80px 0 70px 0;
+}
+.partners-logo {
+    background-color: aliceblue;
+}
