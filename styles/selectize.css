@@ -81,7 +81,7 @@
 }
 .selectize-input::after,
 .selectize-input.dropdown-active::before {
-  content: "'';
+  content: "";
   display: block;
   width: 10px;
   height: 10px;
