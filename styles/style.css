@@ -1223,7 +1223,9 @@ a.b-dark-bkgrnd:active {
     left: auto;
 }
 
-.carousel-control:hover, .carousel-control:focus {
+.carousel-control:hover,
+.carousel-control:active, 
+.carousel-control:focus {
     background: #22a24f;
 }
 
@@ -1244,22 +1246,29 @@ a.b-dark-bkgrnd:active {
 
 .carousel-control.left .hover {
     opacity: 0;
+    background: url("../img/arrow-left-hover.png") no-repeat;
     -webkit-transition: opacity 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: opacity 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    background: url("../img/arrow-left-hover.png") #22a24f no-repeat;
 }
 
 .carousel-control.right .hover {
-    background: url("../img/arrow-right-hover.png") #22a24f no-repeat;
     opacity: 0;
+    background: url("../img/arrow-right-hover.png") no-repeat;
     -webkit-transition: opacity 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: opacity 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
-.carousel-control.left .hover:hover,
-.carousel-control.right .hover:hover,
-.carousel-control.left .hover:focus,
-.carousel-control.right .hover:focus {
+.carousel-control.left:hover .normal,
+.carousel-control.left:focus .normal,
+.carousel-control.right:hover .normal,
+.carousel-control.right:focus .normal {
+    opacity: 0;
+}
+
+.carousel-control.left:hover .hover,
+.carousel-control.left:focus .hover,
+.carousel-control.right:hover .hover,
+.carousel-control.right:focus .hover {
     opacity: 1;
 }
 
@@ -1277,6 +1286,7 @@ a.b-dark-bkgrnd:active {
     height: 10px;
     margin: 0 5px;
     background: #e0e0e0;
+    cursor: pointer;
     -webkit-transition: background 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: background 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
