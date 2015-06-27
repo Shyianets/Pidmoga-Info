@@ -17,11 +17,11 @@ $('.my-select').selectize();
 
     $(window).on('scroll', function() {
         if ( $(this).scrollTop() >= topOffset ) {
-            $('div.fixnav').addClass('fixed');
+            $('.fixnav').addClass('fixed');
             $('.type-view').css('margin-top', '50px');
         }
         if ( $(this).scrollTop() < topOffset ) {
-            $('div.fixnav').removeClass('fixed');
+            $('.fixnav').removeClass('fixed');
             $('.type-view').css('margin-top', '0');
         }
 

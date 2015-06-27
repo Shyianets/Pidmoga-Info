@@ -812,7 +812,6 @@ position: absolute;
 
 .facebook-block h2 {
     padding-top: 75px;
-    padding-bottom: 30px;
 }
 
 .facebook-block .fb-description {
@@ -1486,14 +1485,12 @@ a.b-dark-bkgrnd:active {
     color: #e0e0e0;
     line-height: 25px;
     cursor: pointer;
-    -webkit-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .fileb-link {
     border-bottom: 1px solid #e0e0e0;
-    -webkit-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .fileb-images {
@@ -1511,15 +1508,14 @@ a.b-dark-bkgrnd:active {
     height: 32px;
     width: 32px;
     background: url(../img/file_browse.png) no-repeat center;
-    -webkit-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    -webkit-transition: opacity 200ms ease-in-out;
+    transition: opacity 200ms ease-in-out;
 }
 
 .file-browse-visible span.hover {
     background: url(../img/file_browse_ok.png) no-repeat center;
     opacity: 0;
-    -webkit-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+
 }
 
 .file-browse-visible:hover {
@@ -1533,6 +1529,12 @@ a.b-dark-bkgrnd:active {
 
 .file-browse-visible:hover .fileb-link {
     color: #22a24f;
-    border-bottom: 1px solid #22a24f;
+    border-color: #22a24f;
+    -webkit-transition: 
+        color 200ms ease-in-out,
+        border-color 200ms ease-in-out;
+    transition: 
+        color 200ms ease-in-out,
+        border-color 200ms ease-in-out;
 }
 
