@@ -1,20 +1,69 @@
 .custom-footer {
+    display: block;
     height: 260px;
     background-color: #f6f6f6;
     text-align: center;
 }
-
+.custom-footer-in {
+    display: inline-block;
+    margin-top: 70px;
+}
 .call-us,
 .mail-us {
     display: inline-block;
-    width: 226px;
-    text-align: left;
-    margin-top: 70px;
-    
+    text-align: left; 
+    float: left;
 }
-
 .call-us h2,
 .mail-us h2 {
     line-height: 30px;
-    margin-button: 36px;
+    margin-top: 0;
+    letter-spacing: 1px;
+}
+.custom-footer-in > span {
+    float: left;
+    margin: 4px 35px;
+}
+.call-us > span,
+.mail-us > a {
+    font: 20px/30px 'Roboto' sans-serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+.mail-us > a {
+    color: #22a24f;
+}
+.call-us > span {
+    color: #616161;
+}
+.admins-cont {
+    margin-top: 80px;;
+    background-color: #f6f6f6;
+    text-align: center
+}
+.admins-cont p {
+    margin: 0;
+    padding: 0;
+}
+.admins-cont h2 {
+    text-align: center;
+    padding: 70px 0;
+    margin: 0;
+}
+.admins {
+    margin: 0;
+    padding-bottom: 75px;
+    display: inline-block;
+}
+.partners {
+    display: block;
+    min-height: 340px;
+    text-align: center;
+}
+.partners h2 {
+    display: inline-block;
+    margin: 80px 0 70px 0;
+}
+.partners-logo {
+    background-color: aliceblue;
 }

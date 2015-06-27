@@ -141,15 +141,13 @@
                     <div class="forma">
                     <label class="label">Iм'я<input type="text" name="name" placeholder="введіть ім'я">
                     </label>
-
                     <label class="label">E-mail<input type="email" name="email" placeholder="введіть email">
                     </label>
-
                     <label class="label">Телефон<input type="tel" name="tel" placeholder="ваш номер телефону">
                     </label>
-
+                    <span class="tel-format">Потрібно писати в форматі +38 (097) 886-31-50 </span>
                     <div class="select-cont">
-                        <select class="demo-default my-select" placeholder="ТИП ДОПОМОГИ">
+                        <select class="demo-default my-select">
                             <option disabled>ТИП ДОПОМОГИ</option>
                             <option value="jur">ЮРИДИЧНА</option>
                             <option value="info">ІНФОРМАЦІЙНА</option>
@@ -423,27 +421,34 @@
                 </div>
                 <!-- /modal window -->
 
-                <div class="admins">
-                	<div class="admin-1">
-                		<a href="#" class="clearfix">
-	                		<img src="img/admin-1.png" width="190px" height="190px">
-	                		<span>Олексій Краснощоков</span>
-                		<p>Керівник проекту</p>
-                		</a>
+                <div class="row admins">
+                    <div class="admins-left col-4">
+                    	<div class="admin-1">
+                    		<a href="#">
+    	                		<span><img src="img/admin-1.png" width="190px" height="190px">
+                                </span>
+    	                		<span class="l-name">Олексій Краснощоков</span>
+                    		<p>Керівник проекту</p>
+                    		</a>
+                    	</div>
+                    </div>
+                	<div class="admins-middle col-4">
+                    	<div class="admin-2">
+                            <a href="#">
+    	                		<img src="img/admin-2.png" width="190px" height="190px">
+    	                		<span class="l-name">Влад Волчков</span>
+    	                		<p>Операційний менеджер</p>
+    	                	</a>
+                        </div>
                 	</div>
-                	<div class="admin-2">
-                		<a href="#">
-	                		<img src="img/admin-2.png" width="190px" height="190px">
-	                		<span>Влад Волчков</span>
-	                		<p>Операційний менеджер</p>
-	                	</a>
-                	</div>
-                	<div class="admin-3">
-                		<a href="#">
-	                		<img src="img/admin-3.png" width="190px" height="190px">
-	                		<span>Катерина Бартецька</span>
-	                		<p>PR Менеджер</p>
-                		</a>
+                	<div class="admins-right col-4">
+                    	<div class="admin-3">
+                            <a href="#">
+    	                		<img src="img/admin-3.png" width="190px" height="190px">
+    	                		<span class="l-name">Катерина Бартецька</span>
+    	                		<p>PR Менеджер</p>
+                    		</a>
+                        </div>
                 	</div>
                 </div>
                 <!--  Кнопки  -->
@@ -575,7 +580,7 @@
             <div class="footer" >
                 <div class="copy"><span>© 2015 Pidmoga.info</span></div>
                 <div class="footer-logos">
-                    <a href="#" class="logo-school"></a>
+                    <a href="http://svc.com.ua/" class="logo-school"></a>
                     <a href="#" class="logo-delta"></a>
                 </div>
             </div>
