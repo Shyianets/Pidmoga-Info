@@ -11,8 +11,19 @@ $('.my-select').selectize();
     });
 }(jQuery);
 
-// // Menu Scroll
-// $(window).on(‘scroll’, function(){
-//     if($(this).scrollTop() >= $(menu).offset().top)
-//     $(menu).css({});
-// })
+// Menu Scroll
++function($) {
+    var topOffset = $('.fixnav').offset().top;
+
+    $(window).on('scroll', function() {
+        if ( $(this).scrollTop() >= topOffset ) {
+            $('div.fixnav').addClass('fixed');
+            $('.type-view').css('margin-top', '50px');
+        }
+        if ( $(this).scrollTop() < topOffset ) {
+            $('div.fixnav').removeClass('fixed');
+            $('.type-view').css('margin-top', '0');
+        }
+
+    })
+}(jQuery);
