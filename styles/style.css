@@ -739,15 +739,15 @@ position: absolute;
 	margin-bottom: 75px;
 }
 
-.left {
+.admins-left {
 	padding-right:115px;
 }
 
-.middle {
+.admins-middle {
 	padding-left:65px;
 	padding-right:65px;
 }
-.right {
+.admins-right {
 	padding-left:115px;
 }
 
