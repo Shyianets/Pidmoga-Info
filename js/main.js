@@ -9,7 +9,7 @@ $('.my-select').selectize();
         currentIndex = $('div.active').index() + 1;
         $('span.slider-counter').html('' + currentIndex + '/' + totalItems + '');
     });
-}(jQuery);
+}(window.jQuery);
 
 // Menu Scroll
 +function($) {
@@ -26,4 +26,4 @@ $('.my-select').selectize();
         }
 
     })
-}(jQuery);
+}(window.jQuery);
