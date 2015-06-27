@@ -13,7 +13,7 @@ body {
     font:16px Roboto, Arial, Helvetica, sans-serif;
     background:#fff;
     width: 100%;
-
+    overflow: hidden;
 }
 
 
@@ -749,7 +749,7 @@ position: absolute;
 	padding-right:65px;
 }
 .right {
-	padding-left:115px; 
+	padding-left:115px;
 }
 
 .admins a {
