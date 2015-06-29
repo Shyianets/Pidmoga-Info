@@ -15,16 +15,13 @@
         var totalItems = $('#' + idCarousel[i] + ' ' +'.item').length;
         var currentIndex = $('#' + idCarousel[i] + ' ' + '.item.active').index() + 1;
         $('#' + idCarousel[i] + ' ' + '.slider-counter').html('' + currentIndex + '/' + totalItems + '');
-    });
-
-    // Events
-    listCarousel.each(function(i) {
         var totalItems = $('#' + idCarousel[i] + ' ' +'.item').length;
         $('#' + idCarousel[i]).on('slid.bs.carousel', function() {
             currentIndex = $('#' + idCarousel[i] + ' ' + '.item.active').index() + 1;
             $('#' + idCarousel[i] + ' ' + '.slider-counter').html('' + currentIndex + '/' + totalItems + '');
         });
-    })
+    });
+
 
 }(window.jQuery);
 
