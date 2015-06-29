@@ -803,18 +803,14 @@ position: absolute;
     color: #616161
 }
 
-.facebook-block {
-    height: 345px;
+.bottom-block {
+    padding-top: 30px;
+    padding-bottom: 65px;
     background-color: #f6f6f6;
-    font-family: Roboto, sans-serif;
     text-align: center;
 }
 
-.facebook-block h2 {
-    padding-top: 75px;
-}
-
-.facebook-block .fb-description {
+.bottom-description {
     padding-bottom: 35px;
     margin: auto;
     max-width: 550px;
