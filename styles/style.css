@@ -13,6 +13,7 @@ body {
     font:16px Roboto, Arial, Helvetica, sans-serif;
     background:#fff;
     width: 100%;
+
 }
 
 
@@ -412,41 +413,13 @@ position: absolute;
     text-decoration: none;
 }
 
-
 .fixnav {
-    background:#f6f6f6;
-    height: 150px;
-}
-
-.header_menu:hover{
-    text-decoration: none;
-}
-
-.header_title {
-    display: inline-block;
-    text-align: center;
-    width: 600px;
-    vertical-align: middle;
-}
-
-.header_title h1 {
-    color: #fff;
-    margin: 0;
-    padding: 0;
-    padding-bottom: 10px;
-}
-
-.header_title p {
-    color: #fff;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
-    margin: 0;
-    padding: 0;
+    z-index: 999;
 }
 
 
 .fix_menu {
+    opacity: 0;
     position: absolute;
     right: 30px;
     top: 17px;
@@ -456,6 +429,12 @@ position: absolute;
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 2px;
+    -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.fixed .fix_menu {
+    opacity: 1;
 }
 
 .fix_nav {
@@ -480,6 +459,7 @@ position: absolute;
 }
 
 .fix_brand {
+    opacity: 0;
     display: block;
     top: 0;
     left: 0;
@@ -490,6 +470,10 @@ position: absolute;
     -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 
+}
+
+.fixed .fix_brand {
+    opacity: 1;
 }
 
 .fix_brand img{
@@ -518,12 +502,46 @@ position: absolute;
 .fix_brand:hover .hover {
     opacity: 1;
 }
+.fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+
+.header_menu:hover{
+    text-decoration: none;
+}
+
+.header_title {
+    display: inline-block;
+    text-align: center;
+    width: 600px;
+    vertical-align: middle;
+}
+
+.header_title h1 {
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 10px;
+}
+
+.header_title p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
 
 .type-view {
     font-size: 0;
     text-align: center;
-		background-color: #f6f6f6;
+    width: 100%;
     margin: 0 auto;
+    background: #f6f6f6;
 }
 
 .grid-view {
@@ -794,7 +812,6 @@ position: absolute;
 
 .facebook-block h2 {
     padding-top: 75px;
-    padding-bottom: 30px;
 }
 
 .facebook-block .fb-description {
@@ -1205,7 +1222,9 @@ a.b-dark-bkgrnd:active {
     left: auto;
 }
 
-.carousel-control:hover, .carousel-control:focus {
+.carousel-control:hover,
+.carousel-control:active, 
+.carousel-control:focus {
     background: #22a24f;
 }
 
@@ -1226,22 +1245,29 @@ a.b-dark-bkgrnd:active {
 
 .carousel-control.left .hover {
     opacity: 0;
+    background: url("../img/arrow-left-hover.png") no-repeat;
     -webkit-transition: opacity 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: opacity 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    background: url("../img/arrow-left-hover.png") #22a24f no-repeat;
 }
 
 .carousel-control.right .hover {
-    background: url("../img/arrow-right-hover.png") #22a24f no-repeat;
     opacity: 0;
+    background: url("../img/arrow-right-hover.png") no-repeat;
     -webkit-transition: opacity 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: opacity 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
-.carousel-control.left .hover:hover,
-.carousel-control.right .hover:hover,
-.carousel-control.left .hover:focus,
-.carousel-control.right .hover:focus {
+.carousel-control.left:hover .normal,
+.carousel-control.left:focus .normal,
+.carousel-control.right:hover .normal,
+.carousel-control.right:focus .normal {
+    opacity: 0;
+}
+
+.carousel-control.left:hover .hover,
+.carousel-control.left:focus .hover,
+.carousel-control.right:hover .hover,
+.carousel-control.right:focus .hover {
     opacity: 1;
 }
 
@@ -1259,6 +1285,7 @@ a.b-dark-bkgrnd:active {
     height: 10px;
     margin: 0 5px;
     background: #e0e0e0;
+    cursor: pointer;
     -webkit-transition: background 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: background 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
@@ -1458,14 +1485,12 @@ a.b-dark-bkgrnd:active {
     color: #e0e0e0;
     line-height: 25px;
     cursor: pointer;
-    -webkit-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .fileb-link {
     border-bottom: 1px solid #e0e0e0;
-    -webkit-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .fileb-images {
@@ -1483,15 +1508,14 @@ a.b-dark-bkgrnd:active {
     height: 32px;
     width: 32px;
     background: url(../img/file_browse.png) no-repeat center;
-    -webkit-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    -webkit-transition: opacity 200ms ease-in-out;
+    transition: opacity 200ms ease-in-out;
 }
 
 .file-browse-visible span.hover {
     background: url(../img/file_browse_ok.png) no-repeat center;
     opacity: 0;
-    -webkit-transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 100ms cubic-bezier(0.47, 0, 0.745, 0.715);
+
 }
 
 .file-browse-visible:hover {
@@ -1505,6 +1529,12 @@ a.b-dark-bkgrnd:active {
 
 .file-browse-visible:hover .fileb-link {
     color: #22a24f;
-    border-bottom: 1px solid #22a24f;
+    border-color: #22a24f;
+    -webkit-transition: 
+        color 200ms ease-in-out,
+        border-color 200ms ease-in-out;
+    transition: 
+        color 200ms ease-in-out,
+        border-color 200ms ease-in-out;
 }
 

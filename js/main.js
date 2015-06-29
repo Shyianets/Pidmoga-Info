@@ -9,5 +9,21 @@ $('.my-select').selectize();
         currentIndex = $('div.active').index() + 1;
         $('span.slider-counter').html('' + currentIndex + '/' + totalItems + '');
     });
-}(jQuery);
+}(window.jQuery);
 
+// Menu Scroll
++function($) {
+    var topOffset = $('.fixnav').offset().top;
+
+    $(window).on('scroll', function() {
+        if ( $(this).scrollTop() >= topOffset ) {
+            $('.fixnav').addClass('fixed');
+            $('.type-view').css('margin-top', '50px');
+        }
+        if ( $(this).scrollTop() < topOffset ) {
+            $('.fixnav').removeClass('fixed');
+            $('.type-view').css('margin-top', '0');
+        }
+
+    })
+}(window.jQuery);
