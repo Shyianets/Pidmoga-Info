@@ -848,17 +848,14 @@ position: absolute;
 .order-button{
     background-color: #22a24f;
 }
-.fb-button:hover
+.order-button:hover,
+.order-button:focus,
+.fb-button:hover,
 .fb-button:focus {
     color: #fff;
     opacity: 0.8;
 }
 
-.order-button:hover
-.order-button:focus {
-    color: #fff;
-    opacity: 0.8;   
-}
 
 .footer {
     height: 70px;
