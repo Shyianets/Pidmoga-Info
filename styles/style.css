@@ -803,29 +803,31 @@ position: absolute;
     color: #616161
 }
 
-.facebook-block {
-    height: 345px;
+.bottom-block {
+    padding-top: 30px;
+    padding-bottom: 65px;
     background-color: #f6f6f6;
-    font-family: Roboto, sans-serif;
     text-align: center;
 }
 
-.facebook-block h2 {
-    padding-top: 75px;
+.bottom-block h2{
+    font-size: 29px;
+    letter-spacing: 1px;
 }
 
-.facebook-block .fb-description {
-    padding-bottom: 35px;
+.bottom-description {
+    padding-bottom: 50px;
     margin: auto;
-    max-width: 550px;
+    max-width: 600px;
+    font-size: 18px;
 }
 
-.fb-button {
+.fb-button, 
+.order-button{
     display: block;
-    width: 230px;
-    height: 50px;
-    line-height: 50px;
-    background-color: #3a5898;
+    width: 250px;
+    height: 55px;
+    line-height: 55px;
     margin: auto;
     text-decoration: none;
     text-transform: uppercase;
@@ -839,10 +841,21 @@ position: absolute;
 
 }
 
-.fb-button:hover {
-    color: #fff;
-    background: #466cbb;
+.fb-button{
+    background-color: #3a5898;
 }
+
+.order-button{
+    background-color: #22a24f;
+}
+.order-button:hover,
+.order-button:focus,
+.fb-button:hover,
+.fb-button:focus {
+    color: #fff;
+    opacity: 0.8;
+}
+
 
 .footer {
     height: 70px;
