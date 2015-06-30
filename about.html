@@ -56,17 +56,34 @@
                     </div>
                 </div>
             </div>
-            <div class="nav">
-                <div class="page_nav">
-                    <ul>
-                        <li><span class="selected">Діяльність</span></li>
-                        <li><a href="#">Мета</a></li>
-                        <li><a href="#">Досягнення</a></li>
-                        <li><a href="#">Команда</a></li>
-                        <li><a href="#">Партнери</a></li>
-                    </ul>
+            <!-- Start Navigation -->
+            <div class="fixnav">
+                <div class="nav fix_nav">
+                    <div class="page_nav">
+                        <div>
+                            <a href="#"  class="fix_brand">
+                                <img class="normal" src="img/logo_topmenu.png">
+                                <img class="hover" src="img/logo_topmenu_hover.png">
+                            </a>
+                        </div>
+                        <ul>
+                            <li class="selected"><a href="#activities">Діяльність</a></li>
+                            <li><a href="#purpose">Мета</a></li>
+                            <li><a href="#achievements">Досягнення</a></li>
+                            <li><a href="#team">Команда</a></li>
+                            <li><a href="#partners">Партнери</a></li>
+                        </ul>
+                        <a href="#" class="fix_menu">Меню
+                            <span class="menu_icon">
+                                <img class="normal" src="img/icon_menu_topmenu.png">
+                                <img class="hover" src="img/icon_menu_hover.png">
+                            </span>
+                        </a>
+                    </div>
                 </div>
             </div>
+        
+            <p><a id="activities"></a></p>
             <div class="container">
                 <div class="content row">
                     <div class="col-2 empty-col"></div>
@@ -85,11 +102,13 @@
                     </div>
                 </div>
             </div>
+        
+            <p><a id="team"></a></p>
             <div class="admins-cont">
                 <h2>наша команда</h2>
                 <div class="row admins">
-                    <div class="left col-4">
-                    	<div class="admin-1">
+                    <div class="admins-left col-4">
+                    	<div class="admin">
                     		<a href="#">
     	                		<span><img src="img/admin-1.png" width="190px" height="190px">
                                 </span>
@@ -98,8 +117,8 @@
                     		</a>
                     	</div>
                     </div>
-                	<div class="middle col-4">
-                    	<div class="admin-2">
+                	<div class="admins-middle col-4">
+                    	<div class="admin">
                             <a href="#">
     	                		<img src="img/admin-2.png" width="190px" height="190px">
     	                		<span class="l-name">Влад Волчков</span>
@@ -107,8 +126,8 @@
     	                	</a>
                         </div>
                 	</div>
-                	<div class="right col-4">
-                    	<div class="admin-3">
+                	<div class="admins-right col-4">
+                    	<div class="admin">
                             <a href="#">
     	                		<img src="img/admin-3.png" width="190px" height="190px">
     	                		<span class="l-name">Катерина Бартецька</span>
@@ -118,8 +137,8 @@
                 	</div>
                 </div>
                 <div class="row admins">
-                    <div class="left col-4">
-                    	<div class="admin-1">
+                    <div class="admins-left col-4">
+                    	<div class="admin">
                     		<a href="#">
     	                		<span><img src="img/admin-4.jpg" width="190px" height="190px">
                                 </span>
@@ -128,8 +147,8 @@
                     		</a>
                     	</div>
                     </div>
-                	<div class="middle col-4">
-                    	<div class="admin-2">
+                	<div class="admins-middle col-4">
+                    	<div class="admin">
                             <a href="#">
     	                		<img src="img/admin-5.jpg" width="190px" height="190px">
     	                		<span class="l-name">Оксана Булда</span>
@@ -137,8 +156,8 @@
     	                	</a>
                         </div>
                 	</div>
-                	<div class="right col-4">
-                    	<div class="admin-3">
+                	<div class="admins-right col-4">
+                    	<div class="admin">
                             <a href="#">
     	                		<img src="img/admin-6.jpg" width="190px" height="190px">
     	                		<span class="l-name">Валерій бугарчук</span>
@@ -148,7 +167,8 @@
                 	</div>
                 </div>
             </div>
-        
+            
+            <p><a id="partners"></a></p>
             <div class="partners">
                 <h2>Партнери</h2>
                 <div class="parthers-logo">
@@ -178,5 +198,10 @@
                     <a href="#" class="logo-delta"></a>
                 </div>
             </div>
+        <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/selectize.min.js"></script>  
+        <script src="js/bs-plugin/transition.js"></script>
+        <script src="js/main.js"></script>
     </body>
 </html>
