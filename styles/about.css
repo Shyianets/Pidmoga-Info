@@ -41,7 +41,7 @@
     background-color: #f6f6f6;
     text-align: center
 }
-.admins-cont p {
+.admin p {
     margin: 0;
     padding: 0;
 }
@@ -54,6 +54,9 @@
     margin: 0;
     padding-bottom: 75px;
     display: inline-block;
+}
+.admin {
+text-align: left;
 }
 .partners {
     display: block;
