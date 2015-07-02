@@ -633,8 +633,8 @@ position: absolute;
 }
 
 .cards {
-    margin: 20px 0;
     text-align: justify;
+    margin: 20px 0;
 }
 
 .cards li{
@@ -644,7 +644,7 @@ position: absolute;
     text-align: left;
 }
 
-.cards ul:after {
+.cards:after {
     content: "";
     width: 100%;
     display: inline-block;
