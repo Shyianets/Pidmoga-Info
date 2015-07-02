@@ -609,6 +609,9 @@ position: absolute;
 .insert-photo {
     position: relative;
     border-left: 3px solid #22a24f;
+}
+
+.insert-photo span {
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
@@ -619,8 +622,6 @@ position: absolute;
 }
 
 .insert-photo img {
-    width: 450px;
-    height: 210px;
     position: absolute;
     right: 0;
     top: 0;
