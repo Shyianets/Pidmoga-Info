@@ -36,28 +36,6 @@
 .call-us > span {
     color: #616161;
 }
-.admins-cont {
-    margin-top: 80px;;
-    background-color: #f6f6f6;
-    text-align: center
-}
-.admin p {
-    margin: 0;
-    padding: 0;
-}
-.admins-cont h2 {
-    text-align: center;
-    padding: 70px 0;
-    margin: 0;
-}
-.admins {
-    margin: 0;
-    padding-bottom: 75px;
-    display: inline-block;
-}
-.admin {
-text-align: left;
-}
 .partners {
     display: block;
     min-height: 340px;
