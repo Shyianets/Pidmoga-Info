@@ -607,15 +607,23 @@ position: absolute;
 }
 
 .insert-photo {
+    position: relative;
     border-left: 3px solid #22a24f;
-    background: url(../img/insert_photo.jpg) no-repeat right;
     font-size: 20px;
     line-height: 30px;
     font-weight: 500;
     letter-spacing: 1px;
     text-transform: uppercase;
     color: #616161;
-    padding: 60px 490px 60px 80px;
+    padding: 60px 40px 60px 80px;
+}
+
+.insert-photo img {
+    width: 450px;
+    height: 210px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .container a{
