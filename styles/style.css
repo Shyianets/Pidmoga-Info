@@ -13,6 +13,7 @@ body {
     font:16px Roboto, Arial, Helvetica, sans-serif;
     background:#fff;
     width: 100%;
+    overflow-x: hidden;
 }
 
 
@@ -884,7 +885,7 @@ position: absolute;
     font-size: 18px;
 }
 
-.fb-button, 
+.fb-button,
 .order-button{
     display: block;
     width: 250px;
@@ -1298,7 +1299,7 @@ a.b-dark-bkgrnd:active {
 }
 
 .carousel-control:hover,
-.carousel-control:active, 
+.carousel-control:active,
 .carousel-control:focus {
     background: #22a24f;
 }
@@ -1613,10 +1614,10 @@ a.topic:hover {
 .file-browse-visible:hover .fileb-link {
     color: #22a24f;
     border-color: #22a24f;
-    -webkit-transition: 
+    -webkit-transition:
         color 200ms ease-in-out,
         border-color 200ms ease-in-out;
-    transition: 
+    transition:
         color 200ms ease-in-out,
         border-color 200ms ease-in-out;
 }

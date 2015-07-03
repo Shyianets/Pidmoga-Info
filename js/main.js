@@ -30,9 +30,11 @@ $('.my-select').selectize();
     $(window).on('scroll', function() {
         if ( $(this).scrollTop() >= topOffset ) {
             $('.fixnav').addClass('fixed');
+            $('.top-menu-block a.menu-close').attr('href','#fixnav');
         }
         if ( $(this).scrollTop() < topOffset ) {
             $('.fixnav').removeClass('fixed');
+            $('.top-menu-block a.menu-close').attr('href','#');
         }
     })
 }(window.jQuery);

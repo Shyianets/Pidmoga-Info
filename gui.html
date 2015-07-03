@@ -11,9 +11,33 @@
     <link rel="stylesheet" href="styles/normalize.css" type="text/css">
     <link rel="stylesheet" href="styles/selectize.css" type="text/css">
     <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/main-page.css" type="text/css">
     <title>Pidmoga Info</title>
 </head>
 <body>
+
+    <div class="top-menu-block">
+        <div class="menu-head clearfix">
+            <div class="menu-lang">
+                <a href="#">ua</a>
+                <a href="#">eng</a>
+                <a href="#">de</a>
+            </div>
+            <a href="#" class="menu-close"><span class="menu-close-text">Меню</span><span class="menu-close-icon"></span></a>
+        </div>
+        <div class="menu-body">
+            <ul class="menu-nav">
+                <li><a href="#">Потребую допомоги</a></li>
+                <li><a href="#">Інфоцентр</a></li>
+                <li><a href="#">Про Проект</a></li>
+                <li class="active"><a href="#">Хочу допомогти</a></li>
+                <li><a href="#">Публікації</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+            <p class="menu-contact">+38 (050) 972-54-74<br>+38 (096) 797-43-19<br><a href="mailto:ok@pidmoga.info">ok@pidmoga.info</a></p>
+        </div>
+        <a href="#" class="menu-button">Ми у Facebook</a>
+    </div>
 
     <!-- Start Header -->
     <div class="header el-vertical-align">
@@ -42,7 +66,7 @@
     <!-- End Header -->
 
     <!-- Start Navigation -->
-    <div class="fixnav">
+    <div class="fixnav" id="fixnav">
         <div class="nav fix_nav">
             <div class="page_nav">
                 <div>
@@ -65,7 +89,7 @@
                         <a href="#">Партнери</a>
                     </li>
                 </ul>
-                <a href="#" class="fix_menu">
+                <a href="#fixnav" class="fix_menu">
                     Меню
                     <span class="menu_icon">
                         <img class="normal" src="img/icon_menu_topmenu.png">
@@ -738,5 +762,6 @@
     <script src="js/bs-plugin/transition.js"></script>
     <script src="js/bs-plugin/carousel.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/main-page.js"></script>
 </body>
 </html>
