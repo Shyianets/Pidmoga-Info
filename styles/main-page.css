@@ -17,6 +17,8 @@
     display: block;
     float: left;
     margin: 25px 0 0 30px;
+    position: relative;
+    z-index: 5001;
 }
 
 .menu-right {
@@ -82,6 +84,7 @@
     display: inline-block;
     padding: 14px 38px;
     margin: 65px 0 0 0;
+    outline: none;
     text-align: center;
     font-size: 14px;
     font-weight: bold;
@@ -204,12 +207,12 @@
     text-transform: uppercase;
     font-weight: bold;
     color: #1a1a1a;
+    padding-right: 10px;
 }
 
 .top-menu-block .menu-head .menu-close .menu-close-icon {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;
     background: url(../img/icon_menu_close.png);
     width: 14px;
     height: 14px;
@@ -292,4 +295,62 @@
 
 .top-menu-block .menu-button:hover {
     background: #466cbb;
+}
+
+
+
+.modal.fade {
+    opacity: 0;
+    transition: opacity .15s linear;
+}
+
+.modal.fade.in {
+    opacity: 1;
+}
+
+.modal {
+    outline: 0;
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5000;
+    background: rgba(224,224,224, 1);
+}
+
+.modal .modal-dialog {
+    background: #e0e0e0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.modal .modal-dialog .modal-close .modal-close-text {
+    position: absolute;
+    top: 26px;
+    right: 44px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a1a1a;
+    padding-right: 10px;
+}
+
+.modal .modal-dialog .modal-close .modal-close-icon {
+    position: absolute;
+    top: 27px;
+    right: 30px;
+    background: url(../img/icon_menu_close.png);
+    width: 14px;
+    height: 14px;
+}
+
+.modal .modal-dialog .modal-body {
+
 }
