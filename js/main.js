@@ -38,3 +38,16 @@ $('.my-select').selectize();
         }
     })
 }(window.jQuery);
+
+
+//Auto placement numbers -->
++function($) {
+    var allNumQuestions = $('.file-added');
+    var arrNubmers = [];
+
+    allNumQuestions.each(function(i) {
+        arrNubmers[i] = i+1+'.'+' ';
+        $(this).prepend(arrNubmers[i]); 
+    });
+}(window.jQuery);
+
