@@ -31,10 +31,12 @@ $('.my-select').selectize();
         if ( $(this).scrollTop() >= topOffset ) {
             $('.fixnav').addClass('fixed');
             $('.top-menu-block a.menu-close').attr('href','#fixnav');
+            $('.top-menu-block .menu-head').addClass('menu-fixed');
         }
         if ( $(this).scrollTop() < topOffset ) {
             $('.fixnav').removeClass('fixed');
             $('.top-menu-block a.menu-close').attr('href','#');
+            $('.top-menu-block .menu-head').removeClass('menu-fixed');
         }
     })
 }(window.jQuery);
