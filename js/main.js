@@ -1,4 +1,9 @@
-$('.my-select').selectize();
+$('.selectz-select').selectize();
+$('.selectz-input').selectize({
+    persist: false,
+    createOnBlur: true,
+    create: true
+});
 
 // Slider Counter
 +function($) {
