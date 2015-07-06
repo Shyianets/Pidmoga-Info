@@ -17,6 +17,8 @@
     display: block;
     float: left;
     margin: 25px 0 0 30px;
+    position: relative;
+    z-index: 5001;
 }
 
 .menu-right {
@@ -82,6 +84,7 @@
     display: inline-block;
     padding: 14px 38px;
     margin: 65px 0 0 0;
+    outline: none;
     text-align: center;
     font-size: 14px;
     font-weight: bold;
@@ -144,8 +147,8 @@
 }
 
 .top-menu-block {
-    position: absolute;
-    z-index: 1;
+    position: fixed;
+    z-index: 1000;
     top: 0;
     bottom: 0;
     left: 100%;
@@ -176,13 +179,24 @@
 }
 
 .top-menu-block .menu-head {
-    margin-top: 25px;
+    margin-top: 29px;
     padding: 0 30px;
+    padding-right: 28px;
+    transition: margin-top .15s linear;
+}
+
+.top-menu-block .menu-head.menu-fixed {
+    margin-top: 17px;
 }
 
 .top-menu-block .menu-head .menu-lang {
     margin-top: 1px;
 }
+
+.top-menu-block .menu-head .menu-lang a {
+    letter-spacing: 1px;
+}
+
 
 .top-menu-block .menu-head .menu-lang a:hover {
     color: #22a24f;
@@ -202,17 +216,46 @@
     display: inline-block;
     vertical-align: middle;
     text-transform: uppercase;
+    letter-spacing: 1px;
     font-weight: bold;
     color: #1a1a1a;
+    padding-right: 10px;
 }
 
 .top-menu-block .menu-head .menu-close .menu-close-icon {
     display: inline-block;
     vertical-align: middle;
-    margin-left: 10px;
-    background: url(../img/icon_menu_close.png);
-    width: 14px;
+    width: 18px;
     height: 14px;
+    position: relative;
+}
+
+.top-menu-block .menu-head .menu-close .menu-close-icon .normal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    /* Переход */
+    -webkit-transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
+}
+
+.top-menu-block .menu-head .menu-close .menu-close-icon .hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    /* Переход */
+    -webkit-transition: opacity 0.3s ease 0s;
+    transition: opacity 0.3s ease 0s;
+}
+
+.menu-close:hover .menu-close-icon .normal {
+    opacity: 0 !important;
+}
+
+.menu-close:hover .menu-close-icon .hover {
+    opacity: 1 !important;
 }
 
 .top-menu-block .menu-body {
@@ -252,6 +295,11 @@
     color: #1a1a1a;
     border: none;
     transition: color .15s linear, border .15s linear;
+    letter-spacing: 1px;
+    -webkit-transition: color 0.3s ease 0s,
+                        border 0.3s ease 0s;
+    transition: color 0.3s ease 0s,
+                border 0.3s ease 0s;
 }
 
 .top-menu-block .menu-nav li a:hover {
@@ -287,9 +335,69 @@
     color: #fff;
     background: #3a5898;
     padding: 26.5px;
+    letter-spacing: 1px;
+    -webkit-transition: background .15s linear;
     transition: background .15s linear;
 }
 
 .top-menu-block .menu-button:hover {
     background: #466cbb;
+}
+
+
+
+.modal.fade {
+    opacity: 0;
+    transition: opacity .15s linear;
+}
+
+.modal.fade.in {
+    opacity: 1;
+}
+
+.modal {
+    outline: 0;
+    display: none;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5000;
+    background: rgba(224,224,224, 1);
+}
+
+.modal .modal-dialog {
+    background: #e0e0e0;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.modal .modal-dialog .modal-close .modal-close-text {
+    position: absolute;
+    top: 26px;
+    right: 44px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    color: #1a1a1a;
+    padding-right: 10px;
+}
+
+.modal .modal-dialog .modal-close .modal-close-icon {
+    position: absolute;
+    top: 27px;
+    right: 30px;
+    background: url(../img/icon_menu_close.png);
+    width: 14px;
+    height: 14px;
+}
+
+.modal .modal-dialog .modal-body {
+
 }

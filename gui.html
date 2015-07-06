@@ -1,596 +1,790 @@
 <!DOCTYPE html>
 <html lang="uk">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="1000px">
-      <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
-      <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
-      <link rel="stylesheet" href="styles/fontello.css" type="text/css">
-      <link rel="stylesheet" href="styles/grid.css" type="text/css">
-      <link rel="stylesheet" href="styles/modal.css" type="text/css">
-      <link rel="stylesheet" href="styles/normalize.css" type="text/css">
-      <link rel="stylesheet" href="styles/style.css" type="text/css">
-      <link rel="stylesheet" href="styles/selectize.css" type="text/css">
-      <title>Pidmoga Info</title>
-    </head>
-    <body>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="1024px">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/fontello.css" type="text/css">
+    <link rel="stylesheet" href="styles/grid.css" type="text/css">
+    <link rel="stylesheet" href="styles/modal.css" type="text/css">
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="styles/selectize.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/main-page.css" type="text/css">
+    <title>Pidmoga Info</title>
+</head>
+<body>
 
-            <div class="header el-vertical-align">
-                <a href="#"  class="brand">
-                    <div>
-                        <img class="normal" src="img/logo_header.png">
-                        <img class="hover" src="img/logo_header_hover.png">
-                        <span>Pidmoga.Info</span>
-                    </div>
+    <div class="top-menu-block">
+        <div class="menu-head clearfix">
+            <div class="menu-lang">
+                <a href="#">ua</a>
+                <a href="#">eng</a>
+                <a href="#">de</a>
+            </div>
+            <a href="#" class="menu-close">
+                <span class="menu-close-text">Меню</span><span class="menu-close-icon">
+                    <img class="normal" src="img/icon_menu_close.png">
+                    <img class="hover" src="img/icon_menu_close_hover.png"></span>
+                </span>
+            </a>
+        </div>
+        <div class="menu-body">
+            <ul class="menu-nav">
+                <li><a href="#">Потребую допомоги</a></li>
+                <li><a href="#">Інфоцентр</a></li>
+                <li><a href="#">Про Проект</a></li>
+                <li class="active"><a href="#">Хочу допомогти</a></li>
+                <li><a href="#">Публікації</a></li>
+                <li><a href="#">Контакти</a></li>
+            </ul>
+            <p class="menu-contact">+38 (050) 972-54-74<br>+38 (096) 797-43-19<br><a href="mailto:ok@pidmoga.info">ok@pidmoga.info</a></p>
+        </div>
+        <a href="#" class="menu-button">Ми у Facebook</a>
+    </div>
+
+    <!-- Start Header -->
+    <div class="header el-vertical-align">
+        <a href="#"  class="brand">
+            <div>
+                <img class="normal" src="img/logo_header.png">
+                <img class="hover" src="img/logo_header_hover.png">
+                <span>Pidmoga.Info</span>
+            </div>
+        </a>
+        <div class="header_title">
+            <h1>Про проект</h1>
+            <p>
+                Ресурс інформаційної допомоги солдатам, що постраждали під час бойових дій на території України.
+            </p>
+        </div>
+        <div class="header-menu-block">
+            <a href="#" class="header_menu">
+                Меню
+                <span class="menu_icon">
+                    <img class="normal" src="img/icon_menu.png">
+                    <img class="hover" src="img/icon_menu_hover.png"></span>
+            </a>
+        </div>
+    </div>
+    <!-- End Header -->
+
+    <!-- Start Navigation -->
+    <div class="fixnav" id="fixnav">
+        <div class="nav fix_nav">
+            <div class="page_nav">
+                <div>
+                    <a href="#"  class="fix_brand">
+                        <img class="normal" src="img/logo_topmenu.png">
+                        <img class="hover" src="img/logo_topmenu_hover.png"></a>
+                </div>
+                <ul>
+                    <li class="selected">Діяльність</li>
+                    <li>
+                        <a href="#">Мета</a>
+                    </li>
+                    <li>
+                        <a href="#">Досягнення</a>
+                    </li>
+                    <li>
+                        <a href="#">Команда</a>
+                    </li>
+                    <li>
+                        <a href="#">Партнери</a>
+                    </li>
+                </ul>
+                <a href="#fixnav" class="fix_menu">
+                    Меню
+                    <span class="menu_icon">
+                        <img class="normal" src="img/icon_menu_topmenu.png">
+                        <img class="hover" src="img/icon_menu_hover.png">
+                    </span>
                 </a>
-                <div class="header_title">
-                    <h1>Про проект</h1>
-                    <p>Ресурс інформаційної допомоги солдатам, що постраждали під час бойових дій на території України.</p>
-                </div>
-                <div class="header-menu-block">
-                    <a href="#" class="header_menu">Меню
-                        <span class="menu_icon">
-                            <img class="normal" src="img/icon_menu.png">
-                            <img class="hover" src="img/icon_menu_hover.png">
-                        </span>
-                    </a>
-                </div>
             </div>
-            <div class="fixnav">
-                <div class="nav fix_nav">
-                    <div class="page_nav">
-                        <div>
-                            <a href="#"  class="fix_brand">
-                                <img class="normal" src="img/logo_topmenu.png">
-                                <img class="hover" src="img/logo_topmenu_hover.png">
-                            </a>
-                        </div>
-                        <ul>
-                            <li class="selected">Діяльність</li>
-                            <li><a href="#">Мета</a></li>
-                            <li><a href="#">Досягнення</a></li>
-                            <li><a href="#">Команда</a></li>
-                            <li><a href="#">Партнери</a></li>
-                        </ul>
-                        <a href="#" class="fix_menu">Меню
-                            <span class="menu_icon">
-                                <img class="normal" src="img/icon_menu_topmenu.png">
-                                <img class="hover" src="img/icon_menu_hover.png">
-                            </span>
-                        </a>
-                    </div>
-                </div>
+        </div>
+    </div>
+    <div class="type-view">
+        <div class="grid-view"></div>
+        <a href="#">
+            <div class="list-view"></div>
+        </a>
+    </div>
+    <!-- End Navigation -->
+
+    <!-- Start Content -->
+    <div class="container">
+
+        <!-- Texts blocks -->
+        <div class="content row">
+            <div class="col-2 empty-col"></div>
+            <div class="info col-8">
+                <h1>Інформайційна допомога</h1>
+                <h2>
+                    Діяльність
+                    <br>Та досягнення</h2>
+                <h3>
+                    Право учасників АТО
+                    <br>на отримання житла</h3>
+                <div class="data">24 листопада 2014</div>
+                <p>
+                    Громадська організація «Підмога.інфо» надає
+                    <a href="#">інформаційну</a>
+                    та адвокаційну
+                    <a href="#">допомогу</a>
+                    учасникам АТО і мирним громадянам, які постраждали внаслідок бойових дій на території України.
+                </p>
+                <ul>
+                    <li>
+                        Бійцям АТО дозволено перевищувати граничні ціни втричі;Бійцям АТО дозволено перевищувати граничні ціни втричі;Бійцям АТО дозволено перевищувати граничні ціни втричі;Бійцям АТО дозволено перевищувати граничні ціни втричі;Бійцям АТО дозволено перевищувати граничні ціни втричі;
+                    </li>
+                    <li>Спрощено перелік документів для отримання протезу;</li>
+                    <li>Єдиноразова виплата підвищилась до 60,9 тис. грн;</li>
+                    <li>Внесено майже 50 змін до Міністерства соціальної політики.</li>
+                </ul>
             </div>
-            <div class="type-view">
-                    <div class="grid-view"></div>
-                    <a href="#"><div class="list-view"></div> </a>
+        </div>
+
+        <!-- Grid Example -->
+        <div class="row">
+            <div class="col-6">
+                <p>
+                    Ми розміщуємо ексклюзивні матеріали від протезистів, лікарів, постраждалих і волонтерів, піднімаємо актуальні питання протезної галузі в Україні, допомагаємо розібратись із законодавчими нюансами. Також ми збираємо інформацію про постраждалих солдат, які потребують допомоги
+                </p>
+            </div>
+            <div class="col-6">
+                <p>
+                    Також, ми працюємо із низкою партнерів, які допомагають у питаннях законодавства, пошуку роботи, оформлення документів, коучінгу (навчання новим навичкам, перекваліфікація), психологічна реабілітація і т. д.
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-4">
+                <p>
+                    Ми розміщуємо ексклюзивні матеріали від протезистів, лікарів, постраждалих і волонтерів, піднімаємо актуальні питання протезної галузі в Україні
+                </p>
+            </div>
+            <div class="col-4">
+                <p>
+                    Допомагаємо розібратись із законодавчими нюансами. Також ми збираємо інформацію про постраждалих солдат, які потребують допомоги
+                </p>
+            </div>
+            <div class="col-4">
+                <p>
+                    Також, ми працюємо із низкою партнерів, які допомагають у питаннях законодавства, пошуку роботи, оформлення документів, коучінгу .
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-3">
+                <p>Бійцям АТО дозволено перевищувати граничні ціни втричі;</p>
+            </div>
+            <div class="col-3">
+                <p>Спрощено перелік документів для отримання протезу;</p>
+            </div>
+            <div class="col-3">
+                <p>
+                    Єдиноразова виплата підвищилась до
+                        60,9 тис. грн;
+                </p>
+            </div>
+            <div class="col-3">
+                <p>Внесено майже 50 змін до Міністерства соціальної політики.</p>
+            </div>
+        </div>
+
+        <!-- Form — Field, Selector -->
+        <div class="row margin-top-large">
+
+            <div class="forma">
+                <label class="label">
+                    Iм'я
+                    <input class="selectz-input" type="text" name="name" placeholder="Введіть ім'я"></label>
+                <label class="label">
+                    E-mail
+                    <input class="selectz-input error-field" type="email" name="email" placeholder="Введіть email" value="asjd">
+                    <span class="form-tooltip error-tooltip">Потрібно писати в форматі +38 (097) 886-31-50</span></label>
+                <label class="label">
+                    Телефон
+                    <input class="selectz-input" type="tel" name="tel" placeholder="Ваш номер телефону">
+                    <span class="form-tooltip">Потрібно писати в форматі +38 (097) 886-31-50</span></label>
+                <div class="select-cont">
+                    <select class="selectz-select" placeholder="Тип допомоги">
+                        <option value="">Тип допомоги</option>
+                        <option value="jur">Юридична</option>
+                        <option value="info">Інформаційна</option>
+                        <option value="psy">Психологічна</option>
+                        <option value="mat">Матеріальна</option>
+                    </select>
+                </div>
+                <label class="label">
+                    E-mail
+                    <input type="text" name="type" value="andrew_koval@gmail.com" disabled>
+                </label>
+                <label class="label">
+                    Допомога
+                    <input type="text" name="type" value="Mатеріальна допомога" disabled>
+                </label>
             </div>
 
+            <!-- Form — Checkbox -->
+            <div class="checkbox col-6">
+                <input type="checkbox" id="check1" />
+                <label for="check1">Бійцям АТО дозволено перевищувати граничні ціни втричі;</label>
+                <br>
 
-            <div class="container">
+                <input type="checkbox" id="check2" />
+                <label for="check2">Спрощено перелік документів для отримання протезу;</label>
+                <br>
 
+                <input type="checkbox" id="check3" />
+                <label for="check3">Єдиноразова виплата підвищилась до 60,9 тис. грн;</label>
+                <br>
 
-                <!-- Andrey - блоки-->
+                <input type="checkbox" id="check4" />
+                <label for="check4">Внесено 50 змін до Міністерства соціальної політики.</label>
+            </div>
 
-                <div class="content row">
-                    <div class="col-2 empty-col"></div>
-                    <div class="info col-8">
-                        <h1>Інформайційна допомога</h1>
-                        <h2>Діяльність<br>Та досягнення</h2>
-                        <h3>Право учасників АТО<br>на отримання житла
-                        </h3>
-                        <div class="data">24 листопада 2014
-                        </div>
-                        <p>Громадська організація «Підмога.інфо» надає <a href="#">інформаційну</a> та адвокаційну <a href="#">допомогу</a> учасникам АТО і мирним громадянам, які постраждали внаслідок бойових дій на території України.
-                        </p>
-                        <ul>
-                            <li>Бійцям АТО дозволено перевищувати граничні ціни втричі;Бійцям АТО дозволено перевищувати граничні ціни втричі;Бійцям АТО дозволено перевищувати граничні ціни втричі;Бійцям АТО дозволено перевищувати граничні ціни втричі;Бійцям АТО дозволено перевищувати граничні ціни втричі;</li>
-                            <li>Спрощено перелік документів для отримання протезу;</li>
-                            <li>Єдиноразова виплата підвищилась до 60,9 тис. грн;</li>
-                            <li>Внесено майже 50 змін до Міністерства соціальної політики.</li>
-                        </ul>
-                    </div>
-                    <div class="col-2"></div>
-                </div>
-                <div class="row">
-                    <div class="col-6">
-                        <p>Ми розміщуємо ексклюзивні матеріали                   від протезистів, лікарів, постраждалих і волонтерів, піднімаємо актуальні питання протезної галузі в Україні, допомагаємо розібратись із законодавчими нюансами. Також ми збираємо інформацію про постраждалих солдат, які потребують допомоги
-                        </p>
-                    </div>
-                    <div class="col-6">
-                        <p>Також, ми працюємо із низкою партнерів, які допомагають у питаннях законодавства, пошуку роботи, оформлення документів, коучінгу (навчання новим навичкам, перекваліфікація), психологічна реабілітація і т. д.
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4">
-                        <p>Ми розміщуємо ексклюзивні матеріали від протезистів, лікарів, постраждалих і волонтерів, піднімаємо актуальні питання протезної галузі в Україні
-                        </p>
-                    </div>
-                    <div class="col-4">
-                        <p>Допомагаємо розібратись із законодавчими нюансами. Також ми збираємо інформацію про постраждалих солдат, які потребують допомоги
-                        </p>
-                    </div>
-                    <div class="col-4">
-                        <p>Також, ми працюємо із низкою партнерів, які допомагають у питаннях законодавства, пошуку роботи, оформлення документів, коучінгу .
-                        </p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-3">
-                        <p>Бійцям АТО дозволено перевищувати граничні ціни втричі;
-                        </p>
-                    </div>
-                    <div class="col-3">
-                        <p>Спрощено перелік документів для отримання протезу;
-                        </p>
-                    </div>
-                    <div class="col-3">
-                        <p>Єдиноразова виплата підвищилась до
-                            60,9 тис. грн;
-                        </p>
-                    </div>
-                    <div class="col-3">
-                        <p>Внесено майже 50 змін до Міністерства соціальної політики.
-                        </p>
-                    </div>
-                </div>
+            <div class="radio col-6">
+                <input type="radio" id="rad1" checked="checked" name="rad"/>
+                <label for="rad1">Бійцям АТО дозволено перевищувати граничні ціни втричі;</label>
+                <br>
 
-                <div class="row margin-top-large">
-                    
-                    <div class="forma">
-                    <label class="label">Iм'я<input type="text" name="name" placeholder="введіть ім'я">
-                    </label>
-                    <label class="label">E-mail<input type="email" name="email" placeholder="введіть email">
-                    </label>
-                    <label class="label">Телефон<input type="tel" name="tel" placeholder="ваш номер телефону">
-                    </label>
-                    <span class="tel-format">Потрібно писати в форматі +38 (097) 886-31-50 </span>
-                    <div class="select-cont">
-                        <select class="demo-default my-select">
-                            <option disabled>ТИП ДОПОМОГИ</option>
-                            <option value="jur">ЮРИДИЧНА</option>
-                            <option value="info">ІНФОРМАЦІЙНА</option>
-                            <option value="psy">ПСИХОЛОГІЧНА</option>
-                            <option value="mat">МАТЕРІАЛЬНА</option>
-                        </select>
-                    </div>
-                    
-                </div>
+                <!-- Form — Radiobutton -->
+                <input type="radio" id="rad2" name="rad" />
+                <label for="rad2">Спрощено перелік документів для отримання протезу;</label>
+                <br>
 
-                    <!--  чекбоксы-->
+                <input type="radio" id="rad3" name="rad" />
+                <label for="rad3">Єдиноразова виплата підвищилась до 60,9 тис. грн;</label>
+                <br>
 
-                    <div class="checkbox col-6">
-                        <input type="checkbox" id="check1" />
-                        <label for="check1">
-                            Бійцям АТО дозволено перевищувати граничні ціни втричі;
-                        </label><br>
+                <input type="radio" id="rad4" name="rad" />
+                <label for="rad4">Внесено 50 змін до Міністерства соціальної політики.</label>
+            </div>
+        </div>
 
-                        <input type="checkbox" id="check2" />
-                        <label for="check2">
-                            Спрощено перелік документів для отримання протезу;
-                        </label><br>
-
-                        <input type="checkbox" id="check3" />
-                        <label for="check3">
-                            Єдиноразова виплата підвищилась до 60,9 тис. грн;
-                        </label><br>
-
-                        <input type="checkbox" id="check4" />
-                        <label for="check4">
-                            Внесено 50 змін до Міністерства соціальної політики.
-                        </label>
-                    </div>
-
-                    <div class="radio col-6">
-                        <input type="radio" id="rad1" checked="checked" name="rad"/>
-                        <label for="rad1">
-                            Бійцям АТО дозволено перевищувати граничні ціни втричі;
-                        </label><br>
-
-
-                        <!-- Alex - радиокнопки-->
-
-                        <input type="radio" id="rad2" name="rad" />
-                        <label for="rad2">
-                            Спрощено перелік документів для отримання протезу;
-                        </label><br>
-
-                        <input type="radio" id="rad3" name="rad" />
-                        <label for="rad3">
-                            Єдиноразова виплата підвищилась до 60,9 тис. грн;
-                        </label><br>
-
-                        <input type="radio" id="rad4" name="rad" />
-                        <label for="rad4">
-                            Внесено 50 змін до Міністерства соціальної політики.
-                        </label>
-                    </div>
-                </div>
-
-
-                <!-- Alex - мои блоки-->
-
-                <div class="row ">
-                    <div class="cont-insert">
-                        <div class="col-2"></div>
-                        <div class="col-8">
-                            <p>Громадська організація «Підмога.інфо» надає інформаційну та адвокаційну допомогу учасникам АТО і мирним громадянам, які постраждали внаслідок бойових дій на території України.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-8">
-                        <div class="insert">
-                            <div class="insert-heading">
-                                Основною сферою діяльності<br>є питання, пов’язані<br> із протезуванням
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2"></div>
-                    <div class="col-8">
-                        <p>Ми розміщуємо ексклюзивні матеріали від протезистів, лікарів, постраждалих і волонтерів, піднімаємо актуальні питання протезної галузі в Україні.</p>
-                    </div>
-                </div>
-                <div class="row margin-top-large">
-                    <div class="col-12">
-                        <div class="insert-photo">
-                            <span>Основною сферою діяльності є питання, пов’язані із протезуванням</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- news-->
-
-                <!-- big news-->
-
-                <div class="news">
-                    <div class="row ">
-                        <div class="col-12">
-                            <a href="#"><img src="img/news_bg.jpg" alt=""></a>
-                            <div class="news-text">
-                                <a href="#"><span class="topic">Статті</span></a>
-                                <span class="days-ago">1 день назад</span><br>
-                                <a href="#"><span class="description">Незаконність сертифікації комплектуючих і варіантів комплектації (відомо рішення суду)</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- small news-->
-
-                    <div class="news-small row">
-                        <div class="col-4">
-                            <img src="img/news_m_1.jpg" alt="">
-                            <a href="http://facebook.com"><div class="hover-img">
-                                <span class="fb-share">Поділитися на facebook</span>
-                                    </div></a>
-                            <div class="news-sm-text">
-                                <a href="#"><span class="topic">Статті</span></a>
-                                <span class="days-ago">2 дня назад</span><br>
-                                <a href="#"><span class="description-sm">Реабілітація після ампутації</span></a>
-                            </div>
-                        </div>
-
-
-                        <div class="col-4">
-                            <img src="img/news_m_2.jpg" alt="">
-                            <a href="http://facebook.com"><div class="hover-img">
-                                <span class="fb-share">Поділитися на facebook</span>
-                                </div></a>
-                            <div class="news-sm-text">
-                                <a href="#"><span class="topic">Відео</span></a>
-                                <span class="days-ago">3 дня назад</span><br>
-                                <a href="#"><span class="description-sm">Вже півроку герой перебуває на лікуванні</span></a>
-                            </div>
-                        </div>
-
-
-                        <div class="col-4">
-                            <img src="img/news_m_3.jpg" alt="">
-                            <a href="http://facebook.com"><div class="hover-img">
-                                <span class="fb-share">Поділитися на facebook</span>
-                                    </div></a>
-                            <div class="news-sm-text">
-                                <a href="#"><span class="topic">Статті</span></a>
-                                <span class="days-ago">2 дня назад</span><br>
-                                <a href="#"><span class="description-sm">Право учасників АТО на отримання житла</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                            <!-- micro news-->
-
-                     <div class="news-micro row">
-                        <div class="col-4">
-                            <div class="news-micro-text">
-                                <a href="#"><span class="topic">Статті</span></a>
-                                <span class="date">24 листопада</span><br>
-                                <a href="#"><span class="description-micro">Народний протез: поранені покладаються на волонтерів</span></a>
-                            </div>
-                        </div>
-
-
-                        <div class="col-4">
-                            <div class="news-micro-text">
-                                <a href="#"><span class="topic">Змі про нас</span></a>
-                                <span class="date">17 вересня</span><br>
-                                <a href="#"><span class="description-micro">Якісні протези в Україн можуть отримати лише паралімпійці — ТСН</span></a>
-                            </div>
-                        </div>
-
-
-                        <div class="col-4">
-                            <div class="news-micro-text">
-                                <a href="#"><span class="topic">Статті</span></a>
-                                <span class="date">3 серпня</span><br>
-                                <a href="#"><span class="description-micro">Дві броньовані швидкі купили волонтери для бійців АТО</span></a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12">
-                        <a class="more-news" href="#">Більше публікацій</a>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="cards clearfix">
-                        <div class="col-4">
-                            <a href="#">
-                                <img src="img/card-1.png" width="290px" height="160px">
-                                <span>Документи, необхідні для отрімання посвідчення учасника АТО</span>
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="#">
-                                <img src="img/card-2.png" width="290px" height="160px">
-                                <span>Порядок проходження військової комісії</span>
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <a href="#">
-                                <img src="img/card-3.png" width="290px" height="160px">
-                                <span>Соціальні пільги учасникам АТО</span>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-4"></div>
-                    <div class="pub-list col-4">
-                        <ul>
-                            <li><a href="#">1</a></li>
-                            <li><a href="#">2</a></li>
-                            <li class="selected">3</li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">6</a></li>
-                            <li><a href="#">...</a></li>
-                            <li><a href="#">10</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-4"></div>
-                </div>
-                <div class="row">
-                    <div class="col-12">
-                        <div class="pub-all">
-                            <a href="#">Всі публікації</a>
-                        </div>
-                    </div>
-                </div>
-	            <div class="small-cards">
-		            <div class="scard">
-		                <a href="#" class="clearfix">
-		                	<span><img src="img/card-1S.png" width="160px" height="80px"></span>
-		                	<span>Документи, необхідні для отрімання
-							посвідчення учасника АТО</span>
-		                </a>
-		            </div>
-		            <div class="scard">
-		                <a href="#" class="clearfix">
-		                	<span><img src="img/card-2S.png" width="160px" height="80px"></span>
-		                	<span>Порядок проходження військової комісії</span>
-		                </a>
-		            </div>
-		            <div class="scard">
-		                <a href="#" class="clearfix">
-		                	<span><img src="img/card-3S.png" width="160px" height="80px"></span>
-		                	<span>Соціальні пільги учасникам АТО</span>
-		                </a>
-		            </div>
-	            </div>
-
-	            <!-- modal window -->
-                <div class="row modal">
-                  <div class="modal-block">
-                    <div class="modal-head">
-                      <a href="#" class="modal-close"><span class="modal-close-text">Закрити</span><span class="modal-close-icon"></span></a>
-                      <h2>Порядок проходження<br>військової комісії</h2>
-                    </div>
-                    <div class="modal-body">
-                      <h2>Державна допомога</h2>
-                      <p>На протезування держава теж встановила певні ліміти. Якщо йдеться про ногу, то вартість протезу не повинна перевищувати 98 тисяч гривень. Ще донедавна ця сума була приблизно на десять тисяч меншою. Для бійців АТО ліміт можна перевищити в тричі, тобто не більше 294 тисяч гривень, якщо буде дозвіл медичної комісії.</p>
-                      <p>Збільшення фінансових лімітів — це наша маленька перемога, — каже Краснощоков. Ми змусили чиновників переглянути витрати, адже хлопці ще зовсім молоді, активні і вони потребують сучасних протезів. Волонтерський проект власне створено, аби вказувати чиновникам на недоліки системи, вносити на законодавчому рівні зміни щодо реабілітації, щоб за декілька років хлопцям не довелося ходити з простягнутою рукою.</p>
-                    </div>
-                    <div class="modal-link">
-                      <a href="#">Наступна публікація</a>
-                    </div>
-                  </div>
-                </div>
-                <!-- /modal window -->
-
-                <div class="row admins">
-                    <div class="admins-left col-4">
-                    	<div class="admin-1">
-                    		<a href="#">
-    	                		<span><img src="img/admin-1.png" width="190px" height="190px">
-                                </span>
-    	                		<span class="l-name">Олексій Краснощоков</span>
-                    		<p>Керівник проекту</p>
-                    		</a>
-                    	</div>
-                    </div>
-                	<div class="admins-middle col-4">
-                    	<div class="admin-2">
-                            <a href="#">
-    	                		<img src="img/admin-2.png" width="190px" height="190px">
-    	                		<span class="l-name">Влад Волчков</span>
-    	                		<p>Операційний менеджер</p>
-    	                	</a>
-                        </div>
-                	</div>
-                	<div class="admins-right col-4">
-                    	<div class="admin-3">
-                            <a href="#">
-    	                		<img src="img/admin-3.png" width="190px" height="190px">
-    	                		<span class="l-name">Катерина Бартецька</span>
-    	                		<p>PR Менеджер</p>
-                    		</a>
-                        </div>
-                	</div>
-                </div>
-                <!--  Кнопки  -->
-
-                <div class="row">
-                    <div class="buttons clearfix">
-                        <div class="col-4">
-                            <a href="#" class="content-button b-green">Мені потрiбна допомога</a>
-                        </div>
-                        <div class="col-4">
-                            <a href="#" class="content-button b-border">
-                            Мені потрiбна допомога
-                            </a>
-                        </div>
-                        <div class="col-4">
-                            <div class="dark-bckgrnd">
-                                <a href="#" class="content-button b-dark-bkgrnd">
-                                Мені потрiбна допомога
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            <!-- Carousel -->
-
-            <div style="height:50px"></div>
-
-            <div class="row">
+        <!-- Insert block little -->
+        <div class="row ">
+            <div class="cont-insert">
                 <div class="col-2"></div>
                 <div class="col-8">
-                    <div id="carousel-pidmoga" class="carousel slide" data-ride="carousel">
-                    
-                      <!-- Wrapper for slides -->
+                    <p>
+                        Громадська організація «Підмога.інфо» надає інформаційну та адвокаційну допомогу учасникам АТО і мирним громадянам, які постраждали внаслідок бойових дій на території України.
+                    </p>
+                </div>
+            </div>
+        </div>
 
-                        <span class="slider-counter"></span>
-
-                        <a class="carousel-next" href="#carousel-pidmoga" role="button" data-slide="next"></a>
-                    
-                        <div class="carousel-inner" role="listbox">
-                            <div class="item active">
-                                <img src="img/slider-1.jpg" alt="...">
-                            </div>
-                            <div class="item">
-                                <img src="img/slider-1.jpg" alt="...">
-                            </div>
-                            <div class="item">
-                                <img src="http://grandwallpapers.net/wallpapers/kotik-v-shoke/kotik-v-shoke_658x411.jpg" alt="...">
-                            </div>
-                            <div class="item">
-                                <img src="img/slider-1.jpg" alt="...">
-                            </div>
-                            <div class="item">
-                                <img src="img/slider-1.jpg" alt="...">
-                            </div>
-                    
-                        </div>
-                    
-                      <!-- Controls -->
-                    
-                        <a class="left carousel-control" href="#carousel-pidmoga" role="button" data-slide="prev">
-                            <span class="normal"></span>
-                            <span class="hover"></span>
-                        </a>
-                        <a class="right carousel-control" href="#carousel-pidmoga" role="button" data-slide="next">
-                            <span class="normal"></span>
-                            <span class="hover"></span>
-                        </a>
-
-                        <!-- Indicators -->
-                    
-                        <ol class="carousel-indicators">
-                            <li data-target="#carousel-pidmoga" data-slide-to="0" class="active"></li>
-                            <li data-target="#carousel-pidmoga" data-slide-to="1"></li>
-                            <li data-target="#carousel-pidmoga" data-slide-to="2"></li>
-                            <li data-target="#carousel-pidmoga" data-slide-to="3"></li>
-                            <li data-target="#carousel-pidmoga" data-slide-to="4"></li>
-                        </ol>
-                    
+        <!-- Insert block all width -->
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div class="insert">
+                    <div class="insert-heading">
+                        Основною сферою діяльності
+                        <br>
+                        є питання, пов’язані
+                        <br>із протезуванням
                     </div>
                 </div>
             </div>
-
-            <div style="height:50px"></div>
-
-
-                <div class="row">
-                    <div class="steps">
-                        <span class="box-step ok-step">1</span>
-                        <span class="s-divider ok-divider"></span>
-                        <span class="box-step current-step">2</span>
-                        <span class="s-divider"></span>
-                        <span class="box-step">3</span>
-                        <span class="s-divider"></span>
-                        <span class="box-step">4</span>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="col-4"></div>
-                    <div class="col-4">
-                        <form>
-                            <input type="file" id="file-browse" name="1" multiple>
-                            <label for="file-browse" class="file-browse-visible">
-                                <span class="fileb-images">
-                                    <span class="fileb-img normal"></span>
-                                    <span class="fileb-img hover"></span>
-                                </span>
-                                <br><span class="fileb-link">Завантажте</span> або<br> перетягніть сюди файли
-                            </label>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-
-
-            <div class="facebook-block">
-                <h2>не будь байдужим</h2>
-                <p class="fb-description">
-                Поділись цим сайтом зі своїми друзями. Серед них, або їхніх близьких<br>можуть бути люди, яким буде потрібна ця інформація.
+        </div>
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <p>
+                    Ми розміщуємо ексклюзивні матеріали від протезистів, лікарів, постраждалих і волонтерів, піднімаємо актуальні питання протезної галузі в Україні.
                 </p>
-                <a href="#" class="fb-button">
-                Ми у Facebook
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="insert-photo">
+                    <span>
+                        Основною сферою діяльності є питання, пов’язані із протезуванням
+                    </span>
+                    <img src="img/insert_photo.jpg" width: 450 height: 210>
+                </div>
+            </div>
+        </div>
+
+        <!-- News Block-->
+        <div class="news">
+
+            <!-- Big News Block-->
+            <div class="row ">
+                <div class="col-12">
+                    <a href="#">
+                        <img src="img/news_bg.jpg" alt=""></a>
+                    <div class="news-text">
+                        <a href="#" class="topic">Статті</a>
+                        <span class="days-ago">1 день назад</span>
+                        <br>
+                        <a href="#" class="description-n">
+                                Незаконність сертифікації комплектуючих і варіантів комплектації (відомо рішення суду)
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Small News Block -->
+            <div class="news-small row">
+                <div class="col-4">
+                    <a href="#" class="news-img"><img src="img/news_m_1.jpg" alt=""></a>
+                    <div class="news-sm-text">
+                        <a href="#" class="topic">
+                            Статті
+                        </a>
+                        <span class="days-ago">2 дня назад</span>
+                        <br>
+                        <a href="#" class="description-sm">
+                            Реабілітація після ампутації
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="video-news news-img">
+                        <img src="img/news_m_2.jpg" alt="">
+                    </a>
+                    <div class="news-sm-text">
+                        <a href="#" class="topic">
+                            Відео
+                        </a>
+                        <span class="days-ago">3 дня назад</span>
+                        <br>
+                        <a href="#" class="description-sm">
+                            Вже півроку герой перебуває на лікуванні
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="news-img"><img src="img/news_m_3.jpg" alt=""></a>
+                    <div class="news-sm-text">
+                        <a href="#" class="topic">
+                            Статті
+                        </a>
+                        <span class="days-ago">2 дня назад</span>
+                        <br>
+                        <a href="#" class="description-sm">
+                            Право учасників АТО на отримання житла
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Text News Block -->
+            <div class="news-micro row">
+                <div class="col-4">
+                    <div class="news-micro-text">
+                        <a href="#" class="topic">
+                            Статті
+                        </a>
+                        <span class="date">24 листопада</span>
+                        <br>
+                        <a href="#" class="description-micro">
+                            Народний протез: поранені покладаються на волонтерів
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="news-micro-text">
+                        <a href="#" class="topic">
+                            Змі про нас
+                        </a>
+                        <span class="date">17 вересня</span>
+                        <br>
+                        <a href="#" class="description-micro">
+                            Якісні протези в Україн можуть отримати лише паралімпійці — ТСН
+                        </a>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="news-micro-text">
+                        <a href="#" class="topic">
+                            Статті
+                        </a>
+                      <span class="date">3 серпня</span>
+                        <br>
+                        <a href="#" class="description-micro">
+                            Дві броньовані швидкі купили волонтери для бійців АТО
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Link All Publication -->
+        <div class="row">
+            <div class="col-12">
+                <div class="pub-all">
+                    <a href="#">Більше публікації</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cards Block --> 
+        <div class="row">
+            <ul class="cards clearfix">
+                <li>
+                    <a href="#">
+                        <img src="img/card-1.png" width="290px" height="160px">
+                        <span>Документи, необхідні для отрімання посвідчення учасника АТО</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/card-2.png" width="290px" height="160px">
+                        <span>Порядок проходження військової комісії</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/card-3.png" width="290px" height="160px">
+                        <span>Соціальні пільги учасникам АТО</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/card-4.png" width="290px" height="160px">
+                        <span>Документи, необхідні для отрімання посвідчення учасника АТО</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/card-5.png" width="290px" height="160px">
+                        <span>Порядок проходження військової комісії</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="img/card-6.png" width="290px" height="160px">
+                        <span>Соціальні пільги учасникам АТО</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Paginator -->
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="pub-list col-4">
+                <ul>
+                    <li>
+                        <a href="#">1</a>
+                    </li>
+                    <li>
+                        <a href="#">2</a>
+                    </li>
+                    <li class="selected">3</li>
+                    <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li>
+                    <li>
+                        <a href="#">6</a>
+                    </li>
+                    <li>
+                        ...
+                    </li>
+                    <li>
+                        <a href="#">10</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-4"></div>
+        </div>
+
+        <!-- Link All Publication -->
+        <div class="row">
+            <div class="col-12">
+                <div class="pub-all">
+                    <a href="#">Всі публікації</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Small cards -->
+        <div class="small-cards">
+            <div class="scard">
+                <a href="#" class="clearfix">
+                    <span>
+                        <img src="img/card-1S.png" width="160px" height="80px"></span>
+                    <span>
+                        Документи, необхідні для отрімання
+                        посвідчення учасника АТО
+                    </span>
                 </a>
             </div>
+            <div class="scard">
+                <a href="#" class="clearfix">
+                    <span>
+                        <img src="img/card-2S.png" width="160px" height="80px"></span>
+                    <span>Порядок проходження військової комісії</span>
+                </a>
+            </div>
+            <div class="scard">
+                <a href="#" class="clearfix">
+                    <span>
+                        <img src="img/card-3S.png" width="160px" height="80px"></span>
+                    <span>Соціальні пільги учасникам АТО</span>
+                </a>
+            </div>
+        </div>
 
-
-            <div class="footer" >
-                <div class="copy"><span>© 2015 Pidmoga.info</span></div>
-                <div class="footer-logos">
-                    <a href="http://svc.com.ua/" class="logo-school"></a>
-                    <a href="#" class="logo-delta"></a>
+        <!-- Modal Window -->
+        <div class="row modal">
+            <div class="modal-block">
+                <div class="modal-head">
+                    <a href="#" class="modal-close">
+                        <span class="modal-close-text">Закрити</span>
+                        <span class="modal-close-icon"></span>
+                    </a>
+                    <h2>
+                        Порядок проходження
+                        <br>військової комісії</h2>
+                </div>
+                <div class="modal-body">
+                    <h2>Державна допомога</h2>
+                    <p>
+                        На протезування держава теж встановила певні ліміти. Якщо йдеться про ногу, то вартість протезу не повинна перевищувати 98 тисяч гривень. Ще донедавна ця сума була приблизно на десять тисяч меншою. Для бійців АТО ліміт можна перевищити в тричі, тобто не більше 294 тисяч гривень, якщо буде дозвіл медичної комісії.
+                    </p>
+                    <p>
+                        Збільшення фінансових лімітів — це наша маленька перемога, — каже Краснощоков. Ми змусили чиновників переглянути витрати, адже хлопці ще зовсім молоді, активні і вони потребують сучасних протезів. Волонтерський проект власне створено, аби вказувати чиновникам на недоліки системи, вносити на законодавчому рівні зміни щодо реабілітації, щоб за декілька років хлопцям не довелося ходити з простягнутою рукою.
+                    </p>
+                </div>
+                <div class="modal-link">
+                    <a href="#">Наступна публікація</a>
                 </div>
             </div>
-        
-            <!-- jquary & selectize -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="js/selectize.min.js"></script>  
-        <script src="js/bs-plugin/transition.js"></script>
-        <script src="js/bs-plugin/carousel.js"></script> 
-        <script src="js/main.js"></script>     
-        
-    </body>
+        </div>
+
+        <!-- Faces Block -->
+        <div class="admins-cont">
+            <ul class="admins">
+                <li class="admin">
+                    <a href="#">
+                        <img src="img/admin-1.png" width="190px" height="190px">
+                        <span>Олексій Краснощоков</span>
+                        <p>Керівник проекту</p>
+                    </a>
+                </li>
+                <li class="admin">
+                    <a href="#">
+                        <img src="img/admin-2.png" width="190px" height="190px">
+                        <span>Влад Волчков</span>
+                        <p>Операційний менеджер</p>
+                    </a>
+                </li>
+                <li class="admin">
+                    <a href="#">
+                        <img src="img/admin-3.png" width="190px" height="190px">
+                        <span>Катерина Бартецька</span>
+                        <p>PR Менеджер</p>
+                    </a>
+                </li>
+                <li class="admin">
+                    <a href="#">
+                        <img src="img/admin-2.png" width="190px" height="190px">
+                        <span>Влад Волчков</span>
+                        <p>Операційний менеджер</p>
+                    </a>
+                </li>
+                <li class="admin">
+                    <a href="#">
+                        <img src="img/admin-3.png" width="190px" height="190px">
+                        <span>Катерина Бартецька</span>
+                        <p>PR Менеджер</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Buttons -->
+        <div class="row">
+            <div class="buttons clearfix">
+                <div class="col-4">
+                    <a href="#" class="content-button b-green">Мені потрiбна допомога</a>
+                </div>
+                <div class="col-4">
+                    <a href="#" class="content-button b-border">Мені потрiбна допомога</a>
+                </div>
+                <div class="col-4">
+                    <div class="dark-bckgrnd">
+                        <a href="#" class="content-button b-dark-bkgrnd">Мені потрiбна допомога</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Carousel -->
+        <div style="height:50px"></div>
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div id="carousel-pidmoga" class="carousel slide" data-ride="carousel">
+
+                    <!-- Wrapper for slides -->
+                    <span class="slider-counter"></span>
+                    <a class="carousel-next" href="#carousel-pidmoga" role="button" data-slide="next"></a>
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/slider-1.jpg" alt="..."></div>
+                        <div class="item">
+                            <img src="img/slider-1.jpg" alt="..."></div>
+                        <div class="item">
+                            <img src="img/kotan.jpg" alt="..."></div>
+                        <div class="item">
+                            <img src="img/slider-1.jpg" alt="..."></div>
+                        <div class="item">
+                            <img src="img/slider-1.jpg" alt="..."></div>
+                        <div class="item">
+                            <img src="img/slider-1.jpg" alt="..."></div>
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-pidmoga" role="button" data-slide="prev">
+                        <span class="normal"></span>
+                        <span class="hover"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-pidmoga" role="button" data-slide="next">
+                        <span class="normal"></span>
+                        <span class="hover"></span>
+                    </a>
+
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-pidmoga" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-pidmoga" data-slide-to="1"></li>
+                        <li data-target="#carousel-pidmoga" data-slide-to="2"></li>
+                        <li data-target="#carousel-pidmoga" data-slide-to="3"></li>
+                        <li data-target="#carousel-pidmoga" data-slide-to="4"></li>
+                        <li data-target="#carousel-pidmoga" data-slide-to="5"></li>
+                    </ol>
+
+                </div>
+            </div>
+        </div>
+
+        <div style="height:50px"></div>
+        <!-- Dividers 50px -->
+
+        <div class="row">
+            <div class="col-2"></div>
+            <div class="col-8">
+                <div id="carousel-pidmoga-2" class="carousel slide" data-ride="carousel">
+
+                    <!-- Wrapper for slides -->
+
+                    <span class="slider-counter"></span>
+
+                    <a class="carousel-next" href="#carousel-pidmoga-2" role="button" data-slide="next"></a>
+
+                    <div class="carousel-inner" role="listbox">
+                        <div class="item active">
+                            <img src="img/slider-1.jpg" alt="..."></div>
+                        <div class="item">
+                            <img src="img/slider-1.jpg" alt="..."></div>
+                        <div class="item">
+                            <img src="img/kotan.jpg" alt="..."></div>
+                        <div class="item">
+                            <img src="img/slider-1.jpg" alt="..."></div>
+                        <div class="item">
+                            <img src="img/slider-1.jpg" alt="..."></div>
+
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="left carousel-control" href="#carousel-pidmoga-2" role="button" data-slide="prev">
+                        <span class="normal"></span>
+                        <span class="hover"></span>
+                    </a>
+                    <a class="right carousel-control" href="#carousel-pidmoga-2" role="button" data-slide="next">
+                        <span class="normal"></span>
+                        <span class="hover"></span>
+                    </a>
+
+                    <!-- Indicators -->
+                    <ol class="carousel-indicators">
+                        <li data-target="#carousel-pidmoga-2" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-pidmoga-2" data-slide-to="1"></li>
+                        <li data-target="#carousel-pidmoga-2" data-slide-to="2"></li>
+                        <li data-target="#carousel-pidmoga-2" data-slide-to="3"></li>
+                        <li data-target="#carousel-pidmoga-2" data-slide-to="4"></li>
+                    </ol>
+
+                </div>
+            </div>
+        </div>
+        <div style="height:50px"></div>
+        <!-- Dividers 50px -->
+
+        <!-- Steps -->
+        <div class="row">
+            <div class="steps">
+                <span class="box-step ok-step">1</span>
+                <span class="s-divider ok-divider"></span>
+                <span class="box-step current-step">2</span>
+                <span class="s-divider"></span>
+                <span class="box-step">3</span>
+                <span class="s-divider"></span>
+                <span class="box-step">4</span>
+            </div>
+        </div>
+
+        <!-- File Upload -->
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <form>
+                    <input type="file" id="file-browse" name="1" multiple>
+                    <label for="file-browse" class="file-browse-visible">
+                        <span class="fileb-images">
+                            <span class="fileb-img normal"></span>
+                            <span class="fileb-img hover"></span>
+                        </span>
+                        <br>
+                        <span class="fileb-link">Завантажте</span>
+                        або
+                        <br>перетягніть сюди файли</label>
+                </form>
+                <span class="file-added">document_text.doc<a href="#" class="file-delete"></a></span><br>
+                <span class="file-added">ivanov_portret_photo_3x4.jpeg<a href="#" class="file-delete"></a></span>
+            </div>
+        </div>
+
+    </div>
+    <!-- End Container 930px -->
+
+    <!-- Bottom Block -->
+    <div class="bottom-block">
+        <h2>не будь байдужим</h2>
+        <p class="bottom-description">
+            Поділись цим сайтом зі своїми друзями. Серед них, або їхніх близьких
+            <br>можуть бути люди, яким буде потрібна ця інформація.</p>
+        <a href="#" class="fb-button">Ми у Facebook</a>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer" >
+        <div class="copy">
+            <span>© 2015 Pidmoga.info</span>
+        </div>
+        <div class="footer-logos">
+            <a href="http://svc.com.ua/" class="logo-school"></a>
+            <a href="#" class="logo-delta"></a>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/selectize.min.js"></script>
+    <script src="js/bs-plugin/transition.js"></script>
+    <script src="js/bs-plugin/carousel.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main-page.js"></script>
+</body>
 </html>
