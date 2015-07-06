@@ -816,6 +816,7 @@ position: absolute;
     display: inline-block;
     margin-bottom: 50px;
     margin-left: 95px;
+    vertical-align: top;
 }
 
 .admin:nth-child(1),
@@ -846,7 +847,7 @@ position: absolute;
     font-size: 15px;
     font-weight: 900;
     color: #000;
-    line-height: 30px;
+    line-height: 25px;
     -webkit-transition: color 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: color 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
@@ -861,6 +862,7 @@ position: absolute;
     color: #616161;
     margin: 0;
     padding: 0;
+    margin-top: 8px;
 }
 
 .admins-cont h2 {
