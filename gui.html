@@ -199,23 +199,32 @@
             <div class="forma">
                 <label class="label">
                     Iм'я
-                    <input type="text" name="name" placeholder="введіть ім'я"></label>
+                    <input class="selectz-input" type="text" name="name" placeholder="Введіть ім'я"></label>
                 <label class="label">
                     E-mail
-                    <input type="email" name="email" placeholder="введіть email"></label>
+                    <input class="selectz-input error-field" type="email" name="email" placeholder="Введіть email" value="asjd">
+                    <span class="form-tooltip error-tooltip">Потрібно писати в форматі +38 (097) 886-31-50</span></label>
                 <label class="label">
                     Телефон
-                    <input type="tel" name="tel" placeholder="ваш номер телефону"></label>
-                <span class="tel-format">Потрібно писати в форматі +38 (097) 886-31-50</span>
+                    <input class="selectz-input" type="tel" name="tel" placeholder="Ваш номер телефону">
+                    <span class="form-tooltip">Потрібно писати в форматі +38 (097) 886-31-50</span></label>
                 <div class="select-cont">
-                    <select class="demo-default my-select">
-                        <option disabled>ТИП ДОПОМОГИ</option>
-                        <option value="jur">ЮРИДИЧНА</option>
-                        <option value="info">ІНФОРМАЦІЙНА</option>
-                        <option value="psy">ПСИХОЛОГІЧНА</option>
-                        <option value="mat">МАТЕРІАЛЬНА</option>
+                    <select class="selectz-select" placeholder="Тип допомоги">
+                        <option value="">Тип допомоги</option>
+                        <option value="jur">Юридична</option>
+                        <option value="info">Інформаційна</option>
+                        <option value="psy">Психологічна</option>
+                        <option value="mat">Матеріальна</option>
                     </select>
                 </div>
+                <label class="label">
+                    E-mail
+                    <input type="text" name="type" value="andrew_koval@gmail.com" disabled>
+                </label>
+                <label class="label">
+                    Допомога
+                    <input type="text" name="type" value="Mатеріальна допомога" disabled>
+                </label>
             </div>
 
             <!-- Form — Checkbox -->
