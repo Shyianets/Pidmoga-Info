@@ -2,7 +2,8 @@ $('.selectz-select').selectize();
 $('.selectz-input').selectize({
     persist: false,
     createOnBlur: true,
-    create: true
+    create: true,
+    maxItems: 1
 });
 
 // Slider Counter
