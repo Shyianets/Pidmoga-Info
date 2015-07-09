@@ -151,18 +151,19 @@
     z-index: 1000;
     top: 0;
     bottom: 0;
-    left: 100%;
+    right: 0;
+    transform: translateX(100%);
     width: 25%;
     height: 100vh;
     min-height: 600px;
     font-size: 14px;
     color: #1a1a1a;
     background: #f4f4f4;
-    transition: left .15s linear;
+    transition: transform .15s linear;
 }
 
 .top-menu-block.active {
-    left: 75%;
+    transform: translateX(0);
 }
 
 .top-menu-block .menu-head .menu-lang {
