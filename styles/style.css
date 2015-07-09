@@ -721,7 +721,6 @@ position: absolute;
 .s-cards a {
     display: block;
     text-decoration: none;
-    width: 100%;
 }
 
 .s-cards a:hover > span {
