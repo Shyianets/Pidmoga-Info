@@ -226,9 +226,17 @@
 .top-menu-block .menu-head .menu-close .menu-close-icon {
     display: inline-block;
     vertical-align: middle;
-    width: 18px;
+    background: url(../img/icon_menu_close.png);
+    width: 14px;
     height: 14px;
     position: relative;
+    transition: background .15s linear;
+}
+
+.top-menu-block .menu-head .menu-close:hover .menu-close-icon {
+    background: url(../img/icon_menu_close_hover.png);
+    width: 14px;
+    height: 14px;
 }
 
 .top-menu-block .menu-head .menu-close .menu-close-icon .normal {
@@ -395,6 +403,13 @@
     top: 27px;
     right: 30px;
     background: url(../img/icon_menu_close.png);
+    width: 14px;
+    height: 14px;
+    transition: background .15s linear;
+}
+
+.modal .modal-dialog .modal-close:hover .modal-close-icon {
+    background: url(../img/icon_menu_close_hover.png);
     width: 14px;
     height: 14px;
 }
