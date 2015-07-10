@@ -548,29 +548,41 @@ position: absolute;
     background: #f6f6f6;
 }
 
-
-.grid-view {
-    display: inline-block;
-    width: 32px;
-    height: 19px;
-    background-image: url(../img/icon-grid-view.png);
-    margin: 15px;
+.type-view span > span {
+    display: none;
 }
 
-
-.list-view {
+.type-view span > * {
     display: inline-block;
     width: 32px;
     height: 19px;
     margin: 15px;
-    background-image: url(../img/icon-list-view.png);
     opacity: 0.35;
-    /* Переход */
-    -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    -webkit-transition: opacity 200ms ease-in-out;
+    transition: opacity 200ms ease-in-out;
 }
 
-.list-view:hover {
+.grid-view > * {
+    background-image: url(../img/icon-grid-view.png);
+}
+
+.list-view > * {
+    background-image: url(../img/icon-list-view.png);
+}
+
+.type-view span {
+    opacity: 1;
+}
+
+.type-view .active a {
+    display: none;
+}
+
+.type-view .active span {
+    display: inline-block;
+}
+
+.type-view a:hover {
     opacity: 1;
 }
 

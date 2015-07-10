@@ -64,4 +64,3 @@ $('.selectz-input').selectize({
 +function($) {
     
 }(window.jQuery);
-
