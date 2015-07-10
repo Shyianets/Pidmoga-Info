@@ -59,3 +59,9 @@ $('.selectz-input').selectize({
     });
 }(window.jQuery);
 
+
+//Switch type-view -->
++function($) {
+    
+}(window.jQuery);
+

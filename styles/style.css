@@ -651,6 +651,9 @@ position: absolute;
 .cards {
     text-align: justify;
     margin: 20px 0;
+    display: block;
+    -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .cards li{
@@ -658,6 +661,8 @@ position: absolute;
     width: 290px;
     vertical-align: top;
     text-align: left;
+    -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .cards:after {
@@ -694,6 +699,10 @@ position: absolute;
     transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
+.cards .little-img {
+    display: none;
+}
+
 .s-cards {
     list-style: none;
     width: 640px;
@@ -703,6 +712,13 @@ position: absolute;
     line-height: 30px;
     padding-top: 30px;
     padding-bottom: 30px;
+    display: block;
+    -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.cards-display-none {
+    display: none;
 }
 
 .s-cards span {
@@ -717,6 +733,8 @@ position: absolute;
 .s-cards li{
     margin-top: 35px;
     min-height: 80px;
+    -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .s-cards a {
@@ -732,6 +750,10 @@ position: absolute;
     opacity: 0.9;
     -webkit-transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+}
+
+.s-cards .big-img {
+    display: none;
 }
 
 .pub-list {
