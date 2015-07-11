@@ -58,9 +58,15 @@ $('.selectz-input').selectize({
         $(this).prepend(arrNubmers[i]); 
     });
 }(window.jQuery);
+ 
 
 
 //Switch type-view -->
 +function($) {
-    
+    $('.type-view span a').on('click', function () {
+        event.preventDefault();
+        $('.doc-cards').toggleClass('s-cards');
+        $('.doc-cards').toggleClass('cards');
+        $('.type-view > span').toggleClass('active');
+    })
 }(window.jQuery);
