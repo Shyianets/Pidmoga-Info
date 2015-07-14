@@ -374,8 +374,8 @@
     bottom: 0;
     left: 0;
     z-index: 5000;
-    background: rgba(224,224,224, 1);
-}
+    /*background: rgba(224,224,224, 1);
+*/}
 
 .modal .modal-dialog {
     background: #e0e0e0;
