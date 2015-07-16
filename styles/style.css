@@ -753,6 +753,7 @@ position: absolute;
 .s-cards a {
     display: block;
     min-height: 80px;
+    outline: 0;
     text-decoration: none;
 }
 

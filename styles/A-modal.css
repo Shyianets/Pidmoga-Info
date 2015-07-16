@@ -1,6 +1,7 @@
 .docs-modal.modal-open {
   overflow: hidden;
 }
+
 .docs-modal.modal {
   position: fixed;
   top: 0;
