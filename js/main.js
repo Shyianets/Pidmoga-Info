@@ -2,12 +2,12 @@
     'use strict';
 
     $('.selectz-select').selectize();
-    $('.selectz-input').selectize({
-        persist: false,
-        createOnBlur: true,
-        create: true,
-        maxItems: 1
-    });
+    // $('.selectz-input').selectize({
+    //     persist: false,
+    //     createOnBlur: true,
+    //     create: true,
+    //     maxItems: 1
+    // });
 
     // Slider Counter
     +function () {
