@@ -113,12 +113,20 @@ p {
 .header {
     position: relative;
     display: block;
-    background: #000 url(../img/header_bg_about.jpg) no-repeat;
-    background-size: cover;
     color: #ffffff;
     overflow: hidden;
     text-align: center;
     height: 350px;
+}
+
+.headre-bg-gui {
+    background: #000 url(../img/header_bg_about.jpg) no-repeat;
+    background-size: cover;
+}
+
+.header-bg-info-law {
+    background: #000 url(../img/header_info-law.jpg) no-repeat;
+    background-size: cover;
 }
 
 .brand {
@@ -1576,17 +1584,6 @@ a.b-dark-bkgrnd:active {
 .news .col-12:hover .description-n,
 .news-small li:hover .description-sm {
     color: #22a24f;
-}
-
-.news-small li .news-img,
-.news .col-12 img  {
-    -webkit-transition: opacity 200ms ease-in-out;
-    transition: opacity 20ц0ms ease-in-out;
-}
-
-.news-small li:hover .news-img,
-.news .col-12:hover img {
-    opacity: 0.8;
 }
 
 .news-small {
