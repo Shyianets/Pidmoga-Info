@@ -1,6 +1,7 @@
 .main-page-container {
     height: 100vh;
     min-height: 600px;
+    min-width: 980px;
     padding-bottom: 70px;
 }
 
@@ -93,7 +94,7 @@
     background: #22a24f;
     border: 2px solid transparent;
     color: #fff;
-    transition: background .15s linear;
+    transition: background .15s ease-in-out;
 }
 
 .help-button:hover,
@@ -138,7 +139,7 @@
     font-size: 14px;
     font-weight: bold;
     color: #fff;
-    transition: background .15s linear;
+    transition: background .15s ease-in-out;
 }
 
 .bottom-menu-block li a:hover {
@@ -154,29 +155,46 @@
     right: 0;
     transform: translateX(100%);
     width: 25%;
+    min-width: 320px;
     height: 100vh;
     min-height: 600px;
     font-size: 14px;
     color: #1a1a1a;
     background: #f4f4f4;
-    transition: transform .15s linear;
+    opacity: 0;
+    transition: transform .2s ease-in-out,
+                opacity .2s ease-in-out 50ms;
 }
 
 .top-menu-block.active {
     transform: translateX(0);
+    opacity: 1;
+    transition: transform .2s ease-in-out,
+                opacity .2s ease-in-out 50ms;
 }
 
 .top-menu-block .menu-head .menu-lang {
     float: left;
+    margin-top: 1px;
 }
 
 .top-menu-block .menu-head .menu-lang a {
     display: inline-block;
     text-decoration: none;
     text-transform: uppercase;
+    letter-spacing: 1px;
     font-weight: bold;
     color: #1a1a1a;
     transition: color .15s linear;
+}
+
+.top-menu-block .menu-head .menu-lang span {
+    display: inline-block;
+    text-decoration: none;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #22a24f;
 }
 
 .top-menu-block .menu-head {
@@ -190,21 +208,12 @@
     margin-top: 17px;
 }
 
-.top-menu-block .menu-head .menu-lang {
-    margin-top: 1px;
-}
-
-.top-menu-block .menu-head .menu-lang a {
-    letter-spacing: 1px;
-}
-
-
 .top-menu-block .menu-head .menu-lang a:hover {
     color: #22a24f;
 }
 
-.top-menu-block .menu-head .menu-lang a + a {
-    margin-left: 15px;
+.top-menu-block .menu-head .menu-lang * + * {
+    margin-left: 10px;
 }
 
 .top-menu-block .menu-head .menu-close {
@@ -217,7 +226,7 @@
     display: inline-block;
     vertical-align: middle;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     font-weight: bold;
     color: #1a1a1a;
     padding-right: 10px;
