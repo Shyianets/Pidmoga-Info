@@ -1578,6 +1578,15 @@ a.b-dark-bkgrnd:active {
     color: #22a24f;
 }
 
+.news-small li .news-img  {
+    -webkit-transition: opacity 200ms ease-in-out;
+    transition: opacity 200ms ease-in-out;
+}
+
+.news-small li:hover .news-img {
+    opacity: 0.8;
+}
+
 .news-small {
     padding: 0 15px;
 }
