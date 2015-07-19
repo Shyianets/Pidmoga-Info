@@ -1106,7 +1106,7 @@ position: absolute;
 /* Verified */
 .verified {
     border-bottom: 1px solid #22a24f;
-    box-shadow: inset 0px -2px 0px #22a24f;
+    box-shadow: inset 0px -1px 0px #22a24f;
     -webkit-transition: box-shadow 200ms ease-in-out,
                         border 200ms ease-in-out;
     transition: box-shadow 200ms ease-in-out,
@@ -1117,7 +1117,7 @@ position: absolute;
 /* Wrong Input */
 .verified.wrong {
     border-bottom: 1px solid #f07d7d;
-    box-shadow: inset 0px -2px 0px #f07d7d;
+    box-shadow: inset 0px -1px 0px #f07d7d;
 }
 
 .verified:hover,
