@@ -780,11 +780,10 @@ position: absolute;
 
 .pub-list {
     line-height: 25px;
-    margin: 20px 0;
 }
 
 .pub-list ul {
-    margin: 0;
+    margin-bottom: 90px;
 }
 
 .pub-list li {
