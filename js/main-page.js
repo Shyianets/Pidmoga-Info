@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	$(document).on('click', '.main-page-container .header-menu-block .header_menu, .fixnav .fix_menu', function(){
+	$(document).on('click', '.main-page-container .header-menu-block .header_menu, .header .header-menu-block .header_menu, .fixnav .fix_menu', function(){
 		$('.top-menu-block').addClass('active');
     });
 
