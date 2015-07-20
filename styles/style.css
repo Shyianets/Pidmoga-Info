@@ -129,6 +129,11 @@ p {
     background-size: cover;
 }
 
+.headre-bg-news {
+    background: #000 url(../img/header_news.jpg) no-repeat;
+    background-size: cover;
+}
+
 .brand {
     display: block;
     width: auto;
@@ -1575,8 +1580,6 @@ a.b-dark-bkgrnd:active {
 .news {
     display: block;
     position: relative;
-    margin-top: 20px;
-    padding: 50px 0 0 0;
     /*background-color: #f6f6f6;*/
 }
 
@@ -1633,6 +1636,7 @@ a.b-dark-bkgrnd:active {
     width: 400px;
     border-top: 3px solid #22a24f;
     float: right;
+    margin-left: 24PX;
 }
 
 .news-sm-text {
