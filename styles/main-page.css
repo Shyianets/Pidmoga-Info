@@ -160,7 +160,7 @@
     min-height: 600px;
     font-size: 14px;
     color: #1a1a1a;
-    background: #f4f4f4;
+    background: rgba(244,244,244, .95);
     opacity: 0;
     transition: transform .2s ease-in-out,
                 opacity .2s ease-in-out 50ms;
