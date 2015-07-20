@@ -851,8 +851,7 @@ position: absolute;
 
 .pub-all a:hover,
 .pub-all a:focus {
-    border-bottom: 1px solid #1a8640;
-    color: #1a8640;
+    color: #000;
 }
 
 .admins {
