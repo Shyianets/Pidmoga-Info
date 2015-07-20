@@ -12,10 +12,6 @@
         <link rel="stylesheet" href="styles/style.css">
         <link rel="stylesheet" href="styles/selectize.css">
         <link rel="stylesheet" href="styles/main-page.css">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/selectize.js/0.12.1/js/standalone/selectize.min.js"></script>
-        <script src="js/main-page.js"></script>
     </head>
     <body>
 
@@ -44,19 +40,29 @@
 
         <div class="main-page-container">
             <div class="main-bg el-vertical-align">
-                <a href="#" class="logo-left">
-                    <img class="logo" src="img/logo_header.png">
-                </a>
-                <a href="#" class="menu-right">
-                    <span class="menu-text">Меню</span>
-                    <span class="navicon"></span>
+                <a href="#"  class="brand">
+                    <div>
+                        <img class="normal" src="img/logo_header.png">
+                        <img class="hover" src="img/logo_header_hover.png">
+                        <span>Pidmoga.Info</span>
+                    </div>
                 </a>
                 <div class="main-content">
                     <h1>Життя без обмежень</h1>
                     <p>Ресурс юридичної та інформаційної допомоги в питаннях протезування</p>
                     <a href="#modal-help" class="help-button" data-toggle="modal">Потребую допомоги</a>
                 </div>
+                <div class="header-menu-block">
+                    <a href="#" class="header_menu">
+                        Меню
+                        <span class="menu_icon">
+                            <img class="normal" src="img/icon_menu.png">
+                            <img class="hover" src="img/icon_menu_hover.png">
+                        </span>
+                    </a>
+                </div>
             </div>
+            
             <div class="bottom-menu-container">
                 <ul class="bottom-menu-block clearfix">
                     <li>
@@ -84,5 +90,17 @@
                 </div>
             </div>
         </div>
+
+            <!-- Scripts -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/selectize.min.js"></script>
+        <script src="js/bs-plugin/transition.js"></script>
+        <script src="js/bs-plugin/carousel.js"></script>
+        <script src="js/bs-plugin/modal.js"></script>
+        <script src="js/bs-plugin/tooltip.js"></script>
+        <script src="js/bs-plugin/popover.js"></script>
+        <script src="js/bs-plugin/collapse.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/main-page.js"></script>
     </body>
 </html>
