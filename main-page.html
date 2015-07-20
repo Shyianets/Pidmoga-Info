@@ -26,7 +26,7 @@
             </div>
             <div class="menu-body">
                 <ul class="menu-nav">
-                    <li><a href="#">Потребую допомоги</a></li>
+                    <li><a href="need-help.html">Потребую допомоги</a></li>
                     <li><a href="#">Інфоцентр</a></li>
                     <li><a href="#">Про Проект</a></li>
                     <li class="active"><a href="#">Хочу допомогти</a></li>
@@ -62,7 +62,7 @@
                     </a>
                 </div>
             </div>
-            
+
             <div class="bottom-menu-container">
                 <ul class="bottom-menu-block clearfix">
                     <li>
@@ -84,8 +84,40 @@
 
         <div class="modal fade" id="modal-help" tabindex="-1" role="dialog" aria-labelledby="modal-info-Label" aria-hidden="false">
             <div class="modal-dialog">
-                <a href="#modal-help" class="modal-close" data-dismiss="modal" aria-hidden="true"><span class="modal-close-text">Закрити</span><span class="modal-close-icon"></span></a>
+
+                <a href="#"  class="brand">
+                    <div>
+                        <img class="normal" src="img/logo_header.png">
+                        <img class="hover" src="img/logo_header_hover.png">
+                        <span>Pidmoga.Info</span>
+                    </div>
+                </a>
+
+                <a href="#modal-help" class="modal-close" data-dismiss="modal" aria-hidden="true">
+                    <span class="modal-close-text">Закрити</span>
+                    <span class="modal-close-icon"></span>
+                </a>
                 <div class="modal-body">
+
+                <div class="modal-body">
+                    <h2>Потрібна Допомога</h2>
+                    <span>Залиште свої контакти — наші спеціалісти зв’яжуться з вами найближчим часом.</span>
+                    <form class="forma">
+                        <div class="select-cont">
+                            <select class="selectz-select" placeholder="Тип допомоги">
+                                <option value="">Тип допомоги</option>
+                                <option value="jur">Юридична</option>
+                                <option value="info">Інформаційна</option>
+                                <option value="psy">Психологічна</option>
+                                <option value="mat">Матеріальна</option>
+                            </select>
+                        </div>
+                        <input class="form-input" type="text" name="name" placeholder="Ваше ім'я">
+                        <input class="form-input" type="tel" name="tel" placeholder="Телефон" value="">
+                        <input class="form-input" type="email" name="email" placeholder="Email" value="">
+                        <button>Відправити</button>
+                    </form>
+                </div>
 
                 </div>
             </div>
