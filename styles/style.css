@@ -1583,6 +1583,7 @@ a.b-dark-bkgrnd:active {
 .news {
     display: block;
     position: relative;
+    margin: 55px 0;
     /*background-color: #f6f6f6;*/
 }
 
@@ -1854,6 +1855,10 @@ a.topic:hover {
 
 .text-center {
     text-align: center;
+}
+
+.bottom-margin-70 {
+    margin-bottom: 70px;
 }
 
 .link-convert {
