@@ -274,7 +274,7 @@
     font-weight: bold;
     color: #1a1a1a;
     border: none;
-    transition: color .15s linear, border .15s linear;
+    transition: color ease-in-out, border ease-in-out;
     letter-spacing: 1px;
     -webkit-transition: color 0.3s ease-in-out 0s,
                         border 0.3s ease-in-out 0s;
