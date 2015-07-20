@@ -274,12 +274,11 @@
     font-weight: bold;
     color: #1a1a1a;
     border: none;
-    transition: color ease-in-out, border ease-in-out;
     letter-spacing: 1px;
-    -webkit-transition: color 0.3s ease-in-out 0s,
-                        border 0.3s ease-in-out 0s;
-    transition: color 0.3s ease-in-out 0s,
-                border 0.3s ease-in-out 0s;
+    -webkit-transition: color 0.15s ease-in-out 0s,
+                        border 0.15s ease-in-out 0s;
+    transition: color 0.15s ease-in-out 0s,
+                border 0.15s ease-in-out 0s;
 }
 
 .top-menu-block .menu-nav li a:hover {
