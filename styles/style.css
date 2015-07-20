@@ -129,6 +129,12 @@ p {
     background-size: cover;
 }
 
+.header-bg-need-help {
+    background: #000 url(../img/header-need-help.jpg) no-repeat;
+    background-size: cover;
+}
+
+
 .brand {
     display: block;
     width: auto;
@@ -663,9 +669,8 @@ position: absolute;
     top: 0;
 }
 
-.container a{
+.news a{
     text-decoration: none;
-
 }
 
 .doc-cards {
@@ -879,12 +884,12 @@ position: absolute;
 
 .admin img {
     margin-bottom: 25px;
+    -webkit-transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
 
 .admin a:hover > img {
-    opacity: 0.9;
-    -webkit-transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
-    transition: opacity 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
+    opacity: 0.8;
 }
 
 .admin span {
@@ -938,7 +943,7 @@ position: absolute;
     padding-bottom: 50px;
     margin: auto;
     max-width: 600px;
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .fb-button,
@@ -1820,5 +1825,44 @@ a.topic:hover {
 
 .file-delete:hover {
     opacity: 0.5;
+}
+
+.container > .text-content:first-child {
+    margin-top: 50px;
+}
+
+.f-contacts {
+    width: 450px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 60px;
+}
+
+.f-phone {
+    float: left;
+}
+
+.f-email {
+    float: right;
+    margin-right: 12px;
+}
+
+/* Text Class */
+
+.text-center {
+    text-align: center;
+}
+
+.link-convert {
+    color: #22a24f;
+    -webkit-transition:
+        color 200ms ease-in-out;
+    transition:
+        color 200ms ease-in-out;
+}
+
+.link-convert:hover {
+    color: #1C8641;
 }
 
