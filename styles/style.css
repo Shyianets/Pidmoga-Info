@@ -1647,6 +1647,24 @@ a.b-dark-bkgrnd:active {
     min-height: 145px;
 }
 
+.news-micro {
+    margin: 0;
+}
+
+.news-micro li{
+    width: 290px;
+    list-style: none;
+    display: inline-block;
+    margin-left: 25px;
+    vertical-align: top;
+    text-align: left;
+}
+
+.news-micro li:first-child,
+.news-micro li:nth-child(3n+1) {
+    margin-left: 0;
+}
+
 .news-micro-text {
     min-height: 184px;
     border-top: 2px solid #22a24f;
