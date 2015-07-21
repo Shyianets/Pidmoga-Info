@@ -90,37 +90,62 @@
         </div>
         <!-- End Header -->
 
-        <!-- Start Navigation -->
-        <div class="fixnav" id="fixnav">
-            <div class="nav fix_nav">
-                <div class="page_nav">
-                    <div>
-                        <a href="#"  class="fix_brand">
-                            <img class="normal" src="img/logo_topmenu.png">
-                            <img class="hover" src="img/logo_topmenu_hover.png"></a>
-                    </div>
-                    <ul>
-                        <li class="selected">Юридичні поради</li>
-                        <li>
-                            <a href="#">Корисна документація</a>
-                        </li>
-                        <li>
-                            <a href="info-pamyatka.html">Пам’ятка постраждалим</a>
-                        </li>
-                        <li>
-                            <a href="#">Позасудовий захист прав</a>
-                        </li>
-                    </ul>
-                    <a href="#fixnav" class="fix_menu">
-                        Меню
-                        <span class="menu_icon">
-                            <img class="normal" src="img/icon_menu_topmenu.png">
-                            <img class="hover" src="img/icon_menu_hover.png"></span>
-                    </a>
+        <!-- Start container -->
+        <div class="container">
+
+            <!-- Texts blocks -->
+            <div class="text-content row">
+                <div class="col-2 empty-col"></div>
+                <div class="info col-8">
+                    <p class="text-center text-20 green-text bottom-margin-70">
+                        <span>+380 50 972-54-74; +380 96 797-43-19</span>
+                        <a class="link-convert top-margin-20" href="mailto:ok@pidmoga.info">ok@pidmoga.info</a>
+                    </p>
                 </div>
             </div>
+            <!-- End Texts blocks -->
+
+            <!-- Form — Field, Selector -->
+            <div class="row bottom-margin-70">
+                
+                <div class="col-2"></div>
+                <div class="col-6">
+                    <form>
+                        <label class="label">
+                            Iм'я
+                            <input class="form-input" type="text" name="name" placeholder="Введіть ім'я">
+                        </label>
+                        <label class="label">
+                            Телефон
+                            <input class="form-input" type="tel" name="tel" placeholder="Ваш номер телефону" value="">
+                            <span class="form-tooltip">Потрібно писати в форматі +380 (XX) XXX-XX-XX</span>
+                        </label>
+                        <label class="label">
+                            E-mail
+                            <input class="form-input" type="email" name="email" placeholder="Введіть email" value="">
+                        </label>
+                        <label class="label">
+                            Допомога
+                            <textarea class="form-input" name="help" placeholder="Чим ви бажаєте допомогти?" value="+380 (97) 123-31-23"></textarea>
+                        </label>
+                        <button>Відправити</button>
+                    </form>
+                </div>
+            </div>
+            <!-- End Form-->
+
         </div>
-        <!-- End Navigation -->
+        <!-- End container -->
+
+                <!-- Bottom Block -->
+        <div class="bottom-block">
+            <h2>не будь байдужим</h2>
+            <p class="bottom-description">
+                Поділись цим сайтом зі своїми друзями. Серед них, або їхніх близьких
+                <br>можуть бути люди, яким буде потрібна ця інформація.</p>
+            <a href="#" class="fb-button">Ми у Facebook</a>
+        </div>
+        <!-- Bottom Block -->
 
         <!-- Footer -->
         <div class="footer" >

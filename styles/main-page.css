@@ -124,9 +124,30 @@
     color: #1a1a1a;
     background: rgba(244,244,244, .95);
     opacity: 0;
+    z-index: 110;
     transition: transform .2s ease-in-out,
                 opacity .2s ease-in-out 50ms;
 }
+
+.under-menu {
+    display: block;
+    opacity: 0;
+    z-index: 1;
+}
+
+.under-menu.under-menu-active {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    opacity: 0.3;
+    transition: transform .2s ease-in-out,
+                opacity .5s ease-in-out 0ms;
+}
+
 
 .top-menu-block.active {
     transform: translateX(0);
