@@ -124,7 +124,6 @@
     color: #1a1a1a;
     background: rgba(244,244,244, .95);
     opacity: 0;
-    z-index: 110;
     transition: transform .2s ease-in-out,
                 opacity .2s ease-in-out 50ms;
 }
@@ -137,7 +136,7 @@
 
 .under-menu.under-menu-active {
     display: block;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     right: 0;
