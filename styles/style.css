@@ -139,6 +139,12 @@ p {
     background-size: cover;
 }
 
+.header-bg-want-to-help {
+    background: #000 url(../img/header-want-to-help.jpg) no-repeat;
+    background-size: cover;
+}
+
+
 .brand {
     display: block;
     width: auto;
