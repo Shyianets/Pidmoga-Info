@@ -1,5 +1,7 @@
 video#bgvid {
     position: fixed;
+    background: url(img/video-bg-poster.jpg) no-repeat;
+    background-size: cover;
     top: 50%;
     left: 50%;
     min-width: 100%;
@@ -8,9 +10,8 @@ video#bgvid {
     height: auto;
     z-index: -100;
     -webkit-transform: translateX(-50%) translateY(-50%);
-    transform: translateX(-50%) translateY(-50%);
-    background: url(img/main.jpg) no-repeat;
-    background-size: cover;
+    -ms-transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-50%);
 }
 
 .main-page-container {
@@ -21,9 +22,8 @@ video#bgvid {
 }
 
 .main-bg {
-    /*background-image: url('../img/main.jpg');*/
-    background-size: cover;
-    background-repeat: no-repeat;
+    background-image: url('../img/video-bg-pattern.png');
+    background-repeat: repeat;
     height: 100%;
     position: relative;
     text-align: center;
@@ -67,7 +67,8 @@ video#bgvid {
     background: #22a24f;
     border: 2px solid transparent;
     color: #fff;
-    transition: background .15s ease-in-out;
+    -webkit-transition: background .15s ease-in-out;
+            transition: background .15s ease-in-out;
 }
 
 .help-button:hover,
@@ -116,7 +117,8 @@ video#bgvid {
     font-size: 14px;
     font-weight: bold;
     color: #fff;
-    transition: background .15s ease-in-out;
+    -webkit-transition: background .15s ease-in-out;
+            transition: background .15s ease-in-out;
 }
 
 .bottom-menu-block li a:hover {
@@ -130,7 +132,9 @@ video#bgvid {
     top: 0;
     bottom: 0;
     right: 0;
-    transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+            -ms-transform: translateX(100%);
+        transform: translateX(100%);
     width: 25%;
     min-width: 320px;
     height: 100vh;
@@ -139,6 +143,10 @@ video#bgvid {
     color: #1a1a1a;
     background: rgba(244,244,244, .95);
     opacity: 0;
+    -webkit-transition: -webkit-transform .2s ease-in-out,
+                opacity .2s ease-in-out 50ms;
+            transition: -webkit-transform .2s ease-in-out,
+                opacity .2s ease-in-out 50ms;
     transition: transform .2s ease-in-out,
                 opacity .2s ease-in-out 50ms;
 }
@@ -158,14 +166,24 @@ video#bgvid {
     bottom: 0;
     background: #000;
     opacity: 0.3;
+    -webkit-transition: -webkit-transform .2s ease-in-out,
+                opacity .5s ease-in-out 0ms;
+            transition: -webkit-transform .2s ease-in-out,
+                opacity .5s ease-in-out 0ms;
     transition: transform .2s ease-in-out,
                 opacity .5s ease-in-out 0ms;
 }
 
 
 .top-menu-block.active {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            -ms-transform: translateX(0);
+        transform: translateX(0);
     opacity: 1;
+    -webkit-transition: -webkit-transform .2s ease-in-out,
+                opacity .2s ease-in-out 50ms;
+            transition: -webkit-transform .2s ease-in-out,
+                opacity .2s ease-in-out 50ms;
     transition: transform .2s ease-in-out,
                 opacity .2s ease-in-out 50ms;
 }
@@ -182,7 +200,8 @@ video#bgvid {
     letter-spacing: 1px;
     font-weight: bold;
     color: #1a1a1a;
-    transition: color .15s ease-in-out;
+    -webkit-transition: color .15s ease-in-out;
+            transition: color .15s ease-in-out;
 }
 
 .top-menu-block .menu-head .menu-lang span {
@@ -198,7 +217,8 @@ video#bgvid {
     margin-top: 29px;
     padding: 0 30px;
     padding-right: 32px;
-    transition: margin-top .15s ease-in-out;
+    -webkit-transition: margin-top .15s ease-in-out;
+            transition: margin-top .15s ease-in-out;
 }
 
 .top-menu-block .menu-head.menu-fixed {
@@ -236,7 +256,8 @@ video#bgvid {
     width: 14px;
     height: 14px;
     position: relative;
-    transition: background .15s ease-in-out;
+    -webkit-transition: background .15s ease-in-out;
+            transition: background .15s ease-in-out;
 }
 
 .top-menu-block .menu-head .menu-close:hover .menu-close-icon {
@@ -251,8 +272,8 @@ video#bgvid {
     left: 0;
     opacity: 1;
     /* Переход */
-    -webkit-transition: opacity 0.3s ease 0s;
-    transition: opacity 0.3s ease-in-out 0s;
+    -webkit-transition: opacity 0.3s ease-in-out 0s;
+            transition: opacity 0.3s ease-in-out 0s;
 }
 
 .top-menu-block .menu-head .menu-close .menu-close-icon .hover {
@@ -261,8 +282,8 @@ video#bgvid {
     left: 0;
     opacity: 0;
     /* Переход */
-    -webkit-transition: opacity 0.3s ease 0s;
-    transition: opacity 0.3s ease-in-out 0s;
+    -webkit-transition: opacity 0.3s ease-in-out 0s;
+            transition: opacity 0.3s ease-in-out 0s;
 }
 
 .menu-close:hover .menu-close-icon .normal {
@@ -311,8 +332,8 @@ video#bgvid {
     border: none;
     letter-spacing: 1px;
     -webkit-transition: color 0.15s ease-in-out 0s,
-                        border 0.15s ease-in-out 0s;
-    transition: color 0.15s ease-in-out 0s,
+                border 0.15s ease-in-out 0s;
+            transition: color 0.15s ease-in-out 0s,
                 border 0.15s ease-in-out 0s;
 }
 
@@ -329,7 +350,8 @@ video#bgvid {
 .top-menu-block .menu-contact a {
     text-decoration: none;
     color: #1a1a1a;
-    transition: color .15s ease-in-out;
+    -webkit-transition: color .15s ease-in-out;
+            transition: color .15s ease-in-out;
 }
 
 .top-menu-block .menu-contact a:hover {
@@ -353,7 +375,7 @@ video#bgvid {
     padding: 26.5px;
     letter-spacing: 1px;
     -webkit-transition: background .15s ease-in-out;
-    transition: background .15s ease-in-out;
+            transition: background .15s ease-in-out;
 }
 
 .top-menu-block .menu-button:hover {
@@ -364,7 +386,8 @@ video#bgvid {
 
 .modal.fade {
     opacity: 0;
-    transition: opacity .15s ease-in-out;
+    -webkit-transition: opacity .15s ease-in-out;
+            transition: opacity .15s ease-in-out;
 }
 
 .modal.fade.in {
@@ -418,7 +441,8 @@ video#bgvid {
     background: url(../img/icon_menu_close.png);
     width: 14px;
     height: 14px;
-    transition: background .15s ease-in-out;
+    -webkit-transition: background .15s ease-in-out;
+            transition: background .15s ease-in-out;
 }
 
 .modal .modal-dialog .modal-close:hover .modal-close-icon {
@@ -488,6 +512,4 @@ video#bgvid {
 .modal .modal-dialog .modal-body .selectize-input {
     background-color: #ededed;
 }
-
-
 
