@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="1024px">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,500,700,900' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="styles/fontello.css" type="text/css">
+    <link rel="stylesheet" href="styles/grid.css" type="text/css">
+    <link rel="stylesheet" href="styles/modal.css" type="text/css">
+    <link rel="stylesheet" href="styles/normalize.css" type="text/css">
+    <link rel="stylesheet" href="styles/selectize.css" type="text/css">
+    <link rel="stylesheet" href="styles/style.css" type="text/css">
+    <link rel="stylesheet" href="styles/main-page.css" type="text/css">
+    <link rel="stylesheet" href="styles/A-modal.css" type="text/css">
+    <title>Pidmoga Info</title>
+</head>
+<body>
+
+    <div class="top-menu-block">
+        <div class="menu-head menu-fixed clearfix">
+            <div class="menu-lang">
+                <span>ua</span>
+                <a href="#">eng</a>
+                <a href="#">de</a>
+            </div>
+            <a href="#" class="menu-close">
+                <span class="menu-close-text">Меню</span>
+                <span class="menu-close-icon">
+                    <img class="normal" src="img/icon_menu_close.png">
+                    <img class="hover" src="img/icon_menu_close_hover.png"></span>
+            </a>
+        </div>
+        <div class="menu-body">
+            <ul class="menu-nav">
+                <li>
+                    <a href="#">Потребую допомоги</a>
+                </li>
+                <li>
+                    <a href="#">Інфоцентр</a>
+                </li>
+                <li>
+                    <a href="#">Про Проект</a>
+                </li>
+                <li class="active">
+                    <a href="#">Хочу допомогти</a>
+                </li>
+                <li>
+                    <a href="#">Публікації</a>
+                </li>
+                <li>
+                    <a href="#">Контакти</a>
+                </li>
+            </ul>
+            <p class="menu-contact">
+                +38 (050) 972-54-74
+                <br>
+                +38 (096) 797-43-19
+                <br>
+                <a href="mailto:ok@pidmoga.info">ok@pidmoga.info</a>
+            </p>
+        </div>
+        <a href="#" class="menu-button">Ми у Facebook</a>
+    </div>
+    <div class="under-menu"></div>
+
+    <!-- Start Navigation -->
+    <div class="fixnav fixed static-menu" id="fixnav">
+        <div class="nav fix_nav">
+            <div class="page_nav">
+                <div>
+                    <a href="#"  class="fix_brand">
+                        <img class="normal" src="img/logo_topmenu.png">
+                        <img class="hover" src="img/logo_topmenu_hover.png"></a>
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">Юридична</a>
+                    </li>
+                    <li class="selected">
+                        Матеріальна
+                    </li>
+                    <li>
+                        <a href="#">Психологічна</a>
+                    </li>
+                    <li>
+                        <a href="#">Працевлаштування</a>
+                    </li>
+                    <li>
+                        <a href="#">Інше</a>
+                    </li>
+                </ul>
+                <a href="#fixnav" class="fix_menu">
+                    Меню
+                    <span class="menu_icon">
+                        <img class="normal" src="img/icon_menu_topmenu.png">
+                        <img class="hover" src="img/icon_menu_hover.png"></span>
+                </a>
+            </div>
+        </div>
+    </div>
+    <!-- End Navigation -->
+
+    <!-- Start container -->
+    <div class="container">
+
+        <!-- Steps -->
+        <div class="row">
+            <div class="steps">
+                <span class="box-step current-step">1</span>
+                <span class="s-divider"></span>
+                <span class="box-step">2</span>
+                <span class="s-divider"></span>
+                <span class="box-step">3</span>
+            </div>
+        </div>
+        <!-- End Steps -->
+
+        <!-- Form -->
+        <div class="row bottom-margin-120">
+                
+                <div class="col-3"></div>
+                <div class="col-6">
+                    <form>
+                        <label class="label">
+                        Для кого?
+                            <div class="select-cont">
+                                <select class="selectz-select" placeholder="Виберіть для кого">
+                                    <option value="">Виберіть для кого</option>
+                                    <option value="forme">Мені</option>
+                                    <option value="tofriend">Другу</option>
+                                    <option value="tofamily">Родичу</option>
+                                </select>
+                            </div>
+                        </label>
+                        <label class="label">
+                            Iм'я
+                            <input class="form-input" type="text" name="name" placeholder="Введіть ім'я">
+                        </label>
+                        <label class="label">
+                            Телефон
+                            <input class="form-input" type="tel" name="tel" placeholder="Ваш номер телефону" value="">
+                            <span class="form-tooltip">Потрібно писати в форматі +380 (XX) XXX-XX-XX</span>
+                        </label>
+                        <label class="label">
+                            E-mail
+                            <input class="form-input" type="email" name="email" placeholder="Введіть email" value="">
+                        </label>
+                        <label class="label">
+                            Місто
+                            <input class="form-input" type="text" name="city" placeholder="Де ви мешкаєте?" value="">
+                        </label>
+                        <button>Наступний крок</button>
+                    </form>
+                </div>
+            </div>
+            <!-- End Form-->
+
+
+
+        <!-- Start File Upload -->
+        <!-- <div class="row ">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <form>
+                    <input type="file" id="file-browse" name="1" multiple>
+                    <label for="file-browse" class="file-browse-visible">
+                        <span class="fileb-images">
+                            <span class="fileb-img normal"></span>
+                            <span class="fileb-img hover"></span>
+                        </span>
+                        <br>
+                        <span class="fileb-link">Завантажте</span>
+                        або
+                        <br>перетягніть сюди файли</label>
+                </form>
+                <span class="file-added">
+                    document_text.doc
+                    <a href="#" class="file-delete"></a>
+                </span>
+                <br>
+                <span class="file-added">
+                    ivanov_portret_photo_3x4.jpeg
+                    <a href="#" class="file-delete"></a>
+                </span>
+            </div>
+        </div> -->
+        <!-- End File Upload -->
+
+
+    </div>
+    <!-- End Container 930px -->
+
+    <!-- Footer -->
+    <div class="footer fixfooter" >
+        <div class="copy">
+            <span>© 2015 Pidmoga.info</span>
+        </div>
+        <div class="footer-logos">
+            <a href="http://svc.com.ua/" class="logo-school"></a>
+            <a href="#" class="logo-delta"></a>
+        </div>
+    </div>
+
+
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="js/selectize.min.js"></script>
+    <script src="js/bs-plugin/transition.js"></script>
+    <script src="js/bs-plugin/carousel.js"></script>
+    <script src="js/bs-plugin/modal.js"></script>
+    <script src="js/bs-plugin/tooltip.js"></script>
+    <script src="js/bs-plugin/popover.js"></script>
+    <script src="js/bs-plugin/collapse.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main-page.js"></script>
+
+</body>
+</html>
