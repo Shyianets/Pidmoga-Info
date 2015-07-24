@@ -2,12 +2,6 @@
     'use strict';
 
     $('.selectz-select').selectize();
-    // $('.selectz-input').selectize({
-    //     persist: false,
-    //     createOnBlur: true,
-    //     create: true,
-    //     maxItems: 1
-    // });
 
     // Slider Counter
     +function () {
@@ -30,24 +24,6 @@
                 $('#' + idCarousel[i] + ' ' + '.slider-counter').html('' + currentIndex + '/' + totalItems + '');
             });
         });
-    }();
-
-    // Menu Scroll
-    +function() {
-        var topOffset = $('.fixnav').offset().top;
-
-        $(window).on('scroll', function() {
-            if ( $(this).scrollTop() >= topOffset ) {
-                $('.fixnav').addClass('fixed');
-                $('.top-menu-block a.menu-close').attr('href','#fixnav');
-                $('.top-menu-block .menu-head').addClass('menu-fixed');
-            }
-            if ( $(this).scrollTop() < topOffset ) {
-                $('.fixnav').removeClass('fixed');
-                $('.top-menu-block a.menu-close').attr('href','#');
-                $('.top-menu-block .menu-head').removeClass('menu-fixed');
-            }
-        })
     }();
 
     /*
@@ -78,5 +54,46 @@
             $('.type-view > span').toggleClass('active');
         });
     }();
+
+    //Play video on content
+    +function () {
+
+        var videoBlocks = $('.video-in-news');
+        var videoFrame = $('.video-in-news iframe');
+        var videoImg = $('.video-in-news .img-to-video');
+
+        $('.video-in-news iframe').detach();
+
+        videoBlocks.each(function(i) {
+            $(videoBlocks[i]).on('click', function () {         
+                event.preventDefault();
+                $(videoImg[i]).css('display', 'none');
+                $(this).append(videoFrame[i]);
+            })
+        })
+    }();
+
+
+    // Menu Scroll
+    +function() {
+
+        var fixBlock = $('.fixnav');
+
+        if (fixBlock.offset() != undefined) var topOffset = fixBlock.offset().top;
+
+        $(window).on('scroll', function() {
+            if ( $(this).scrollTop() >= topOffset ) {
+                $('.fixnav').addClass('fixed');
+                $('.top-menu-block a.menu-close').attr('href','#fixnav');
+                $('.top-menu-block .menu-head').addClass('menu-fixed');
+            }
+            if ( $(this).scrollTop() < topOffset ) {
+                $('.fixnav').removeClass('fixed');
+                $('.top-menu-block a.menu-close').attr('href','#');
+                $('.top-menu-block .menu-head').removeClass('menu-fixed');
+            }
+        })
+    }();
+
 
 })(jQuery);
