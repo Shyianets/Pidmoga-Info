@@ -2112,3 +2112,20 @@ a.topic:hover {
 .link-convert:hover {
     color: #1C8641;
 }
+
+.goal {
+    background-color: #f6f6f6;
+    margin-top: 85px;
+    margin-bottom: 80px;
+    padding: 75px 0;
+}
+
+.goal h2 {
+    text-align: center;
+
+}
+
+.goal img {
+    display: inline-block;
+    text-align: center;
+}
