@@ -26,9 +26,7 @@
         });
     }();
 
-    /*
-        Will add number to form when user load document
-    */
+    //Will add number to form when user load document
     +function autoNumberPlacement() {
         var allNumQuestions = $('.file-added');
         var arrNubmers = [];
@@ -74,7 +72,7 @@
     }();
 
 
-    // Menu Scroll
+    // Menu Scroll Fixed
     +function() {
 
         var fixBlock = $('.fixnav');
