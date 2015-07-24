@@ -91,7 +91,7 @@ p {
     line-height: 25px;
 }
 
-h2:first-child {
+.container h2:first-child {
     margin-top: -5px;
 }
 
