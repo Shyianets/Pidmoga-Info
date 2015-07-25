@@ -95,7 +95,7 @@
 
     // Modal Scroll
 
-    $(document).on('show.bs.modal', '.modal', function(){
+    $(document).on('show.bs.modal', '.modal-info', function(){
         var $this = $(this);
         $this.show();
         var windowHeight = $(window).height(),
@@ -108,7 +108,7 @@
         }
     });
 
-    $(document).on('hidden.bs.modal', '.modal', function(){
+    $(document).on('hidden.bs.modal', '.modal-info', function(){
         $('body').removeClass('modal-scroll');
     });
 

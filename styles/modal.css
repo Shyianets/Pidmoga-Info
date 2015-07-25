@@ -1,18 +1,32 @@
-.modal {
+.modal-info {
+    outline: 0;
+    display: none;
+    overflow: auto;
+    overflow-y: scroll;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 5000;
     background: rgba(0,0,0, 0.9);
 }
-.modal .modal-block {
+.modal-info .modal-dialog {
     width: 770px;
-    margin: 0 auto;
     padding: 70px 0;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
-.modal .modal-block .modal-head {
+.modal-info .modal-dialog .modal-body .modal-head {
     background: url('../img/modal-head-02.png');
     width: 770px;
     height: 340px;
     position: relative;
 }
-.modal .modal-block .modal-head .modal-close {
+.modal-info .modal-dialog .modal-body .modal-head .modal-close {
     display: block;
     float: right;
     margin: 20px 25px 0 0;
@@ -22,7 +36,7 @@
     -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
-.modal .modal-block .modal-head .modal-close .modal-close-text {
+.modal-info .modal-dialog .modal-body .modal-head .modal-close .modal-close-text {
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;
@@ -32,11 +46,11 @@
     text-decoration: none;
     text-transform: uppercase;
 }
-.modal .modal-block .modal-head .modal-close:hover,
-.modal .modal-block .modal-head .modal-close:active {
+.modal-info .modal-dialog .modal-body .modal-head .modal-close:hover,
+.modal-info .modal-dialog .modal-body .modal-head .modal-close:active {
     opacity: 1;
 }
-.modal .modal-block .modal-head .modal-close .modal-close-icon {
+.modal-info .modal-dialog .modal-body .modal-head .modal-close .modal-close-icon {
     display: inline-block;
     vertical-align: middle;
     margin-left: 10px;
@@ -44,7 +58,7 @@
     width: 14px;
     height: 14px;
 }
-.modal .modal-block .modal-head h2 {
+.modal-info .modal-dialog .modal-body .modal-head h2 {
     position: absolute;
     color: #fff;
     left: 40px;
@@ -53,19 +67,19 @@
     line-height: 40px;
     margin: 0;
 }
-.modal .modal-block .modal-body {
+.modal-info .modal-dialog .modal-body .modal-content {
     background: #fff;
     padding: 40px 75px;
 }
-.modal .modal-block .modal-body p {
+.modal-info .modal-dialog .modal-body .modal-content p {
     padding: 0;
     margin: 30px 0 0 0;
 }
-.modal .modal-block .modal-link {
+.modal-info .modal-dialog .modal-body .modal-link {
     background: #f6f6f6;
     text-align: center;
 }
-.modal .modal-block .modal-link a {
+.modal-info .modal-dialog .modal-body .modal-link a {
     display: inline-block;
     margin: 25px 0;
     font-size: 14px;
@@ -78,7 +92,7 @@
     -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
-.modal .modal-block .modal-link a:hover {
+.modal-info .modal-dialog .modal-body .modal-link a:hover {
     border-bottom: 1px solid #1a8640;
     color: #1a8640;
 }
@@ -91,27 +105,27 @@
 }
 .modal-scroll {
     overflow: hidden;
-    .modal-backdrop {
-        display: none;
-    }
-    .modal {
-        overflow-x: hidden;
-        overflow-y: auto;
-    }
-    .modal-dialog {
-        position: relative !important;
-        margin: 30px auto !important;
-        top: auto !important;
-        left: auto !important;
-        right: auto !important;
-        bottom: auto !important;
-        transform: translateY(0) !important;
-    }
-    .modal-scrollbar-measure {
-        position:absolute;
-        top:-9999px;
-        width:50px;
-        height:50px;
-        overflow:scroll
-    }
+}
+.modal-scroll .modal-backdrop {
+    display: none;
+}
+.modal-scroll .modal {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+.modal-scroll .modal-dialog {
+    position: relative !important;
+    margin: 30px auto !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    transform: translateY(0) !important;
+}
+.modal-scroll .modal-scrollbar-measure {
+    position:absolute;
+    top:-9999px;
+    width:50px;
+    height:50px;
+    overflow:scroll
 }
