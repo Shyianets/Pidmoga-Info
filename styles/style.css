@@ -2174,11 +2174,15 @@ a.topic:hover {
     padding: 75px 0;
     width: 930px;
     margin: 0 auto;
+    text-align: center;
 }
 
-.goal h2 {
-    text-align: center;
+.goal.green {
+    color: #22a24f;
+}
 
+.goal h3 {
+    margin: 0 auto;
 }
 
 .goal img {
