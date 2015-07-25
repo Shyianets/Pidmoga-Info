@@ -1,18 +1,18 @@
 .modal {
     background: rgba(0,0,0, 0.9);
 }
-.modal .modal-dialog {
+.modal .modal-block {
     width: 770px;
     margin: 0 auto;
     padding: 70px 0;
 }
-.modal .modal-dialog .modal-head {
+.modal .modal-block .modal-head {
     background: url('../img/modal-head-02.png');
     width: 770px;
     height: 340px;
     position: relative;
 }
-.modal .modal-dialog .modal-head .modal-close {
+.modal .modal-block .modal-head .modal-close {
     display: block;
     float: right;
     margin: 20px 25px 0 0;
@@ -22,7 +22,7 @@
     -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
-.modal .modal-dialog .modal-head .modal-close .modal-close-text {
+.modal .modal-block .modal-head .modal-close .modal-close-text {
     display: inline-block;
     vertical-align: middle;
     font-size: 14px;
@@ -32,11 +32,11 @@
     text-decoration: none;
     text-transform: uppercase;
 }
-.modal .modal-dialog .modal-head .modal-close:hover,
-.modal .modal-dialog .modal-head .modal-close:active {
+.modal .modal-block .modal-head .modal-close:hover,
+.modal .modal-block .modal-head .modal-close:active {
     opacity: 1;
 }
-.modal .modal-dialog .modal-head .modal-close .modal-close-icon {
+.modal .modal-block .modal-head .modal-close .modal-close-icon {
     display: inline-block;
     vertical-align: middle;
     margin-left: 10px;
@@ -44,7 +44,7 @@
     width: 14px;
     height: 14px;
 }
-.modal .modal-dialog .modal-head h2 {
+.modal .modal-block .modal-head h2 {
     position: absolute;
     color: #fff;
     left: 40px;
@@ -53,19 +53,19 @@
     line-height: 40px;
     margin: 0;
 }
-.modal .modal-dialog .modal-body {
+.modal .modal-block .modal-body {
     background: #fff;
     padding: 40px 75px;
 }
-.modal .modal-dialog .modal-body p {
+.modal .modal-block .modal-body p {
     padding: 0;
     margin: 30px 0 0 0;
 }
-.modal .modal-dialog .modal-link {
+.modal .modal-block .modal-link {
     background: #f6f6f6;
     text-align: center;
 }
-.modal .modal-dialog .modal-link a {
+.modal .modal-block .modal-link a {
     display: inline-block;
     margin: 25px 0;
     font-size: 14px;
@@ -78,7 +78,7 @@
     -webkit-transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
     transition: all 200ms cubic-bezier(0.47, 0, 0.745, 0.715);
 }
-.modal .modal-dialog .modal-link a:hover {
+.modal .modal-block .modal-link a:hover {
     border-bottom: 1px solid #1a8640;
     color: #1a8640;
 }

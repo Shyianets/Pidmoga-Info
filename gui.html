@@ -145,42 +145,42 @@
 		<div class="row">
 			<ul class="doc-cards cards clearfix">
 				<li>
-					<a href="#myModal" data-toggle="modal" data-target="#myModal">
+					<a href="#myModal" data-toggle="modal">
 						<img class="big-img" src="img/card-1.png" width="290" height="160" alt="">
 						<img class="little-img" src="img/s-card-1.png" width="160" height="80" alt="">
 						<span>Документи, необхідні для отрімання посвідчення учасника АТО</span>
 					</a>
 				</li>
 				<li>
-					<a href="#myModal" data-toggle="modal" data-target="#myModal">
+					<a href="#myModal" data-toggle="modal">
 						<img class="big-img" src="img/card-2.png" width="290" height="160"  alt="">
 						<img class="little-img" src="img/s-card-2.png" width="160" height="80"  alt="">
 						<span>Порядок проходження військової комісії</span>
 					</a>
 				</li>
 				<li>
-					<a href="#myModal" data-toggle="modal" data-target="#myModal">
+					<a href="#myModal" data-toggle="modal">
 						<img class="big-img" src="img/card-3.png" width="290" height="160" alt="">
 						<img class="little-img" src="img/s-card-3.png" width="160" height="80"  alt="">
 						<span>Соціальні пільги учасникам АТО</span>
 					</a>
 				</li>
 				<li>
-					<a href="#myModal" data-toggle="modal" data-target="#myModal">
+					<a href="#myModal" data-toggle="modal">
 						<img class="big-img" src="img/card-4.png" width="290" height="160" alt="">
 						<img class="little-img" src="img/s-card-4.png" width="160" height="80"  alt="">
 						<span>Документи, необхідні для отрімання посвідчення учасника АТО</span>
 					</a>
 				</li>
 				<li>
-					<a href="#myModal" data-toggle="modal" data-target="#myModal">
+					<a href="#myModal" data-toggle="modal">
 						<img class="big-img" src="img/card-5.png" width="290" height="160" alt="">
 						<img class="little-img" src="img/s-card-5.png" width="160" height="80"  alt="">
 						<span>Порядок проходження військової комісії</span>
 					</a>
 				</li>
 				<li>
-					<a href="#myModal" data-toggle="modal" data-target="#myModal">
+					<a href="#myModal" data-toggle="modal">
 						<img class="big-img" src="img/card-6.png" width="290" height="160" alt="">
 						<img class="little-img" src="img/s-card-6.png" width="160" height="80"  alt="">
 						<span>Соціальні пільги учасникам АТО</span>
@@ -801,20 +801,21 @@
 		</div>
 	</div>
 
-	<!-- Start Andrew's Modal Window -->
-	<div class="modal docs-modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-		<div class="modal-dialog" role="document">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-						<span aria-hidden="true">Закрити&times;</span>
-					</button>
-					<h2 class="modal-title" id="myModalLabel">
+	<!-- Modal Window -->
+	<div class="row modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="false">
+		<div class="modal-dialog">
+			<div class="modal-block">
+				<div class="modal-head">
+					<a href="#myModal" class="modal-close" data-dismiss="modal" aria-hidden="true">
+						<span class="modal-close-text">Закрити</span>
+						<span class="modal-close-icon"></span>
+					</a>
+					<h2>
 						Порядок проходження
 						<br>військової комісії</h2>
 				</div>
 				<div class="modal-body">
-					<h3>Державна допомога</h3>
+					<h2>Державна допомога</h2>
 					<p>
 						На протезування держава теж встановила певні ліміти. Якщо йдеться про ногу, то вартість протезу не повинна перевищувати 98 тисяч гривень. Ще донедавна ця сума була приблизно на десять тисяч меншою. Для бійців АТО ліміт можна перевищити в тричі, тобто не більше 294 тисяч гривень, якщо буде дозвіл медичної комісії.
 					</p>
@@ -822,37 +823,9 @@
 						Збільшення фінансових лімітів — це наша маленька перемога, — каже Краснощоков. Ми змусили чиновників переглянути витрати, адже хлопці ще зовсім молоді, активні і вони потребують сучасних протезів. Волонтерський проект власне створено, аби вказувати чиновникам на недоліки системи, вносити на законодавчому рівні зміни щодо реабілітації, щоб за декілька років хлопцям не довелося ходити з простягнутою рукою.
 					</p>
 				</div>
-				<div class="modal-footer">
+				<div class="modal-link">
 					<a href="#">Наступна публікація</a>
 				</div>
-			</div>
-		</div>
-	</div>
-	<!-- End Andrew's Modal Window -->
-
-	<!-- Modal Window -->
-	<div class="row modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="modal-info-Label" aria-hidden="false">
-		<div class="modal-dialog">
-			<div class="modal-head">
-				<a href="#myModal" class="modal-close" data-dismiss="modal" aria-hidden="true">
-					<span class="modal-close-text">Закрити</span>
-					<span class="modal-close-icon"></span>
-				</a>
-				<h2>
-					Порядок проходження
-					<br>військової комісії</h2>
-			</div>
-			<div class="modal-body">
-				<h2>Державна допомога</h2>
-				<p>
-					На протезування держава теж встановила певні ліміти. Якщо йдеться про ногу, то вартість протезу не повинна перевищувати 98 тисяч гривень. Ще донедавна ця сума була приблизно на десять тисяч меншою. Для бійців АТО ліміт можна перевищити в тричі, тобто не більше 294 тисяч гривень, якщо буде дозвіл медичної комісії.
-				</p>
-				<p>
-					Збільшення фінансових лімітів — це наша маленька перемога, — каже Краснощоков. Ми змусили чиновників переглянути витрати, адже хлопці ще зовсім молоді, активні і вони потребують сучасних протезів. Волонтерський проект власне створено, аби вказувати чиновникам на недоліки системи, вносити на законодавчому рівні зміни щодо реабілітації, щоб за декілька років хлопцям не довелося ходити з простягнутою рукою.
-				</p>
-			</div>
-			<div class="modal-link">
-				<a href="#">Наступна публікація</a>
 			</div>
 		</div>
 	</div>
