@@ -33,7 +33,7 @@
 
         allNumQuestions.each(function(i) {
             arrNubmers[i] = i+1+'.'+' ';
-            $(this).prepend(arrNubmers[i]); 
+            $(this).prepend(arrNubmers[i]);
         });
     }();
 
@@ -63,7 +63,7 @@
         $('.video-in-news iframe').detach();
 
         videoBlocks.each(function(i) {
-            $(videoBlocks[i]).on('click', function () {         
+            $(videoBlocks[i]).on('click', function () {
                 event.preventDefault();
                 $(videoImg[i]).css('display', 'none');
                 $(this).append(videoFrame[i]);
@@ -92,6 +92,25 @@
             }
         })
     }();
+
+    // Modal Scroll
+
+    $(document).on('show.bs.modal', '.modal', function(){
+        var $this = $(this);
+        $this.show();
+        var windowHeight = $(window).height(),
+            $modalBlock = $this.find('.modal-dialog'),
+            modalHeight = $modalBlock.outerHeight();
+        $this.hide();
+
+        if (modalHeight > windowHeight) {
+            $('body').addClass('modal-scroll');
+        }
+    });
+
+    $(document).on('hidden.bs.modal', '.modal', function(){
+        $('body').removeClass('modal-scroll');
+    });
 
 
 })(jQuery);
