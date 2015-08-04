@@ -905,6 +905,11 @@ position: absolute;
     color: #000;
 }
 
+.activity {
+    width: 930px;
+    margin: 0 auto;
+}
+
 .admins {
     width: 770px;
     text-align: left;
