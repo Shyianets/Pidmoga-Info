@@ -905,7 +905,8 @@ position: absolute;
     color: #000;
 }
 
-.activity {
+.activity,
+.partners {
     width: 930px;
     margin: 0 auto;
 }
@@ -918,7 +919,8 @@ position: absolute;
 
 }
 
-.admin {
+.admin,
+.partner {
     width: 190px;
     display: inline-block;
     margin-bottom: 50px;
@@ -972,13 +974,13 @@ position: absolute;
     margin-top: 8px;
 }
 
-.admins-cont {
+.admins-wrap {
     width: 100%;
     background-color: #f6f6f6;
 
 }
 
-.admins-cont h2 {
+.admins-wrap h2 {
     text-align: center;
     padding: 70px 0;
     margin: 0;
@@ -986,6 +988,11 @@ position: absolute;
 
 .admin {
     text-align: left;
+}
+
+.activity h2,
+.partners h2 {
+    text-align: center;
 }
 
 .bottom-block {
