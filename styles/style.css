@@ -597,6 +597,11 @@ position: absolute;
     padding: 0;
 }
 
+.header_title a {
+    color: #fff;
+    text-decoration: none;
+}
+
 .type-view {
     font-size: 0;
     text-align: center;
