@@ -599,7 +599,7 @@ position: absolute;
 
 .header_title a {
     color: #fff;
-    text-decoration: none;
+    text-decoration: none; 
 }
 
 .type-view {
@@ -913,6 +913,14 @@ position: absolute;
 .activity {
     width: 930px;
     margin: 0 auto;
+}
+
+.activity ul{
+    list-style: none;
+}
+
+.activity a{
+    text-decoration: none;
 }
 
 .admins {
