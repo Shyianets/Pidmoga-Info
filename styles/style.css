@@ -905,8 +905,7 @@ position: absolute;
     color: #000;
 }
 
-.activity,
-.partners {
+.activity {
     width: 930px;
     margin: 0 auto;
 }
@@ -919,8 +918,7 @@ position: absolute;
 
 }
 
-.admin,
-.partner {
+.admin {
     width: 190px;
     display: inline-block;
     margin-bottom: 50px;
@@ -980,7 +978,7 @@ position: absolute;
 
 }
 
-.admins-wrap h2 {
+.admins-wrap     h2 {
     text-align: center;
     padding: 70px 0;
     margin: 0;
@@ -995,6 +993,18 @@ position: absolute;
     text-align: center;
 }
 
+.partners {
+    width: 775px;
+    margin: 0 auto;
+}
+
+.partner {
+    display: inline-block;
+    margin-bottom: 50px;
+    /*margin-left: 98px;*/
+    vertical-align: top;
+}
+
 .bottom-block {
     margin-top: 30px;
     padding-top: 30px;
@@ -1002,6 +1012,20 @@ position: absolute;
     background-color: #f6f6f6;
     text-align: center;
 
+}
+
+.contact-us {
+    margin: 0 auto;
+    width: 720px;
+    text-align: left;
+}
+
+.contact-us-left {
+    width: 325px;
+}
+
+.contact-us-right {
+    width: 245px;
 }
 
 .bottom-block h2{
@@ -1940,7 +1964,9 @@ a.b-dark-bkgrnd:active {
     text-align: right;
 }
 
-
+.e-mail {
+    display: block;
+}
 
 
 
