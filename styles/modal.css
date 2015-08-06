@@ -129,3 +129,6 @@
     height:50px;
     overflow:scroll
 }
+body.modal-open, .modal-open .fixnav.fixed {
+    padding-right: 17px;
+}
