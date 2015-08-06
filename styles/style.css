@@ -66,11 +66,11 @@ h2 {
 }
 
 h3 {
-    width: 340px;
+    /*width: 340px;*/
     font-size: 22px;
     line-height: 30px;
     font-weight: 500;
-    color: #1a1a1a;
+    color: #505050;
 }
 
 h4 {
@@ -729,6 +729,12 @@ position: absolute;
     right: 0;
     top: 0;
 }
+
+.insert-modal {
+    width: 400px;
+    margin: 65px 50px;
+}
+
 .news a{
     text-decoration: none;
 }
