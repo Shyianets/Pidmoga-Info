@@ -918,7 +918,7 @@ position: absolute;
 
 .activity {
     width: 930px;
-    margin: 0 auto;
+    margin: 80px auto;
 }
 
 .activity ul{
@@ -1014,13 +1014,16 @@ position: absolute;
 
 .partners {
     width: 775px;
-    margin: 0 auto;
+    margin: 80px auto;
+}
+
+#partners {
+    position: inherit;
+    top: -190px;
 }
 
 .partner {
     display: inline-block;
-    margin-bottom: 50px;
-    /*margin-left: 98px;*/
     vertical-align: top;
 }
 
@@ -1038,7 +1041,8 @@ position: absolute;
 }
 
 .contact-us {
-    margin: 0 auto;
+    margin: 45px auto;
+    margin-bottom: 0;
     width: 720px;
     text-align: left;
 }
@@ -1788,7 +1792,7 @@ a.b-dark-bkgrnd:active {
 .news {
     display: block;
     position: relative;
-    margin: 55px 0;
+    margin: 80px 0;
     /*background-color: #f6f6f6;*/
 }
 
@@ -2232,14 +2236,14 @@ a.topic:hover {
 }
 
 .goal {
-    padding: 75px 0;
+    padding-top: 75px;
     width: 930px;
     margin: 0 auto;
     text-align: center;
 }
 
-.goal.green {
-    color: #22a24f;
+.major-goal {
+    margin-bottom: 75px;
 }
 
 .goal h3 {
