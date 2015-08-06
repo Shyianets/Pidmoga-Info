@@ -1019,8 +1019,8 @@ position: absolute;
 
 .partner {
     display: inline-block;
-    margin-bottom: 50px;
     vertical-align: top;
+    margin-left: 80px;
 }
 
 .partner:first-child,
